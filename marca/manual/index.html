@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Manual de marca ROGLE</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="index_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-7ecb3698bc4d6b3d354bf3333b7e82d3.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark-c0ae64d36ed4ced1434210b2fa69902d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-7ecb3698bc4d6b3d354bf3333b7e82d3.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap-54a17c834eb66dd2990f346e84b415fa.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="index_files/libs/bootstrap/bootstrap-dark-a45a661b4e9d0e87cc85c6ab12dd57ed.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="index_files/libs/bootstrap/bootstrap-54a17c834eb66dd2990f346e84b415fa.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+
+
+<link rel="stylesheet" href="guide.css">
+</head>
+
+<body class="quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul class="collapse">
+  <li><a href="#la-marca" id="toc-la-marca" class="nav-link active" data-scroll-target="#la-marca">La marca</a></li>
+  <li><a href="#logotipos" id="toc-logotipos" class="nav-link" data-scroll-target="#logotipos">Logotipos</a></li>
+  <li><a href="#color" id="toc-color" class="nav-link" data-scroll-target="#color">Color</a></li>
+  <li><a href="#tipografía" id="toc-tipografía" class="nav-link" data-scroll-target="#tipografía">Tipografía</a></li>
+  <li><a href="#convivencia-con-la-upv" id="toc-convivencia-con-la-upv" class="nav-link" data-scroll-target="#convivencia-con-la-upv">Convivencia con la UPV</a></li>
+  <li><a href="#aniversario" id="toc-aniversario" class="nav-link" data-scroll-target="#aniversario">20 aniversario</a></li>
+  <li><a href="#plantillas-vídeo-y-kit-de-imprenta" id="toc-plantillas-vídeo-y-kit-de-imprenta" class="nav-link" data-scroll-target="#plantillas-vídeo-y-kit-de-imprenta">Plantillas, vídeo y kit de imprenta</a></li>
+  <li><a href="#sitio-web" id="toc-sitio-web" class="nav-link" data-scroll-target="#sitio-web">Sitio web</a></li>
+  <li><a href="#presentaciones" id="toc-presentaciones" class="nav-link" data-scroll-target="#presentaciones">Presentaciones</a></li>
+  <li><a href="#uso-en-proyectos" id="toc-uso-en-proyectos" class="nav-link" data-scroll-target="#uso-en-proyectos">Uso en proyectos</a></li>
+  <li><a href="#cambiar-de-alternativa" id="toc-cambiar-de-alternativa" class="nav-link" data-scroll-target="#cambiar-de-alternativa">Cambiar de alternativa</a></li>
+  <li><a href="#alternativas-descartadas-por-el-momento" id="toc-alternativas-descartadas-por-el-momento" class="nav-link" data-scroll-target="#alternativas-descartadas-por-el-momento">Alternativas descartadas por el momento</a></li>
+  <li><a href="#marca-anterior-historial" id="toc-marca-anterior-historial" class="nav-link" data-scroll-target="#marca-anterior-historial">Marca anterior (historial)</a></li>
+  <li><a href="#decisiones-tomadas" id="toc-decisiones-tomadas" class="nav-link" data-scroll-target="#decisiones-tomadas">Decisiones tomadas</a></li>
+  <li><a href="#pendientes" id="toc-pendientes" class="nav-link" data-scroll-target="#pendientes">Pendientes</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Manual de marca ROGLE</h1>
+<p class="subtitle lead">Reengineering Operations GroupWork Logistics Excellence</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">1 de octubre de 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="la-marca" class="level2">
+<h2 class="anchored" data-anchor-id="la-marca">La marca</h2>
+<p>ROGLE es un grupo de investigación del Departamento de Organización de Empresas de la Universitat Politècnica de València. Investiga la reingeniería de operaciones y la logística, y trabaja en equipo.</p>
+<p>La web del grupo es <a href="https://rogle.webs.upv.es/" class="uri">https://rogle.webs.upv.es/</a>.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Advertencia</span>Marca vigente por el momento: alternativa A
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Desde el 1 de octubre de 2026 el grupo usa la alternativa A del 20 aniversario. La UPV aún no la ha aprobado. A necesita el visto bueno del Área de Comunicación de la UPV (imagen@upv.es), y por eso el repositorio sigue privado. Si no se aprueba, el grupo puede volver a C o a B con un comando (ver <a href="#cambiar-de-alternativa">Cambiar de alternativa</a>). El seguimiento está en el <a href="https://github.com/allabur/rogle/issues/13">epic #13</a>.</p>
+</div>
+</div>
+<section id="idea" class="level3">
+<h3 class="anchored" data-anchor-id="idea">Idea</h3>
+<ul>
+<li>En valenciano, <em>rogle</em> es el corro de personas. «Fer rogle» es reunirse en círculo.</li>
+<li>El isotipo muestra cinco personas en corro. Cada una abraza al grupo con una media luna.</li>
+<li>Las medias lunas giran. Expresan dos ideas del nombre: el trabajo en grupo (<em>GroupWork</em>) y el ciclo continuo de mejora de las operaciones (<em>Reengineering Operations</em>).</li>
+<li>Son cinco personas. El grupo crece.</li>
+</ul>
+<p>Este manual fija cómo usar el logotipo, los colores y la tipografía. Los logotipos vigentes están en <code>brand/logos/</code> y los valores en el <code>_brand.yml</code> de la raíz. La especificación completa está en <code>rediseno-20/BRAND_SPEC.md</code>.</p>
+</section>
+</section>
+<section id="logotipos" class="level2">
+<h2 class="anchored" data-anchor-id="logotipos">Logotipos</h2>
+<p>La marca tiene tres versiones. Comparten el isotipo y la tipografía. Las imágenes de esta sección son los archivos de <code>brand/logos/</code>: cambian solas si cambia la alternativa vigente.</p>
+<div class="logo-grid">
+<div class="logo-tile">
+<p><img src="logos/logo/rogle-logo-color.svg" class="img-fluid" alt="Logotipo principal de ROGLE"> <span class="caption"><strong>Principal.</strong> Isotipo a la izquierda y descriptor bajo el nombre. Es la versión por defecto.</span></p>
+</div>
+<div class="logo-tile">
+<p><img src="logos/wordmark/rogle-wordmark-color.svg" class="img-fluid" alt="Logotipo integrado de ROGLE"> <span class="caption"><strong>Integrado.</strong> El isotipo hace de «O». Para portadas, pósteres y cabeceras donde el nombre es protagonista.</span></p>
+</div>
+<div class="logo-tile">
+<p><img src="logos/symbol/rogle-symbol-color.svg" class="img-fluid" alt="Isotipo de ROGLE"> <span class="caption"><strong>Isotipo.</strong> Para iconos, sellos y espacios cuadrados donde el nombre ya aparece cerca.</span></p>
+</div>
+</div>
+<p>Principal e integrado existen con descriptor y sin él (<code>-notagline</code>). Usa la versión sin descriptor cuando el descriptor ya aparezca en la página o la pieza sea pequeña. Con descriptor, el ancho mínimo es 60 mm o 320 px.</p>
+<section id="variantes-de-color" class="level3">
+<h3 class="anchored" data-anchor-id="variantes-de-color">Variantes de color</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variante</th>
+<th>Archivo</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>color</code></td>
+<td><code>rogle-&lt;versión&gt;-color</code></td>
+<td>Fondos blancos o claros. Primera opción</td>
+</tr>
+<tr class="even">
+<td><code>reverse</code></td>
+<td><code>rogle-&lt;versión&gt;-reverse</code></td>
+<td>Fondos Oxford Blue u oscuros. Sin fondo propio</td>
+</tr>
+<tr class="odd">
+<td><code>black</code></td>
+<td><code>rogle-logo-black</code></td>
+<td>Impresión a una tinta, grabado y sellos. Solo el logotipo principal</td>
+</tr>
+</tbody>
+</table>
+<div class="logo-grid">
+<div class="logo-tile">
+<p><img src="logos/logo/rogle-logo-color.svg" class="img-fluid" alt="Variante color"> <span class="caption"><code>color</code>: fondos blancos o claros.</span></p>
+</div>
+<div class="logo-tile on-oxford">
+<p><img src="logos/logo/rogle-logo-reverse.svg" class="img-fluid" alt="Variante invertida"> <span class="caption"><code>reverse</code>: fondos Oxford Blue u oscuros.</span></p>
+</div>
+<div class="logo-tile">
+<p><img src="logos/logo/rogle-logo-black.svg" class="img-fluid" alt="Variante de una tinta negra"> <span class="caption"><code>black</code>: una tinta negra.</span></p>
+</div>
+</div>
+<p>Sin descriptor, el logotipo principal y el integrado tienen las mismas variantes <code>color</code> y <code>reverse</code>.</p>
+<div class="logo-grid">
+<div class="logo-tile">
+<p><img src="logos/logo/rogle-logo-notagline-color.svg" class="img-fluid" alt="Logotipo principal sin descriptor"> <span class="caption"><code>rogle-logo-notagline-color</code></span></p>
+</div>
+<div class="logo-tile on-oxford">
+<p><img src="logos/logo/rogle-logo-notagline-reverse.svg" class="img-fluid" alt="Logotipo principal sin descriptor, invertido"> <span class="caption"><code>rogle-logo-notagline-reverse</code></span></p>
+</div>
+<div class="logo-tile on-oxford">
+<p><img src="logos/wordmark/rogle-wordmark-reverse.svg" class="img-fluid" alt="Logotipo integrado, invertido"> <span class="caption"><code>rogle-wordmark-reverse</code></span></p>
+</div>
+<div class="logo-tile on-oxford">
+<p><img src="logos/symbol/rogle-symbol-reverse.svg" class="img-fluid" alt="Isotipo, invertido"> <span class="caption"><code>rogle-symbol-reverse</code></span></p>
+</div>
+</div>
+<p>La variante <code>black</code> es plana. Úsala solo cuando el color no sea posible. El degradado de las versiones digitales no se imprime.</p>
+</section>
+<section id="más-versiones-de-la-alternativa-a" class="level3">
+<h3 class="anchored" data-anchor-id="más-versiones-de-la-alternativa-a">Más versiones de la alternativa A</h3>
+<p>Estas piezas existen por alternativa. Aquí se muestra A. Con otra alternativa vigente, cambia <code>A</code> por <code>B</code> o <code>C</code> en el nombre de la carpeta y del archivo.</p>
+<div class="logo-grid">
+<div class="logo-tile">
+<p><img src="rediseno-20/alternativa-A/rogle-A-vertical.svg" class="img-fluid" alt="Logotipo vertical"> <span class="caption"><code>rogle-A-vertical</code>: espacios estrechos o cuadrados.</span></p>
+</div>
+<div class="logo-tile">
+<p><img src="rediseno-20/alternativa-A/rogle-A-horizontal-digital.svg" class="img-fluid" alt="Logotipo horizontal digital"> <span class="caption"><code>rogle-A-horizontal-digital</code>: solo en pantalla. Medias lunas con degradado.</span></p>
+</div>
+<div class="logo-tile on-oxford">
+<p><img src="rediseno-20/alternativa-A/rogle-A-horizontal-negativo-descriptor.svg" class="img-fluid" alt="Logotipo horizontal en negativo con descriptor"> <span class="caption"><code>rogle-A-horizontal-negativo-descriptor</code>: portadas oscuras.</span></p>
+</div>
+<div class="logo-tile">
+<p><img src="rediseno-20/alternativa-A/rogle-A-integrado-descriptor.svg" class="img-fluid" alt="Logotipo integrado con descriptor"> <span class="caption"><code>rogle-A-integrado-descriptor</code>: el isotipo hace de «O».</span></p>
+</div>
+</div>
+<p>El catálogo completo (trece versiones por alternativa, en SVG, PDF y PNG) está en <code>rediseno-20/alternativa-A/</code>, <code>rediseno-20/pdf/</code> y <code>rediseno-20/png/</code>. La tabla de cada versión y su uso está en la especificación.</p>
+</section>
+<section id="isotipo-y-piezas-comunes" class="level3">
+<h3 class="anchored" data-anchor-id="isotipo-y-piezas-comunes">Isotipo y piezas comunes</h3>
+<p>Las tres alternativas comparten el mismo isotipo. Está en <code>rediseno-20/comunes/</code>.</p>
+<div class="logo-grid">
+<div class="logo-tile">
+<p><img src="rediseno-20/comunes/rogle-isotipo.svg" class="img-fluid" alt="Isotipo plano"> <span class="caption"><code>rogle-isotipo</code>: versión plana, para impresión y uso general.</span></p>
+</div>
+<div class="logo-tile">
+<p><img src="rediseno-20/comunes/rogle-isotipo-digital.svg" class="img-fluid" alt="Isotipo digital"> <span class="caption"><code>rogle-isotipo-digital</code>: medias lunas con degradado. Solo en pantalla.</span></p>
+</div>
+<div class="logo-tile on-oxford">
+<p><img src="rediseno-20/comunes/rogle-isotipo-negativo.svg" class="img-fluid" alt="Isotipo en negativo"> <span class="caption"><code>rogle-isotipo-negativo</code>: sobre fondo Oxford Blue.</span></p>
+</div>
+<div class="logo-tile">
+<p><img src="rediseno-20/comunes/rogle-avatar.svg" class="img-fluid" alt="Avatar"> <span class="caption"><code>rogle-avatar</code>: redes sociales y perfiles.</span></p>
+</div>
+<div class="logo-tile">
+<p><img src="rediseno-20/comunes/rogle-favicon.svg" class="img-fluid" alt="Favicon"> <span class="caption"><code>rogle-favicon</code>: hasta 48 px. Se exporta a 16, 32 y 48 px.</span></p>
+</div>
+</div>
+</section>
+<section id="logotipos-animados" class="level3">
+<h3 class="anchored" data-anchor-id="logotipos-animados">Logotipos animados</h3>
+<p>Cada alternativa tiene cuatro animaciones, en GIF (800 px, en bucle) y MP4. Están en <code>rediseno-20/animaciones/</code>. Son para pantallas, presentaciones y redes.</p>
+<ul>
+<li><strong>Giro:</strong> el isotipo gira en el centro, se coloca a la izquierda y el nombre aparece de izquierda a derecha.</li>
+<li><strong>Común:</strong> el isotipo aparece con un pequeño rebote y el nombre entra desde la izquierda.</li>
+<li><strong>Fer rogle:</strong> las cinco personas llegan y forman el corro, las medias lunas las abrazan, el corro gira una quinta parte y caen las letras.</li>
+<li><strong>20:</strong> un contador pasa de 2006 a 2026, se convierte en el «20» y aparece «SINCE 2006».</li>
+</ul>
+<div class="ab-grid">
+<div class="logo-tile">
+<p><img src="rediseno-20/animaciones/rogle-A-animado-giro.gif" class="img-fluid" alt="Alternativa A, animación giro"></p>
+</div>
+<div class="logo-tile">
+<p><img src="rediseno-20/animaciones/rogle-A-animado-fer-rogle.gif" class="img-fluid" alt="Alternativa A, animación fer rogle"></p>
+</div>
+<div class="logo-tile on-oxford">
+<p><img src="rediseno-20/animaciones/rogle-A-animado-20.gif" class="img-fluid" alt="Alternativa A, animación 20"></p>
+</div>
+</div>
+</section>
+<section id="área-de-protección-y-tamaño-mínimo" class="level3">
+<h3 class="anchored" data-anchor-id="área-de-protección-y-tamaño-mínimo">Área de protección y tamaño mínimo</h3>
+<ul>
+<li>Alrededor de la marca se deja un espacio libre igual a 0,25 veces la altura del isotipo. Ningún texto, borde o imagen entra en ese margen.</li>
+<li>Isotipo: 16 px en pantalla y 5 mm impreso. Hasta 48 px se usa <code>rogle-favicon</code>.</li>
+<li>Horizontal: 160 px o 30 mm de ancho.</li>
+<li>Horizontal con descriptor: 320 px o 60 mm de ancho.</li>
+</ul>
+</section>
+<section id="usos-incorrectos" class="level3">
+<h3 class="anchored" data-anchor-id="usos-incorrectos">Usos incorrectos</h3>
+<ul>
+<li>No deformes, gires ni inclines la marca.</li>
+<li>No cambies los colores ni el número de personas del isotipo.</li>
+<li>No añadas sombras, contornos, brillos ni otros efectos.</li>
+<li>No uses el degradado en impresión a una tinta.</li>
+<li>No cambies la separación entre isotipo y logotipo.</li>
+<li>No coloques la marca sobre fotografías o fondos con poco contraste.</li>
+<li>No uses el isotipo de la UPV ni su pictograma (Poli) dentro de la marca ROGLE.</li>
+</ul>
+</section>
+</section>
+<section id="color" class="level2">
+<h2 class="anchored" data-anchor-id="color">Color</h2>
+<p>La paleta parte de Oxford Blue y de dos índigos. El ámbar es el único acento cálido y tiene una regla estricta. Los valores están en el <code>_brand.yml</code> de la raíz y en <code>brand/latex/rogle-colors.sty</code>.</p>
+<section id="colores-de-marca" class="level3">
+<h3 class="anchored" data-anchor-id="colores-de-marca">Colores de marca</h3>
+<div class="swatches">
+<div class="swatch">
+<div class="chip" style="background:#002147">
+
+</div>
+<div class="meta">
+<p><strong>Oxford Blue</strong><br>
+<code>#002147</code> · <code>oxford-blue</code><br>
+Personas del isotipo, logotipo, textos y fondo del negativo.</p>
+</div>
+</div>
+<div class="swatch">
+<div class="chip" style="background:#3F4AA8">
+
+</div>
+<div class="meta">
+<p><strong>Índigo</strong><br>
+<code>#3F4AA8</code> · <code>indigo</code><br>
+Descriptor, inicio del degradado, enlaces y titulares de apoyo.</p>
+</div>
+</div>
+<div class="swatch">
+<div class="chip" style="background:#5B67C7">
+
+</div>
+<div class="meta">
+<p><strong>Índigo medio</strong><br>
+<code>#5B67C7</code> · <code>indigo-medio</code><br>
+Medias lunas de la versión principal.</p>
+</div>
+</div>
+<div class="swatch">
+<div class="chip" style="background:#A9B0E0">
+
+</div>
+<div class="meta">
+<p><strong>Índigo claro</strong><br>
+<code>#A9B0E0</code> · <code>indigo-claro</code><br>
+Final del degradado y medias lunas en negativo. Nunca texto sobre blanco.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="colores-de-apoyo" class="level3">
+<h3 class="anchored" data-anchor-id="colores-de-apoyo">Colores de apoyo</h3>
+<div class="swatches">
+<div class="swatch">
+<div class="chip" style="background:#F5B000">
+
+</div>
+<div class="meta">
+<p><strong>Ámbar</strong><br>
+<code>#F5B000</code> · <code>ambar</code><br>
+Solo la cifra «20», sobre Oxford Blue.</p>
+</div>
+</div>
+<div class="swatch">
+<div class="chip" style="background:#5B6770">
+
+</div>
+<div class="meta">
+<p><strong>Gris UPV 431</strong><br>
+<code>#5B6770</code> · <code>gris-upv-431</code><br>
+Nombre del grupo en la firma institucional UPV.</p>
+</div>
+</div>
+<div class="swatch">
+<div class="chip" style="background:#CFCFCF">
+
+</div>
+<div class="meta">
+<p><strong>Separador</strong><br>
+<code>#CFCFCF</code> · <code>separador</code><br>
+Línea entre la marca UPV y la marca ROGLE.</p>
+</div>
+</div>
+<div class="swatch">
+<div class="chip" style="background:#FFFFFF;border-bottom:1px solid #CFCFCF">
+
+</div>
+<div class="meta">
+<p><strong>Blanco</strong><br>
+<code>#FFFFFF</code> · <code>blanco</code><br>
+Fondo. Personas y logotipo en negativo.</p>
+</div>
+</div>
+</div>
+<p>Reglas de color:</p>
+<ol type="1">
+<li>Oxford Blue e índigo nunca se tocan (2,11 : 1). El aire blanco del isotipo los separa.</li>
+<li>El ámbar no se usa sobre fondo claro (1,89 : 1).</li>
+<li>El degradado solo se usa en pantalla. En impresión se usa la versión plana.</li>
+</ol>
+</section>
+<section id="contraste-y-accesibilidad" class="level3">
+<h3 class="anchored" data-anchor-id="contraste-y-accesibilidad">Contraste y accesibilidad</h3>
+<p>La UPV exige al menos el nivel AA en todos sus canales.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Combinación</th>
+<th>Contraste</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Oxford Blue sobre blanco</td>
+<td>16,05 : 1</td>
+</tr>
+<tr class="even">
+<td>Índigo sobre blanco</td>
+<td>7,62 : 1</td>
+</tr>
+<tr class="odd">
+<td>Índigo medio sobre blanco</td>
+<td>4,99 : 1</td>
+</tr>
+<tr class="even">
+<td>Gris UPV 431 sobre blanco</td>
+<td>5,80 : 1</td>
+</tr>
+<tr class="odd">
+<td>Índigo claro sobre Oxford Blue</td>
+<td>7,62 : 1</td>
+</tr>
+<tr class="even">
+<td>Ámbar sobre Oxford Blue</td>
+<td>8,48 : 1</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="tipografía" class="level2">
+<h2 class="anchored" data-anchor-id="tipografía">Tipografía</h2>
+<p>La marca usa <strong>Palatino</strong> para el texto y para todos los títulos, estos en negrita. <strong>Gill Sans</strong> queda solo para lo secundario: etiquetas, pies, cabeceras y numeración. La regla es la misma en documentos y presentaciones. Es el sistema de la marca personal de Alberto Lacort, que comparte esta paleta. Las fórmulas van en Pagella y el código en Consolas o Inconsolata. Decisión y fuentes: registro de decisión.</p>
+<p><strong>Excepción: la web usa Poppins e Inter, las fuentes web de la UPV.</strong> Poppins Bold va en los titulares e Inter en el texto, el menú y las etiquetas. Documentos y presentaciones siguen con Palatino y Gill Sans. Las fuentes web están en <code>brand/fonts/poppins/</code> y <code>brand/fonts/inter/</code>, con su licencia SIL OFL 1.1.</p>
+<div class="type-specimen specimen">
+<div class="specimen-display">
+<p>Reingeniería de operaciones</p>
+</div>
+<div class="specimen-title">
+<p>Títulos en Palatino negrita</p>
+</div>
+<div class="specimen-label">
+<p>Etiquetas, pies y cabeceras en Gill Sans</p>
+</div>
+<div class="specimen-text">
+<p>El texto corrido va en Palatino. Las cursivas marcan <em>términos técnicos</em>. La utilización de un servidor es <em>ρ</em> = <em>λ</em>/<em>μ</em>.</p>
+</div>
+<div class="specimen-code">
+<p>quarto render muestra.qmd</p>
+</div>
+</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Uso</th>
+<th>Fuente</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Texto y todos los títulos (portada, sección, diapositiva), estos en negrita</td>
+<td>Palatino</td>
+</tr>
+<tr class="even">
+<td>Texto secundario: etiquetas, pies de figura y de tabla, cabeceras de tabla, cabecera y pie de página, numeración, menú de seguimiento y metadatos de autoría</td>
+<td>Gill Sans</td>
+</tr>
+<tr class="odd">
+<td>Fórmulas</td>
+<td>Pagella: <code>newpxmath</code> en LaTeX y <code>mathjax-pagella</code> en web; Cambria Math en Office</td>
+</tr>
+<tr class="even">
+<td>Código</td>
+<td>Consolas en Office; Inconsolata en LaTeX y como respaldo web</td>
+</tr>
+</tbody>
+</table>
+<p>Cada medio toma la fuente del sistema. LaTeX y la web usan una fuente libre de respaldo si falta. Word y PowerPoint no tienen respaldo.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Uso</th>
+<th>Word y PowerPoint</th>
+<th>LaTeX y Beamer</th>
+<th>Web, HTML y Quarto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Texto</td>
+<td>Palatino Linotype</td>
+<td>Palatino del sistema; respaldo <code>newpxtext</code></td>
+<td>Palatino del sistema; respaldo TeX Gyre Pagella</td>
+</tr>
+<tr class="even">
+<td>Títulos (negrita)</td>
+<td>Palatino Linotype</td>
+<td>Palatino del sistema; respaldo <code>newpxtext</code></td>
+<td>Palatino del sistema; respaldo TeX Gyre Pagella</td>
+</tr>
+<tr class="odd">
+<td>Texto secundario</td>
+<td>Gill Sans MT</td>
+<td>Gill Sans del sistema; respaldo <code>gillius</code></td>
+<td>Gill Sans del sistema; respaldo Gillius ADF</td>
+</tr>
+<tr class="even">
+<td>Fórmulas</td>
+<td>Cambria Math</td>
+<td><code>newpxmath</code></td>
+<td>MathJax 4 con la fuente <code>mathjax-pagella</code> (HTML y Reveal.js)</td>
+</tr>
+<tr class="odd">
+<td>Código</td>
+<td>Consolas</td>
+<td><code>inconsolata</code></td>
+<td>Consolas o Menlo; respaldo Inconsolata</td>
+</tr>
+</tbody>
+</table>
+<p>LaTeX toma Palatino y Gill Sans del sistema solo con LuaLaTeX o XeLaTeX. Con pdfLaTeX usa siempre los clones libres.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Nivel</th>
+<th>Documento</th>
+<th>Diapositiva</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Título de portada</td>
+<td>—</td>
+<td>40 pt</td>
+</tr>
+<tr class="even">
+<td>Título de separador de sección</td>
+<td>—</td>
+<td>36 pt</td>
+</tr>
+<tr class="odd">
+<td>Título</td>
+<td>18 pt</td>
+<td>28 pt</td>
+</tr>
+<tr class="even">
+<td>Subtítulo</td>
+<td>14 pt</td>
+<td>24 pt</td>
+</tr>
+<tr class="odd">
+<td>Texto</td>
+<td>11 pt</td>
+<td>18 pt</td>
+</tr>
+<tr class="even">
+<td>Pie de figura y notas</td>
+<td>9 pt</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>Pie de página</td>
+<td>—</td>
+<td>12 pt</td>
+</tr>
+</tbody>
+</table>
+<p>En diapositivas, ningún texto baja de 18 pt salvo los pies de página y los créditos.</p>
+<p>Cómo aplicarla:</p>
+<ul>
+<li><strong>Quarto:</strong> el <code>_brand.yml</code> de la raíz ya define colores y tipografía. <code>rediseno-20/muestra.qmd</code> es un ejemplo completo.</li>
+<li><strong>Fórmulas en Quarto:</strong> añade <code>include-in-header: &lt;ruta&gt;/brand/rediseno-20/mathjax-pagella.html</code> y fija MathJax 4 en <code>html-math-method</code>, como hace <code>muestra.qmd</code>. Reveal.js necesita el mismo ajuste, porque Quarto carga allí MathJax 2 por defecto.</li>
+<li><strong>Reveal.js:</strong> las fuentes libres de respaldo no llegan a las diapositivas. Allí se usan Palatino y Gill Sans del sistema. Los títulos van en Palatino negrita y Gill Sans solo aparece en lo secundario.</li>
+<li><strong>LaTeX:</strong> carga <code>\usepackage{rogle20-fonts}</code> desde <code>brand/latex/</code>. <code>\rogletitlefont</code> da Palatino en negrita para los títulos; <code>\sffamily</code> da Gill Sans para lo secundario.</li>
+<li><strong>Word y PowerPoint:</strong> Palatino Linotype para el texto y los títulos (en negrita) y Gill Sans MT solo para lo secundario (en PowerPoint: menú, etiquetas, fuente y pie; en Word: pies de figura, cabeceras y numeración). Office para Mac las incluye y PowerPoint las incrusta al exportar a PDF. En Windows falta comprobarlo.</li>
+<li><strong>Fórmulas en Word y PowerPoint:</strong> usa Cambria Math. En equipos propios puedes instalar TeX Gyre Pagella Math (<code>brand/fonts/</code>) y elegirla en las opciones de ecuación.</li>
+</ul>
+<p>Las fuentes libres de respaldo están en <code>brand/fonts/</code>, cada una con su licencia. Gillius ADF no es un clon exacto: está inspirada en Gill Sans. Palatino, Gill Sans, Cambria y Consolas no se incluyen, porque son comerciales.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Fuente</th>
+<th>Licencia</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>TeX Gyre Pagella y TeX Gyre Pagella Math</td>
+<td>GUST Font License</td>
+</tr>
+<tr class="even">
+<td>Gillius ADF</td>
+<td>GPL 2 o posterior. Su README cita una excepción para fuentes, cuyo texto no se distribuye</td>
+</tr>
+<tr class="odd">
+<td>Inconsolata</td>
+<td>SIL Open Font License</td>
+</tr>
+</tbody>
+</table>
+<p>Las letras de la marca dependen de la alternativa y se entregan convertidas a trazados:</p>
+<ul>
+<li><strong>Logotipo:</strong> letras UPV (A), geométrica a medida (B) o Palatino negrita (C).</li>
+<li><strong>Descriptor:</strong> Belleza (A), Barlow Semi Condensed Medium (B) o Palatino (C). Belleza y Barlow tienen licencia OFL. C usa TeX Gyre Pagella, con licencia GUST.</li>
+<li><strong>Firma institucional UPV:</strong> Futura Bold Condensed, como recomienda el anexo de la UPV para grupos. El anexo nombra Futura LT Pro. Los archivos usan la variante BT. Es una fuente comercial. Su licencia está pendiente (<a href="https://github.com/allabur/rogle/issues/24">#24</a>).</li>
+</ul>
+</section>
+<section id="convivencia-con-la-upv" class="level2">
+<h2 class="anchored" data-anchor-id="convivencia-con-la-upv">Convivencia con la UPV</h2>
+<p>ROGLE pertenece a la UPV. La jerarquía depende del tipo de documento.</p>
+<ul>
+<li><strong>Documentos institucionales</strong> (actas, docencia oficial, RiuNet, memorias de proyecto): manda la marca UPV. ROGLE aparece como firma secundaria, a la derecha o en el pie.</li>
+<li><strong>Materiales propios del grupo</strong> (web, pósteres, presentaciones, informes técnicos, redes): manda ROGLE. La UPV aparece como respaldo, más pequeña y separada por una línea vertical en color separador.</li>
+</ul>
+<p>No mezcles las paletas en la misma pieza. Los colores UPV de <code>_brand.yml</code> (prefijo <code>upv-</code>) sirven solo para documentos institucionales.</p>
+<section id="firma-institucional" class="level3">
+<h3 class="anchored" data-anchor-id="firma-institucional">Firma institucional</h3>
+<p>Los documentos oficiales siguen el anexo de la Guía de Comunicación de la UPV para grupos de investigación. La marca UPV va acompañada del nombre del grupo en Futura Bold Condensed y en Gris UPV 431.</p>
+<div class="logo-grid">
+<div class="logo-tile">
+<p><img src="rediseno-20/comunes/upv-rogle-firma-institucional.svg" class="img-fluid" alt="Firma institucional UPV del grupo ROGLE"> <span class="caption"><code>upv-rogle-firma-institucional</code>: marca UPV en negro.</span></p>
+</div>
+<div class="logo-tile">
+<p><img src="rediseno-20/comunes/upv-rogle-firma-institucional-negativo.svg" class="img-fluid" alt="Firma institucional UPV del grupo ROGLE en negativo"> <span class="caption"><code>upv-rogle-firma-institucional-negativo</code>: marca UPV en negativo sobre el cuadrado gris.</span></p>
+</div>
+</div>
+</section>
+<section id="marca-propia-junto-a-la-upv" class="level3">
+<h3 class="anchored" data-anchor-id="marca-propia-junto-a-la-upv">Marca propia junto a la UPV</h3>
+<div class="logo-grid">
+<div class="logo-tile">
+<p><img src="rediseno-20/alternativa-A/rogle-A-upv-convivencia.svg" class="img-fluid" alt="Alternativa A, convivencia con la UPV"> <span class="caption"><code>rogle-A-upv-convivencia</code>: materiales propios junto a la marca UPV.</span></p>
+</div>
+</div>
+<p>Cuando ROGLE aparece con su propia marca junto a la UPV (<code>rogle-&lt;X&gt;-upv-convivencia</code>, con <code>&lt;X&gt;</code> igual a A, B o C):</p>
+<ol type="1">
+<li>La marca UPV va a la izquierda y ROGLE a su derecha.</li>
+<li>Ambas tienen la misma altura. El isotipo de ROGLE mide lo mismo que la tinta visible de la marca UPV, sin contar el aire de su lienzo. El bloque ROGLE (isotipo y logotipo) queda centrado en esa altura. ROGLE nunca es mayor que la marca UPV.</li>
+<li>Las separa una línea vertical en color separador, con al menos media altura de aire a cada lado. La línea mide lo mismo que la tinta de las dos marcas.</li>
+<li>La marca UPV no se modifica.</li>
+<li>El archivo deja 90 unidades de margen en los cuatro lados. Se miden sobre la tinta de la marca UPV, el separador y ROGLE, no sobre el lienzo de la marca UPV.</li>
+</ol>
+</section>
+</section>
+<section id="aniversario" class="level2">
+<h2 class="anchored" data-anchor-id="aniversario">20 aniversario</h2>
+<p>ROGLE se creó en 2006. El 20 aniversario es en 2026. La marca lleva la cifra «20» en ámbar, solo sobre Oxford Blue. Se usa solo durante el año del aniversario. Después, la marca sigue igual, sin la cifra.</p>
+<div class="logo-grid">
+<div class="logo-tile on-oxford">
+<p><img src="rediseno-20/alternativa-A/rogle-A-20-aniversario.svg" class="img-fluid" alt="20 aniversario"> <span class="caption"><code>rogle-A-20-aniversario</code>: solo en pantalla, porque lleva degradado.</span></p>
+</div>
+<div class="logo-tile on-oxford">
+<p><img src="rediseno-20/alternativa-A/rogle-A-20-since.svg" class="img-fluid" alt="20 aniversario, «since 2006»"> <span class="caption"><code>rogle-A-20-since</code>: «SINCE 2006». Medias lunas planas: se puede imprimir.</span></p>
+</div>
+<div class="logo-tile">
+<p><img src="rediseno-20/alternativa-A/rogle-A-20-blanco.svg" class="img-fluid" alt="20 aniversario para fondo blanco"> <span class="caption"><code>rogle-A-20-blanco</code>: la cifra va en índigo, porque el ámbar no se usa sobre fondo claro.</span></p>
+</div>
+</div>
+</section>
+<section id="plantillas-vídeo-y-kit-de-imprenta" class="level2">
+<h2 class="anchored" data-anchor-id="plantillas-vídeo-y-kit-de-imprenta">Plantillas, vídeo y kit de imprenta</h2>
+<p>Las plantillas con la marca vigente están en <code>rediseno-20/plantillas/</code>. Cada carpeta tiene un README con los comandos y una muestra en PNG.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Plantilla</th>
+<th>Carpeta</th>
+<th>Formato</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Presentaciones</td>
+<td><code>plantillas/presentaciones/</code></td>
+<td>Quarto, Reveal.js y Beamer</td>
+</tr>
+<tr class="even">
+<td>Informe técnico y artículo</td>
+<td><code>plantillas/informe/</code></td>
+<td>Quarto a PDF con LuaLaTeX</td>
+</tr>
+<tr class="odd">
+<td>Póster A0</td>
+<td><code>plantillas/poster/</code></td>
+<td>Typst</td>
+</tr>
+<tr class="even">
+<td>Carta con membrete</td>
+<td><code>plantillas/carta/</code></td>
+<td>LaTeX</td>
+</tr>
+<tr class="odd">
+<td>Word y PowerPoint</td>
+<td><code>office/</code></td>
+<td>Tema <code>.thmx</code>, <code>ROGLE.potx</code> (estilo consultora, con menú de secciones) y plantillas <code>.dotx</code> (preprint, documento de trabajo, margen ancho y carta)</td>
+</tr>
+</tbody>
+</table>
+<p>Estas plantillas cargan los logotipos de la alternativa A directamente. No cambian con <code>brand/adoptar.sh</code>. Las excepciones son las presentaciones y las de Word y PowerPoint (<code>brand/office/</code>), que siguen la alternativa vigente. Las de Word y PowerPoint se regeneran con <code>python3 brand/office/build_all.py</code> tras ejecutar <code>brand/adoptar.sh</code>. Las presentaciones, con <code>python3 brand/rediseno-20/plantillas/presentaciones/build_logos.py</code>. Los formatos de <code>_extensions/</code> (prácticas, casos docentes y CITYM) usan los logotipos vigentes y se actualizan al cambiar de alternativa.</p>
+<p>Vídeos de presentación de la marca, en <code>rediseno-20/video/</code>:</p>
+<ul>
+<li><a href="../../descargas/video/rogle-presentacion-marca-A.mp4"><code>rogle-presentacion-marca-A.mp4</code></a>: horizontal, 1920 × 1080, 75 segundos, con música de fondo.</li>
+<li><a href="../../descargas/video/rogle-presentacion-marca-A-vertical.mp4"><code>rogle-presentacion-marca-A-vertical.mp4</code></a>: vertical, 1080 × 1920, para redes y móvil.</li>
+</ul>
+<p>La música es una pieza original en estilo <em>reel</em>, sintetizada por <code>rediseno-20/video/musica/build_musica.py</code>: pop de baile a 128 pulsaciones por minuto en do mayor, con bombo a cuatro tiempos y efecto de bombeo, palmas, un gancho melódico de cuatro compases y una subida que desemboca en el «drop» justo cuando entra la escena del 20 aniversario. No es ninguna canción existente: las canciones que triunfan en redes tienen derechos de autor, y un vídeo institucional con ellas se silenciaría o se retiraría. La pieza es de dominio público (CC0). Para generar el vídeo sin música, <code>--sin-musica</code>. Los estilos anteriores siguen disponibles: <code>build_musica.py valenciana</code> y <code>build_musica.py ambiental</code>. Para usar un sonido de moda, publica la versión sin música y añade el audio desde la biblioteca de la propia red (Instagram, TikTok) al subirla.</p>
+<p>Hay también versiones con <strong>locución</strong> (<code>rogle-presentacion-marca-A-locucion.mp4</code> y <code>-vertical-locucion.mp4</code>): una voz de mujer explica cada escena y la música baja mientras habla. El guion está en <code>rediseno-20/video/locucion/guion.md</code>. La voz es neuronal (Piper, español de España, en local) y suena mucho más natural que la del sistema, pero sigue siendo sintética: para la versión definitiva, una persona del grupo graba cada intervención (<code>escena-01.wav</code> … <code>escena-09.wav</code>) y se vuelve a generar con <code>uv run brand/rediseno-20/video/locucion/build_locucion.py</code>, que usa las grabaciones si existen.</p>
+<p>El kit para imprenta es un ZIP con todas las piezas en SVG, PDF, PDF CMYK, EPS, DXF y PNG, las animaciones y un LEEME. El de la alternativa A está en <a href="../../descargas/marca/ROGLE-20-aniversario-marca-A.zip"><code>rediseno-20/kit-imprenta/ROGLE-20-aniversario-marca-A.zip</code></a>. Para otra alternativa, ejecuta <code>brand/rediseno-20/kit-imprenta/empaquetar.sh A,C</code> (o <code>B</code>, <code>ABC</code>).</p>
+</section>
+<section id="sitio-web" class="level2">
+<h2 class="anchored" data-anchor-id="sitio-web">Sitio web</h2>
+<p>La web del grupo es <a href="https://rogle.webs.upv.es" class="uri">https://rogle.webs.upv.es</a>, en la web avanzada de la UPV. Es un sitio estático de Quarto, bilingüe (<code>/es/</code> y <code>/en/</code>), con la alternativa vigente: cabecera con el logotipo horizontal, portada oscura con la cifra «20» en ámbar y pie con la convivencia UPV y ROGLE. Poppins va en los titulares e Inter en el resto (excepción web, véase «Tipografía»). Tiene tema claro y oscuro. No usa cookies ni recursos de otros dominios. La página <a href="https://rogle.webs.upv.es/es/marca.html">Marca</a> de la web ofrece todo para descargar: logotipos, paleta, plantillas, kit de imprenta, vídeos y este manual (en <code>/marca/manual/</code>). Cada miembro tiene un perfil y cada artículo una ficha con cita APA y BibTeX.</p>
+<p>Las fuentes están en <code>web/</code>. <code>uv run web/build_web.py</code> genera los datos, las fuentes y las imágenes, y compila el sitio en <code>web/_site/</code>. <code>uv run web/build_web.py deploy</code> prepara el commit del sitio compilado para el repositorio de despliegue <code>allabur/rogle-web</code>, que Plesk descarga. Los pasos de Plesk y la lista de comprobación están en <code>web/README.md</code>.</p>
+</section>
+<section id="presentaciones" class="level2">
+<h2 class="anchored" data-anchor-id="presentaciones">Presentaciones</h2>
+<p>Reveal.js, Beamer y PowerPoint comparten un diseño de estilo consultora. La plantilla de Quarto (Reveal.js y Beamer) está en <code>plantillas/presentaciones/</code> y la de PowerPoint en <code>office/</code>.</p>
+<ul>
+<li><strong>Estilo.</strong> Fondo blanco, título de acción de una frase, menú de seguimiento de las secciones, barra de mensaje clave, línea de fuente y pie con número. La portada, la contraportada y los separadores van sobre Oxford Blue.</li>
+<li><strong>Tipografía.</strong> Los títulos van en Palatino negrita y el cuerpo en Palatino. Gill Sans solo aparece en lo secundario: menú, etiquetas, fuente, pie, número, cabeceras de tabla y leyendas.</li>
+<li><strong>Menú de seguimiento.</strong> Cinco variantes: lateral, superior, inferior, pasos (chevrones numerados) y ninguno. La sección actual va en índigo y las demás en gris. En Reveal.js y Beamer se elige con <code>tracker:</code> en el YAML y se calcula a partir de los <code># Sección</code>.</li>
+<li><strong>Portada.</strong> El diseño principal es un campo Oxford Blue con un filete ámbar y una franja blanca con los logotipos de la UPV y de ROGLE en positivo. La alternativa es toda Oxford Blue con los logotipos en blanco (<code>portada: negativa</code>).</li>
+<li><strong>Color.</strong> El ámbar solo va sobre Oxford Blue.</li>
+</ul>
+</section>
+<section id="uso-en-proyectos" class="level2">
+<h2 class="anchored" data-anchor-id="uso-en-proyectos">Uso en proyectos</h2>
+<section id="quarto" class="level3">
+<h3 class="anchored" data-anchor-id="quarto">Quarto</h3>
+<p>Cualquier proyecto Quarto importa la marca con un comando:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> use brand allabur/rogle</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Quarto copia <code>_brand.yml</code> y los logotipos en <code>_brand/</code>. Aplica colores, tipografía y logotipo a HTML, Reveal.js, Dashboard y Typst sin configuración adicional. El repositorio es privado: necesitas acceso de lectura.</p>
+</section>
+<section id="latex" class="level3">
+<h3 class="anchored" data-anchor-id="latex">LaTeX</h3>
+<p>Copia <code>brand/latex/rogle-colors.sty</code> junto al documento y cárgalo con <code>\usepackage{rogle-colors}</code>. Los colores se llaman <code>rogleOxfordBlue</code>, <code>rogleIndigo</code>, <code>rogleIndigoMedio</code>, <code>rogleIndigoClaro</code>, <code>rogleAmbar</code>, etc. Usa los logotipos en PDF de <code>brand/logos/</code>. La tipografía está en <code>brand/latex/rogle20-fonts.sty</code>.</p>
+</section>
+<section id="office-y-otras-herramientas" class="level3">
+<h3 class="anchored" data-anchor-id="office-y-otras-herramientas">Office y otras herramientas</h3>
+<p>Usa los PNG de <code>brand/logos/</code> (1200 px de ancho, fondo transparente). Introduce los colores con su código HEX. Para Word y PowerPoint hay tema, diapositivas y plantillas de documento listas en <code>brand/office/</code> (ver su README).</p>
+</section>
+<section id="archivos" class="level3">
+<h3 class="anchored" data-anchor-id="archivos">Archivos</h3>
+<pre><code>brand/
+├── logos/                 Logotipos vigentes. Los genera adoptar.sh
+│   ├── logo/              Principal: rogle-logo[-notagline]-&lt;variante&gt;.{svg,pdf,png}
+│   ├── wordmark/          Integrado: rogle-wordmark[-notagline]-&lt;variante&gt;.{svg,pdf,png}
+│   └── symbol/            Isotipo:   rogle-symbol-&lt;variante&gt;.{svg,pdf,png}
+├── marca-activa.txt       Alternativa vigente (A, B o C)
+├── adoptar.sh             Cambia de alternativa y regenera los logotipos
+├── latex/
+│   ├── rogle-colors.sty   Colores de la marca (y los de la marca anterior, con prefijo roglevioleta)
+│   └── rogle20-fonts.sty  Tipografía de la marca
+├── fonts/                 Fuentes libres de respaldo, con su licencia
+├── historial/violeta/     Marca anterior (violeta, Inter)
+├── rediseno-20/           Alternativas, plantillas, vídeo, kit de imprenta y especificación
+│   ├── BRAND_SPEC.md      Especificación de la marca
+│   ├── alternativa-A/     SVG de la alternativa A (vigente)
+│   ├── alternativa-B/     SVG de la alternativa B
+│   ├── alternativa-C/     SVG de la alternativa C (generados)
+│   ├── comunes/           Isotipo, favicon, avatar y firma institucional UPV
+│   ├── animaciones/       GIF y MP4 de las cuatro animaciones de A, B y C
+│   ├── plantillas/        Presentaciones, informe, póster y carta
+│   ├── video/             Vídeo de presentación (horizontal y vertical) y su generador
+│   ├── kit-imprenta/      Generador (empaquetar.sh) y ZIP de la alternativa A
+│   ├── pdf/ y png/        Exportaciones por carpeta
+│   ├── muestra.qmd        Documento de ejemplo con la marca
+│   └── obsoleto/          Entrega anterior con Futura (solo historial)
+├── build-logos.sh         Exporta PDF y PNG de rediseno-20 (r20) o la marca anterior (actual)
+└── index.qmd              Este manual</code></pre>
+<p>Los SVG y PDF tienen el texto convertido en trazos. No necesitan ninguna fuente instalada.</p>
+</section>
+</section>
+<section id="cambiar-de-alternativa" class="level2">
+<h2 class="anchored" data-anchor-id="cambiar-de-alternativa">Cambiar de alternativa</h2>
+<p>La alternativa vigente se guarda en <code>brand/marca-activa.txt</code>. Para cambiarla, ejecuta desde la raíz del repositorio:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brand/adoptar.sh</span> C</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>El script acepta <code>A</code>, <code>B</code> o <code>C</code>. Sin argumento, regenera la alternativa guardada. Necesita <code>rsvg-convert</code> y <code>uv</code>.</p>
+<p>Qué cambia:</p>
+<ul>
+<li>Se regenera <code>brand/logos/</code> (SVG, PDF y PNG), con los mismos nombres de rol: <code>rogle-logo-color</code>, <code>rogle-symbol-reverse</code>, etc.</li>
+<li>Se actualizan los <code>rogle-logo.png</code> de las tres extensiones de <code>_extensions/</code> y de <code>assets/</code>.</li>
+<li>Cambian solos el <code>_brand.yml</code>, que apunta a esos nombres, y las imágenes de las secciones de logotipos de este manual.</li>
+</ul>
+<p>Qué no cambia:</p>
+<ul>
+<li>La paleta, la tipografía y el isotipo, que son comunes a las tres alternativas.</li>
+<li>Las plantillas de <code>rediseno-20/plantillas/</code>, que usan los logotipos de A. Para pasarlas a otra alternativa, sustituye <code>rogle-A-</code> por <code>rogle-C-</code> en sus rutas.</li>
+<li>Las galerías «Más versiones», «20 aniversario» y «Firma institucional» de este manual, que muestran A.</li>
+</ul>
+<p>El cambio es determinista. Pasar de A a C y volver a A deja git limpio.</p>
+</section>
+<section id="alternativas-descartadas-por-el-momento" class="level2">
+<h2 class="anchored" data-anchor-id="alternativas-descartadas-por-el-momento">Alternativas descartadas por el momento</h2>
+<p>A, B y C solo cambian las letras del nombre y del descriptor. Las composiciones horizontales miden 1200 × 450. B y C no dependen de nadie fuera del grupo. Siguen disponibles si la UPV no aprueba A.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Alternativa A (vigente)</th>
+<th>Alternativa B (reserva)</th>
+<th>Alternativa C (tipografía de la marca)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Letras de ROGLE</td>
+<td>R, O, L y E recortadas del logotipo oficial de la UPV y engrosadas 2 unidades SVG. La G se construye con la C y la I de la UPV.</td>
+<td>Geométrica condensada dibujada a medida.</td>
+<td>Palatino negrita, con contornos de TeX Gyre Pagella Bold, su clon libre.</td>
+</tr>
+<tr class="even">
+<td>Descriptor</td>
+<td>Belleza (licencia OFL).</td>
+<td>Barlow Semi Condensed Medium (licencia OFL), al mismo ancho que ROGLE.</td>
+<td>Palatino, con contornos de TeX Gyre Pagella, al mismo ancho que ROGLE.</td>
+</tr>
+<tr class="odd">
+<td>Aprobación externa</td>
+<td>Necesita el visto bueno del Área de Comunicación de la UPV.</td>
+<td>No depende de nadie fuera del grupo.</td>
+<td>No depende de nadie fuera del grupo.</td>
+</tr>
+</tbody>
+</table>
+<div class="ab-grid">
+<div class="ab-head">
+<p>Alternativa A (vigente)</p>
+</div>
+<div class="ab-head">
+<p>Alternativa B (descartada)</p>
+</div>
+<div class="ab-head">
+<p>Alternativa C (descartada)</p>
+</div>
+<div class="logo-tile">
+<p><img src="rediseno-20/alternativa-A/rogle-A-horizontal-descriptor.svg" class="img-fluid" alt="Alternativa A, horizontal con descriptor"></p>
+</div>
+<div class="logo-tile">
+<p><img src="rediseno-20/alternativa-B/rogle-B-horizontal-descriptor.svg" class="img-fluid" alt="Alternativa B, horizontal con descriptor"></p>
+</div>
+<div class="logo-tile">
+<p><img src="rediseno-20/alternativa-C/rogle-C-horizontal-descriptor.svg" class="img-fluid" alt="Alternativa C, horizontal con descriptor"></p>
+</div>
+<div class="logo-tile">
+<p><img src="rediseno-20/alternativa-A/rogle-A-integrado.svg" class="img-fluid" alt="Alternativa A, integrado"></p>
+</div>
+<div class="logo-tile">
+<p><img src="rediseno-20/alternativa-B/rogle-B-integrado.svg" class="img-fluid" alt="Alternativa B, integrado"></p>
+</div>
+<div class="logo-tile">
+<p><img src="rediseno-20/alternativa-C/rogle-C-integrado.svg" class="img-fluid" alt="Alternativa C, integrado"></p>
+</div>
+</div>
+<p>Todas las versiones de cada alternativa están en sus carpetas: <code>alternativa-A/</code>, <code>alternativa-B/</code> y <code>alternativa-C/</code>. C se genera a partir de B con <code>uv run brand/rediseno-20/build_alternativa_c.py</code>. La lámina de A para la solicitud a la UPV está en <code>rediseno-20/upv/</code>. La votación del grupo está pendiente (<a href="https://github.com/allabur/rogle/issues/18">#18</a>).</p>
+</section>
+<section id="marca-anterior-historial" class="level2">
+<h2 class="anchored" data-anchor-id="marca-anterior-historial">Marca anterior (historial)</h2>
+<p>Hasta el 30 de septiembre de 2026 la marca fue un símbolo violeta con tipografía Inter. Se conserva en <code>historial/violeta/</code> y en la etiqueta git <code>marca-violeta</code>. No se usa en piezas nuevas.</p>
+</section>
+<section id="decisiones-tomadas" class="level2">
+<h2 class="anchored" data-anchor-id="decisiones-tomadas">Decisiones tomadas</h2>
+<ul>
+<li><strong>Alternativa:</strong> A, por el momento (1 de octubre de 2026). Es reversible con <code>brand/adoptar.sh</code>. La UPV aún no la ha aprobado.</li>
+<li><strong>Isotipo:</strong> cinco personas en corro, común a las tres alternativas.</li>
+<li><strong>Tipografía:</strong> Palatino para texto y títulos (negrita) y Gill Sans solo para lo secundario, con fórmulas en Pagella. Una sola regla para documentos y presentaciones (registro).</li>
+<li><strong>Siglas:</strong> el desarrollo oficial es el inglés, «Reengineering Operations GroupWork Logistics Excellence». «Reingeniería, Organización, trabajo en Grupo y Logística Empresarial» es su traducción.</li>
+<li><strong>Año de creación:</strong> 2006, por decisión del usuario el 1 de octubre de 2026. El grupo cumple 20 años en 2026, no 25 como se creyó antes. La marca del aniversario lleva «20» y «since 2006».</li>
+<li><strong>Versión impresa del 20 aniversario:</strong> las variantes «since» y el kit de imprenta usan medias lunas planas.</li>
+<li><strong>Marca anterior:</strong> queda en el historial. La marca violeta ya no es vigente.</li>
+</ul>
+</section>
+<section id="pendientes" class="level2">
+<h2 class="anchored" data-anchor-id="pendientes">Pendientes</h2>
+<p>Cada pendiente tiene su issue en GitHub:</p>
+<ul>
+<li><a href="https://github.com/allabur/rogle/issues/14">#14</a>: pedir la aprobación de A al Área de Comunicación de la UPV.</li>
+<li><a href="https://github.com/allabur/rogle/issues/18">#18</a>: cerrar la votación del grupo.</li>
+<li><a href="https://github.com/allabur/rogle/issues/22">#22</a>: marca UPV oficial en la firma institucional en negativo.</li>
+<li><a href="https://github.com/allabur/rogle/issues/23">#23</a>: confirmar el valor en pantalla del Pantone 431. Ahora se usa <code>#5B6770</code>.</li>
+<li><a href="https://github.com/allabur/rogle/issues/24">#24</a>: licencia de Futura para la firma institucional.</li>
+</ul>
+<p>Los epics <a href="https://github.com/allabur/rogle/issues/13">#13</a> (adoptar A), <a href="https://github.com/allabur/rogle/issues/20">#20</a> (diseño), <a href="https://github.com/allabur/rogle/issues/26">#26</a> (plantillas) y <a href="https://github.com/allabur/rogle/issues/32">#32</a> (presentar la marca) siguen abiertos hasta cerrar sus pendientes.</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

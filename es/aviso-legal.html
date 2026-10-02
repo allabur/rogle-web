@@ -32,12 +32,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script src="../rogle-theme.js"></script>
 <link rel="canonical" href="https://rogle.webs.upv.es/es/aviso-legal.html">
 <link rel="alternate" hreflang="es" href="aviso-legal.html">
 <link rel="alternate" hreflang="en" href="../en/legal.html">
 <link rel="alternate" hreflang="x-default" href="../es/aviso-legal.html">
 <meta name="theme-color" content="#002147">
-<meta name="color-scheme" content="light">
+<meta name="color-scheme" content="light dark">
 <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
 <link rel="icon" sizes="48x48" href="../favicon.ico">
 <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
@@ -64,34 +65,38 @@ ul.task-list li input[type="checkbox"] {
 <!-- Quarto prints no title block: the page frame in rogle-site.lua prints the h1. -->
 
 
-<a class="skip-link" href="#main-content">Saltar al contenido</a>
-<header class="site-header"><div class="wrap header-inner">
-<a class="brand" href="index.html" aria-label="ROGLE, ir al inicio"><img src="../img/rogle-logo.svg" alt="" width="171" height="64"></a>
-<div class="header-tools">
-<span class="nav-control">
-<input type="checkbox" id="menu-toggle" class="nav-toggle" aria-label="Menú">
-<label for="menu-toggle" class="nav-button button button--outline" aria-hidden="true">Menú</label>
+<a class="rogle-skip" href="#main-content">Saltar al contenido</a>
+
+<div class="rogle-header__bar"><header class="rogle-header">
+<a class="rogle-brand" href="index.html" aria-label="ROGLE, ir al inicio"><img class="rogle-logo--light" src="../img/rogle-logo.svg" alt="" width="171" height="64"><img class="rogle-logo--dark" src="../img/rogle-logo-negativo.svg" alt="" width="171" height="64"></a>
+<span class="rogle-nav__control">
+<input type="checkbox" id="menu-toggle" class="rogle-nav__toggle" aria-label="Menú">
+<label for="menu-toggle" class="rogle-button rogle-button--outline" aria-hidden="true">Menú</label>
 </span>
-<a class="lang-switch button button--outline" hreflang="en" lang="en" href="../en/legal.html" title="Read this page in English">EN</a>
-</div>
-<nav class="site-nav" aria-label="Principal"><ul class="nav-list">
+<nav class="rogle-nav" aria-label="Principal"><ul class="rogle-nav__list">
 <li><a href="index.html">Inicio</a></li>
 <li><a href="miembros.html">Miembros</a></li>
 <li><a href="investigacion.html">Investigación</a></li>
-<li><a href="docencia.html">Docencia y recursos</a></li>
+<li><a href="docencia.html">Docencia</a></li>
+<li><a href="recursos.html">Recursos</a></li>
 <li><a href="noticias.html">Noticias</a></li>
 <li><a href="contacto.html">Contacto</a></li>
 </ul></nav>
-</div></header>
-<main id="main-content" tabindex="-1"><div class="titleband"><div class="wrap">
-<nav class="crumbs" aria-label="Migas de pan"><ol>
+<div class="rogle-header__tools">
+<button type="button" class="rogle-button rogle-button--outline rogle-square rogle-theme-toggle" hidden="" data-rogle-theme-toggle="" data-label-to-dark="Cambiar a tema oscuro" data-label-to-light="Cambiar a tema claro" aria-label="Cambiar a tema oscuro"><svg class="rogle-theme-toggle__moon" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z"></path></svg><svg class="rogle-theme-toggle__sun" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></button>
+<a class="rogle-button rogle-button--outline rogle-square" hreflang="en" lang="en" href="../en/legal.html" title="Read this page in English">EN</a>
+</div>
+</header></div>
+<main id="main-content" tabindex="-1"><div class="rogle-titleband rogle-band--dark"><div class="rogle-wide">
+<nav class="rogle-breadcrumb" aria-label="Migas de pan">
+<ol>
 <li><a href="index.html">Inicio</a></li>
 <li aria-current="page">Aviso legal y privacidad</li>
 </ol></nav>
 <h1>Aviso legal y privacidad</h1>
 </div></div>
-<div class="band"><div class="wrap"><div class="page">
-<div class="notice" role="note">
+<div class="rogle-section"><div class="rogle-wide"><div class="rogle-page">
+<div class="rogle-callout" role="note">
 <p><strong>Borrador pendiente de revisión.</strong> Este texto es una propuesta del grupo. Debe revisarlo el servicio jurídico de la UPV antes de darlo por definitivo.</p>
 </div>
 <!-- REVISAR CON EL SERVICIO JURÍDICO DE LA UPV: titularidad, NIF y datos registrales, base jurídica, plazos y canal de ejercicio de derechos. -->
@@ -102,10 +107,12 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>De las personas del grupo: nombre completo, cargo o función, departamento y enlaces a perfiles públicos (directorio de la UPV, ORCID, Scopus, Google Scholar, ResearchGate, LinkedIn y webs personales). Esos datos ya eran públicos en la web anterior del grupo.</li>
 <li>De los proyectos y artículos: los nombres de los participantes y de los autores, tal como constan en la información pública de autoría.</li>
-<li>No publicamos correos electrónicos, teléfonos, fotografías ni otros datos privados.</li>
+<li>De cada perfil: el cargo, las líneas de trabajo, la biografía que ya era pública y la lista de publicaciones y proyectos del grupo en los que figura el nombre de la persona. Esas listas salen de la coincidencia del nombre con los autores y participantes de las tablas de la web anterior.</li>
+<li>Una fotografía solo si la persona lo ha autorizado. Sin autorización, el perfil muestra un avatar con las iniciales.</li>
+<li>No publicamos correos electrónicos, teléfonos ni otros datos privados.</li>
 </ul>
 <h2 id="cookies">Cookies y seguimiento</h2>
-<p>Esta web es estática. No usa cookies, ni analítica, ni publicidad, ni formularios. No carga tipografías, scripts ni imágenes de otros dominios. El filtro de las tablas de Investigación se ejecuta en tu navegador y no envía nada.</p>
+<p>Esta web es estática. No usa cookies, ni analítica, ni publicidad, ni formularios. No carga tipografías, scripts ni imágenes de otros dominios. Los filtros de Investigación y los botones de copiar se ejecutan en tu navegador y no envían nada. Si pulsas el botón de tema claro u oscuro, tu navegador guarda esa elección (la clave <code>rogle-theme</code>) en el almacenamiento local de tu equipo. No es una cookie, no se envía a ningún servidor y no te identifica.</p>
 <p>Como cualquier servidor web, el servicio de alojamiento de la UPV puede registrar datos técnicos de la conexión, como la dirección IP y la fecha de la visita, por motivos de seguridad y funcionamiento. Ese registro lo gestiona la UPV.</p>
 <h2 id="enlaces">Enlaces a otros sitios</h2>
 <p>Algunos enlaces llevan a servicios de terceros, como Google Sheets, ORCID o LinkedIn. Esos sitios tienen sus propias cookies y políticas de privacidad. El grupo no las controla.</p>
@@ -119,12 +126,12 @@ ul.task-list li input[type="checkbox"] {
 
 </div></div></div>
 </main>
-<footer class="site-footer">
-<div class="footer-brands"><div class="wrap">
+<footer class="rogle-footer">
+<div class="rogle-footer__brands"><div class="rogle-wide">
 <img src="../img/upv-rogle-convivencia.svg" alt="Universitat Politècnica de València y ROGLE" width="680" height="159">
 </div></div>
-<div class="footer-main"><div class="wrap footer-grid">
-<div class="footer-col"><h2 class="footer-title">Dónde estamos</h2>
+<div class="rogle-footer__main"><div class="rogle-wide rogle-footer__grid">
+<div class="rogle-footer__col"><h2 class="rogle-footer__title">Dónde estamos</h2>
 <address><strong>Grupo de Investigación ROGLE</strong><br>
 <span lang="es">Departamento de Organización de Empresas</span><br>
 Universitat Politècnica de València<br>
@@ -132,17 +139,18 @@ Edificio 7D<br>
 Camino de Vera, s/n<br>
 46022 València</address>
 <p><a href="https://www.openstreetmap.org/search?query=Universitat%20Polit%C3%A8cnica%20de%20Val%C3%A8ncia%2C%20Camino%20de%20Vera" rel="noopener">Cómo llegar (mapa en OpenStreetMap)</a></p></div>
-<div class="footer-col"><h2 class="footer-title">Páginas</h2>
-<ul class="footer-list"><li><a href="index.html">Inicio</a></li><li><a href="miembros.html">Miembros</a></li><li><a href="investigacion.html">Investigación</a></li><li><a href="docencia.html">Docencia y recursos</a></li><li><a href="noticias.html">Noticias</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="aviso-legal.html">Aviso legal y privacidad</a></li></ul></div>
-<div class="footer-col"><h2 class="footer-title">Enlaces</h2>
-<ul class="footer-list">
+<div class="rogle-footer__col"><h2 class="rogle-footer__title">Páginas</h2>
+<ul class="rogle-footer__list"><li><a href="index.html">Inicio</a></li><li><a href="miembros.html">Miembros</a></li><li><a href="investigacion.html">Investigación</a></li><li><a href="docencia.html">Docencia</a></li><li><a href="recursos.html">Recursos</a></li><li><a href="noticias.html">Noticias</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="marca.html">Marca</a></li><li><a href="aviso-legal.html">Aviso legal y privacidad</a></li></ul></div>
+<div class="rogle-footer__col"><h2 class="rogle-footer__title">Enlaces</h2>
+<ul class="rogle-footer__list">
 <li><a href="https://www.upv.es" rel="noopener">Universitat Politècnica de València</a></li>
 <li><a href="https://rogle.blogs.upv.es/" rel="noopener">Web anterior del grupo</a></li>
 </ul></div>
 </div></div>
-<div class="footer-legal"><div class="wrap footer-legal__inner">
+<div class="rogle-footer__legal"><div class="rogle-wide rogle-footer__legal-inner">
 <p>© 2006–2026 Grupo ROGLE · Universitat Politècnica de València</p>
 <p>Última actualización: <time datetime="2026-10-02">2 de octubre de 2026</time></p>
+<p class="rogle-building">Web en construcción</p>
 <p>Esta web no usa cookies ni analítica. <a href="aviso-legal.html">Aviso legal y privacidad</a></p>
 </div></div>
 </footer>

@@ -1,0 +1,63 @@
+/* Layout helpers for the ROGLE brand guide (brand/index.qmd). Colours come from _brand.yml. */
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+.logo-tile {
+  border: 1px solid #CFCFCF;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: #FFFFFF;
+}
+.logo-tile img { height: 110px; width: 100%; object-fit: contain; }
+.logo-tile .caption { font-size: 0.85rem; color: #5B6770; }
+
+.swatches {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+.swatch { border: 1px solid #CFCFCF; border-radius: 8px; overflow: hidden; }
+.swatch .chip { height: 84px; }
+.swatch .meta { padding: 0.6rem 0.75rem; font-size: 0.85rem; line-height: 1.4; }
+.swatch .meta strong { display: block; font-size: 0.95rem; }
+.swatch code { font-size: 0.8rem; background: none; padding: 0; color: inherit; }
+
+.type-specimen { border-left: 4px solid #3F4AA8; padding: 0.5rem 1rem; margin: 1rem 0; }
+
+/* Dark tiles and the A/B/C comparison grid */
+.logo-tile.on-oxford { background: #002147; border-color: #002147; }
+.logo-tile.on-oxford .caption { color: #CFCFCF; }
+.logo-tile.on-oxford code { background: none; color: inherit; padding: 0; }
+.ab-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 1rem 0 1.5rem; }
+.ab-grid .ab-head { font-weight: 600; font-size: 0.95rem; }
+.ab-grid .ab-row { grid-column: 1 / -1; margin: 0.75rem 0 -0.5rem; font-size: 0.9rem; font-weight: 600; opacity: 0.75; }
+.ab-grid .logo-tile { padding: 1rem; }
+.ab-grid .logo-tile img { height: 96px; }
+.ab-grid .ab-row p, .ab-grid .ab-head p { margin: 0; }
+
+/* Typography specimen: system Palatino and Gill Sans first, self-hosted clones as fallback */
+@font-face { font-family: "TeX Gyre Pagella"; font-weight: 400; font-style: normal; src: url("fonts/tex-gyre-pagella/texgyrepagella-regular.otf"); }
+@font-face { font-family: "TeX Gyre Pagella"; font-weight: 400; font-style: italic; src: url("fonts/tex-gyre-pagella/texgyrepagella-italic.otf"); }
+@font-face { font-family: "TeX Gyre Pagella"; font-weight: 700; font-style: normal; src: url("fonts/tex-gyre-pagella/texgyrepagella-bold.otf"); }
+@font-face { font-family: "Gillius ADF"; font-weight: 400; font-style: normal; src: url("fonts/gillius-adf/GilliusADF-Regular.otf"); }
+@font-face { font-family: "Gillius ADF"; font-weight: 700; font-style: normal; src: url("fonts/gillius-adf/GilliusADF-Bold.otf"); }
+@font-face { font-family: "Inconsolata"; font-weight: 200 900; src: url("fonts/inconsolata/Inconsolata[wdth,wght].ttf"); }
+.specimen { border-left-color: #3F4AA8; color: #002147; background: #FFFFFF; }
+.specimen .specimen-label { font-family: "Gill Sans", "Gill Sans MT", "Gillius ADF", Calibri, sans-serif; font-size: 0.95rem; color: #5B6770; margin-bottom: 0.6rem; }
+.specimen .specimen-display, .specimen .specimen-title { font-family: "Palatino Linotype", Palatino, "Book Antiqua", "TeX Gyre Pagella", serif; }
+.specimen .specimen-display { font-size: 2.6rem; font-weight: 700; line-height: 1.1; }
+.specimen .specimen-title { font-size: 1.5rem; font-weight: 700; }
+.specimen .specimen-text { font-family: "Palatino Linotype", Palatino, "Book Antiqua", "TeX Gyre Pagella", serif; font-size: 1.1rem; }
+.specimen .specimen-code { font-family: Consolas, Menlo, Inconsolata, monospace; font-size: 0.95rem; }
+@media (max-width: 600px) {
+  .ab-grid { gap: 0.5rem; }
+  .ab-grid .logo-tile { padding: 0.4rem; }
+  .ab-grid .logo-tile img { height: 56px; }
+}

@@ -1,0 +1,145 @@
+# ROGLE brand: single source of truth for colours, logos and typography.
+# Current brand: the 20th-anniversary proposal, alternative A adopted for the time being (the UPV has not approved it yet).
+# To switch alternative (A, B or C):  brand/adoptar.sh C   (regenerates brand/logos/ and the logos of the extensions).
+# The logo files keep stable role names, so this file does not change when the alternative changes.
+# The previous violet brand lives in brand/historial/violeta/ and under the tag marca-violeta.
+# Quarto applies this file automatically to HTML, Reveal.js, Dashboard and Typst output in this project.
+# Other projects import it with:  quarto use brand allabur/rogle
+# Guide: brand/index.qmd. Spec of the proposal: brand/rediseno-20/BRAND_SPEC.md.
+
+meta:
+  name:
+    full: "ROGLE: Reengineering Operations GroupWork Logistics Excellence"
+    short: ROGLE
+  link: https://rogle.webs.upv.es/
+
+logo:
+  images:
+    logo:
+      path: brand/logos/logo/rogle-logo-color.svg
+      alt: "Logotipo de ROGLE"
+    logo-reverse:
+      path: brand/logos/logo/rogle-logo-reverse.svg
+      alt: "Logotipo de ROGLE"
+    logo-notagline:
+      path: brand/logos/logo/rogle-logo-notagline-color.svg
+      alt: "Logotipo de ROGLE"
+    logo-notagline-reverse:
+      path: brand/logos/logo/rogle-logo-notagline-reverse.svg
+      alt: "Logotipo de ROGLE"
+    symbol:
+      path: brand/logos/symbol/rogle-symbol-color.svg
+      alt: "Isotipo de ROGLE"
+    symbol-reverse:
+      path: brand/logos/symbol/rogle-symbol-reverse.svg
+      alt: "Isotipo de ROGLE"
+  small:
+    light: symbol
+    dark: symbol-reverse
+  medium:
+    light: logo-notagline
+    dark: logo-notagline-reverse
+  large:
+    light: logo
+    dark: logo-reverse
+
+color:
+  palette:
+    oxford-blue: "#002147"
+    indigo: "#3F4AA8"
+    indigo-medio: "#5B67C7"
+    indigo-claro: "#A9B0E0"
+    # Amber rule: only for the "20" mark and on Oxford Blue. Never for text or fills on white.
+    ambar: "#F5B000"
+    gris-upv-431: "#5B6770"
+    separador: "#CFCFCF"
+    blanco: "#FFFFFF"
+    # Status
+    green: "#2E8B57"
+    red: "#C8423B"
+    # UPV institutional colours, for co-branded documents only
+    upv-grey: "#424A50"
+    upv-red: "#E5554F"
+    upv-yellow: "#FFD100"
+    upv-blue: "#59CBE8"
+    upv-blue-dark: "#338FC2"
+  foreground:
+    light: oxford-blue
+    dark: blanco
+  background:
+    light: blanco
+    dark: oxford-blue
+  primary: indigo
+  secondary: indigo-medio
+  tertiary: gris-upv-431
+  light: blanco
+  dark: oxford-blue
+  info: indigo
+  success: green
+  warning: ambar
+  danger: red
+
+typography:
+  # Typography: Palatino for text and titles (bold), Gill Sans only for secondary text. System fonts first, free clones as fallback.
+  # Self-hosted fallbacks live in brand/fonts/. Paths are relative to this file.
+  fonts:
+    - family: TeX Gyre Pagella
+      source: file
+      files:
+        - path: brand/fonts/tex-gyre-pagella/texgyrepagella-regular.otf
+          weight: 400
+          style: normal
+        - path: brand/fonts/tex-gyre-pagella/texgyrepagella-italic.otf
+          weight: 400
+          style: italic
+        - path: brand/fonts/tex-gyre-pagella/texgyrepagella-bold.otf
+          weight: 700
+          style: normal
+        - path: brand/fonts/tex-gyre-pagella/texgyrepagella-bolditalic.otf
+          weight: 700
+          style: italic
+    - family: Gillius ADF
+      source: file
+      files:
+        - path: brand/fonts/gillius-adf/GilliusADF-Regular.otf
+          weight: 400
+          style: normal
+        - path: brand/fonts/gillius-adf/GilliusADF-Italic.otf
+          weight: 400
+          style: italic
+        - path: brand/fonts/gillius-adf/GilliusADF-Bold.otf
+          weight: 700
+          style: normal
+        - path: brand/fonts/gillius-adf/GilliusADF-BoldItalic.otf
+          weight: 700
+          style: italic
+    - family: Inconsolata
+      source: file
+      files:
+        # Variable font: the browser maps font-weight to the wght axis.
+        - path: "brand/fonts/inconsolata/Inconsolata[wdth,wght].ttf"
+          weight: 400
+          style: normal
+        - path: "brand/fonts/inconsolata/Inconsolata[wdth,wght].ttf"
+          weight: 700
+          style: normal
+  base:
+    family: '"Palatino Linotype", Palatino, "Book Antiqua", "TeX Gyre Pagella", serif'
+    line-height: 1.6
+  headings:
+    # Decision: brand/rediseno-20/decisiones/tipografia.md. Titles in bold Palatino; Gill Sans only for secondary text.
+    family: '"Palatino Linotype", Palatino, "Book Antiqua", "TeX Gyre Pagella", serif'
+    weight: bold
+    color: oxford-blue
+  monospace:
+    family: 'Consolas, Menlo, Inconsolata, monospace'
+  link:
+    color: indigo
+
+defaults:
+  bootstrap:
+    rules: |
+      // Gill Sans is only for secondary text: labels, captions and metadata.
+      .quarto-title-meta, .quarto-title-meta-heading, figcaption, .caption, .table > thead th {
+        font-family: "Gill Sans", "Gill Sans MT", "Gillius ADF", Calibri, sans-serif;
+      }

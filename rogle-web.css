@@ -1,57 +1,53 @@
 /*
  * rogle-web.css: style sheet of the ROGLE group website (rogle.webs.upv.es).
  *
- * Brand: alternative A of the 20th anniversary (brand/rediseno-20/BRAND_SPEC.md).
+ * Base: the UPV web kit of the group members' personal sites (buttons, bands, cards, header,
+ * menu, breadcrumb, footer, publication cards with action strip, light and dark theme), renamed
+ * to rogle-* and recoloured with alternative A of the 20th anniversary
+ * (brand/rediseno-20/BRAND_SPEC.md).
  * - Palette: Oxford Blue, indigo and its two tints, UPV grey 431, separator. Amber appears only
- *   on Oxford Blue (hero, title band, footer); the sheet keeps every amber rule in the
- *   "AMBER" section so web/tests can check it.
- * - Typography: Palatino for text and for every title (bold). Gill Sans only for secondary
- *   text: menu, labels, table heads, header, footer. To change a family, edit one line in the
- *   "Typography" block below.
- * - No third-party fonts, images or scripts. The fallback fonts are self-hosted in fonts/.
+ *   on Oxford Blue (hero, title band, notice bar, footer) and, in the dark theme, on its night
+ *   shade. Every amber rule lives in those scopes so web/tests can check it.
+ * - Typography (web exception, decision of 2 October 2026): Poppins Bold for titles and Inter
+ *   for everything else. They are the web fonts of the UPV. Documents and presentations keep
+ *   Palatino and Gill Sans. Scale of the web spec: titles 64/42/28 px from a 1280 px window,
+ *   40/30/24 px at 320 px; text 20/16/14/12 px; line height 1.5 (1.2 in titles).
+ * - No third-party fonts, images or scripts. The fonts are self-hosted in fonts/ (WOFF2).
+ * - Themes: light by default, dark by system preference or by the button of the header
+ *   (rogle-theme.js writes data-theme on <html>). Colours that change with the theme are the
+ *   semantic tokens of the "Tokens" block; the rest of the sheet only uses those tokens.
  */
 
-/* ---- Fonts (self-hosted fallbacks; system Palatino and Gill Sans come first in the stacks) */
+/* ---- Fonts (self-hosted, Latin subset, OFL 1.1; see fonts/*-OFL.txt) ------------------------ */
 @font-face {
-  font-family: "TeX Gyre Pagella";
-  src: url("fonts/pagella-regular.woff2") format("woff2");
-  font-weight: 400;
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Bold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "TeX Gyre Pagella";
-  src: url("fonts/pagella-italic.woff2") format("woff2");
-  font-weight: 400;
+  font-family: "Inter";
+  src: url("fonts/InterVariable.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/InterVariable-Italic.woff2") format("woff2");
+  font-weight: 400 700;
   font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "TeX Gyre Pagella";
-  src: url("fonts/pagella-bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Gillius ADF";
-  src: url("fonts/gillius-regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Gillius ADF";
-  src: url("fonts/gillius-bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
   font-display: swap;
 }
 
 /* ---- Tokens ------------------------------------------------------------------------------ */
 :root {
-  /* Palette */
+  color-scheme: light;
+
+  /* Palette (alternative A) */
   --oxford-blue: #002147;
+  --oxford-night: #001124; /* darker shade of Oxford Blue: page background of the dark theme */
   --indigo: #3f4aa8;
   --indigo-mid: #5b67c7;
   --indigo-light: #a9b0e0;
@@ -61,18 +57,108 @@
   --white: #ffffff;
   --surface: #f3f4fa; /* very light indigo tint for alternate sections */
 
-  /* Typography: change one line to change a family (brand decision of 2 October 2026) */
-  --font-text: "Palatino Linotype", Palatino, "Book Antiqua", "TeX Gyre Pagella", serif;
-  --font-title: "Palatino Linotype", Palatino, "Book Antiqua", "TeX Gyre Pagella", serif;
-  --font-label: "Gill Sans", "Gill Sans MT", "Gillius ADF", Calibri, sans-serif;
+  /* Typography: change one line to change a family (web exception of 2 October 2026) */
+  --font-text: Inter, Arial, sans-serif;
+  --font-title: Poppins, Arial, sans-serif;
+  --font-label: Inter, Arial, sans-serif;
   --font-code: Consolas, Menlo, Inconsolata, monospace;
 
-  --text: var(--oxford-blue);
+  /* Scale of the web spec: titles grow linearly from a 320 px to a 1280 px window */
+  --size-h1: clamp(2.5rem, 2rem + 2.5vw, 4rem);
+  --size-h2: clamp(1.875rem, 1.625rem + 1.25vw, 2.625rem);
+  --size-h3: clamp(1.5rem, 1.416667rem + 0.416667vw, 1.75rem);
+  --size-lead: 1.25rem;
+  --size-text: 1rem;
+  --size-menu: 0.875rem;
+  --size-small: 0.75rem;
+  --leading-text: 1.5;
+  --leading-title: 1.2;
+
+  --measure: 70ch;
+  --shadow: 0 0.25rem 0.375rem 0 rgba(0, 0, 0, 0.1);
+
+  /* Theme: semantic tokens, light values */
+  --bg: var(--white);
+  --fg: var(--oxford-blue);
   --muted: var(--gray-upv);
+  --heading: var(--oxford-blue);
   --link: var(--indigo);
-  --measure: 42rem;
-  --gutter: clamp(1rem, 3vw, 2.5rem);
-  --radius: 0.25rem;
+  --link-hover: var(--oxford-blue);
+  --line: var(--separator);
+  --tint: var(--surface);
+  --card-bg: var(--white);
+  --card-line: var(--oxford-blue);
+  --card-hover: var(--indigo);
+  --field-bg: var(--white);
+  --field-line: var(--gray-upv);
+  --btn-bg: var(--indigo);
+  --btn-fg: var(--white);
+  --btn-line: var(--indigo);
+  --btn-hover-bg: var(--oxford-blue);
+  --btn-hover-fg: var(--white);
+  --btn-hover-line: var(--oxford-blue);
+  --out-bg: var(--white);
+  --out-fg: var(--indigo);
+  --out-line: var(--indigo);
+  --out-hover-bg: var(--indigo);
+  --out-hover-fg: var(--white);
+  --res-bg: var(--oxford-blue);
+  --res-fg: var(--white);
+  --res-line: var(--oxford-blue);
+  --legal-bg: var(--surface);
+  --legal-fg: var(--oxford-blue);
+  --legal-link: var(--indigo);
+  --strip-bg: var(--surface);
+  --primary-bg: var(--indigo);
+  --primary-fg: var(--white);
+  --mark: var(--indigo);
+  --code-bg: var(--surface);
+  --head-bg: var(--oxford-blue);
+  --head-fg: var(--white);
+  --focus: var(--indigo);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --shadow: none;
+  --bg: var(--oxford-night);
+  --fg: var(--white);
+  --muted: var(--indigo-light);
+  --heading: var(--white);
+  --link: var(--indigo-light);
+  --link-hover: var(--white);
+  --line: #2b4166;
+  --tint: var(--oxford-blue);
+  --card-bg: var(--oxford-blue);
+  --card-line: var(--indigo-light);
+  --card-hover: var(--amber);
+  --field-bg: transparent;
+  --field-line: var(--indigo-light);
+  --btn-bg: var(--amber);
+  --btn-fg: var(--oxford-blue);
+  --btn-line: var(--amber);
+  --btn-hover-bg: var(--white);
+  --btn-hover-fg: var(--oxford-blue);
+  --btn-hover-line: var(--white);
+  --out-bg: transparent;
+  --out-fg: var(--white);
+  --out-line: var(--white);
+  --out-hover-bg: var(--white);
+  --out-hover-fg: var(--oxford-blue);
+  --res-bg: transparent;
+  --res-fg: var(--indigo-light);
+  --res-line: var(--indigo-light);
+  --legal-bg: var(--oxford-blue);
+  --legal-fg: var(--white);
+  --legal-link: var(--white);
+  --strip-bg: var(--oxford-blue);
+  --primary-bg: var(--amber);
+  --primary-fg: var(--oxford-blue);
+  --mark: var(--indigo-light);
+  --code-bg: var(--indigo);
+  --head-bg: var(--indigo);
+  --head-fg: var(--white);
+  --focus: var(--white);
 }
 
 /* ---- Base -------------------------------------------------------------------------------- */
@@ -95,11 +181,11 @@ html {
 }
 body.rogle-site {
   margin: 0;
-  background: var(--white);
-  color: var(--text);
+  background: var(--bg);
+  color: var(--fg);
   font-family: var(--font-text);
-  font-size: 1.125rem;
-  line-height: 1.6;
+  font-size: var(--size-text);
+  line-height: var(--leading-text);
   font-kerning: normal;
   overflow-wrap: break-word;
 }
@@ -111,29 +197,37 @@ svg {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
+  margin: 0 0 0.75rem;
+  color: var(--heading);
   font-family: var(--font-title);
   font-weight: 700;
-  line-height: 1.2;
-  color: var(--oxford-blue);
-  margin: 0 0 0.75rem;
+  line-height: var(--leading-title);
 }
 h1 {
-  font-size: clamp(2rem, 4.5vw, 2.75rem);
+  font-size: var(--size-h1);
 }
 h2 {
-  font-size: clamp(1.5rem, 3vw, 2rem);
   margin-top: 2.5rem;
+  font-size: var(--size-h2);
 }
 h2:first-child {
   margin-top: 0;
 }
 h3 {
-  font-size: 1.3rem;
+  font-size: var(--size-h3);
+}
+h4,
+h5,
+h6 {
+  font-size: var(--size-text);
 }
 p,
 ul,
-ol {
+ol,
+dl {
   margin: 0 0 1rem;
 }
 li > p {
@@ -146,11 +240,11 @@ a {
   text-decoration-thickness: 0.08em;
 }
 a:hover {
-  color: var(--oxford-blue);
-  text-decoration-thickness: 0.14em;
+  color: var(--link-hover);
+  text-decoration-thickness: 0.2em;
 }
 :focus-visible {
-  outline: 3px solid var(--indigo);
+  outline: 2px dashed var(--focus);
   outline-offset: 3px;
 }
 ::selection {
@@ -160,278 +254,361 @@ a:hover {
 address {
   font-style: normal;
 }
-.label,
-.lang-switch,
-.nav-list,
-.crumbs,
-.kicker,
-.footer-title,
-.button,
-.table-tools,
-th {
-  font-family: var(--font-label);
+code,
+kbd,
+samp,
+pre {
+  font-family: var(--font-code);
 }
-
-.wrap {
-  width: min(75rem, 100% - 2 * var(--gutter));
-  margin-inline: auto;
+pre {
+  overflow-x: auto;
+  margin: 0 0 1rem;
+  padding: 1rem;
+  background: var(--code-bg);
+  color: var(--fg);
+  font-size: var(--size-menu);
+  line-height: 1.5;
 }
-.page {
-  max-width: var(--measure);
-}
-.band {
-  padding-block: clamp(2.5rem, 5vw, 4rem);
-}
-.band--tint {
-  background: var(--surface);
-}
-.intro {
-  font-size: 1.25rem;
-  max-width: 48rem;
-  margin-bottom: 1.5rem;
-}
-
-.skip-link {
-  position: absolute;
-  left: 0.5rem;
-  top: -4rem;
-  z-index: 100;
-  padding: 0.75rem 1rem;
-  background: var(--oxford-blue);
+:root[data-theme="dark"] pre {
   color: var(--white);
-  font-family: var(--font-label);
-  font-weight: 700;
-}
-.skip-link:focus {
-  top: 0.5rem;
 }
 main:focus {
   outline: none;
 }
+.rogle-lead {
+  font-size: var(--size-lead);
+}
+.rogle-small {
+  font-size: var(--size-small);
+}
+.rogle-muted {
+  color: var(--muted);
+}
 
-/* ---- Buttons ----------------------------------------------------------------------------- */
-.button {
+/* ---- Skip link, structure ---------------------------------------------------------------- */
+.rogle-skip {
+  position: absolute;
+  left: 0.5rem;
+  top: 0;
+  z-index: 100;
+  padding: 0.75rem 1rem;
+  background: var(--oxford-blue);
+  color: var(--white);
+  font-weight: 700;
+  transform: translateY(-200%);
+}
+.rogle-skip:focus {
+  transform: none;
+  color: var(--white);
+}
+:root[data-theme="dark"] .rogle-skip:focus {
+  background: var(--white);
+  color: var(--oxford-blue);
+}
+.rogle-wide {
+  max-width: 75rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+.rogle-page {
+  max-width: var(--measure);
+}
+.rogle-section {
+  padding-block: 2.5rem;
+}
+.rogle-band {
+  background: var(--tint);
+  color: var(--fg);
+}
+.rogle-band--dark {
+  background: var(--oxford-blue);
+  color: var(--white);
+}
+.rogle-intro {
+  max-width: 48rem;
+  margin-bottom: 1.5rem;
+  font-size: var(--size-lead);
+}
+
+/* ---- Buttons (on dark bands use only the outline button) ----------------------------------- */
+.rogle-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
   min-height: 2.75rem;
   min-width: 2.75rem;
-  padding: 0.45rem 1.15rem;
-  border: 2px solid var(--indigo);
-  border-radius: var(--radius);
-  background: var(--indigo);
-  color: var(--white);
-  font-size: 1rem;
+  padding: 0.25rem 1.5rem;
+  border: 2px solid var(--btn-line);
+  border-radius: 0;
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  font-family: var(--font-text);
+  font-size: var(--size-menu);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: var(--leading-text);
   text-decoration: none;
+  text-transform: uppercase;
   cursor: pointer;
-  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 }
-.button:hover {
-  background: var(--oxford-blue);
-  border-color: var(--oxford-blue);
-  color: var(--white);
+.rogle-button:hover {
+  border-color: var(--btn-hover-line);
+  background: var(--btn-hover-bg);
+  color: var(--btn-hover-fg);
 }
-.button--outline {
-  background: var(--white);
-  border-color: var(--oxford-blue);
-  color: var(--oxford-blue);
+.rogle-button--outline {
+  border-color: var(--out-line);
+  background: var(--out-bg);
+  color: var(--out-fg);
 }
-.button--outline:hover {
-  background: var(--oxford-blue);
-  color: var(--white);
+.rogle-button--outline:hover {
+  border-color: var(--out-line);
+  background: var(--out-hover-bg);
+  color: var(--out-hover-fg);
 }
-.button--small {
+:root[data-theme="dark"] .rogle-button--outline:hover {
+  border-color: var(--white);
+}
+.rogle-button--resource {
+  border-color: var(--res-line);
+  background: var(--res-bg);
+  color: var(--res-fg);
+}
+.rogle-button--small {
   min-height: 2.5rem;
-  padding: 0.25rem 0.8rem;
-  font-size: 0.95rem;
+  padding-inline: 1rem;
+}
+.rogle-button:disabled,
+.rogle-button[aria-disabled="true"] {
+  border-color: var(--line);
+  background: var(--bg);
+  color: var(--muted);
+  cursor: not-allowed;
+}
+.rogle-square {
+  width: 2.75rem;
+  padding: 0;
+}
+.rogle-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0 0;
+}
+
+/* ---- Form fields ------------------------------------------------------------------------- */
+input:where(:not([type="submit"], [type="button"], [type="checkbox"], [type="radio"])),
+select {
+  min-height: 2.75rem;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--field-line);
+  border-radius: 0;
+  background: var(--field-bg);
+  color: var(--fg);
+  font-family: var(--font-text);
+  font-size: var(--size-text);
+  line-height: var(--leading-text);
+}
+select option {
+  background: var(--bg);
+  color: var(--fg);
+}
+label {
+  font-weight: 700;
 }
 
 /* ---- Header and menu --------------------------------------------------------------------- */
-.site-header {
-  background: var(--white);
-  border-bottom: 1px solid var(--separator);
+.rogle-header__bar {
+  border-bottom: 1px solid var(--line);
+  background: var(--bg);
 }
-.header-inner {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-areas: "brand tools" "nav nav";
+.rogle-header {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  column-gap: 1rem;
-  padding-block: 0.5rem;
+  gap: 0.75rem;
+  max-width: 75rem;
+  margin-inline: auto;
+  padding: 0.5rem 1rem;
 }
-.brand {
-  grid-area: brand;
+.rogle-brand {
   display: inline-block;
   line-height: 0;
-  justify-self: start;
 }
-.brand img {
+.rogle-brand img {
   display: block;
-  height: 4rem;
+  height: 3.5rem;
   width: auto;
 }
-.header-tools {
-  grid-area: tools;
+@media (max-width: 39.99rem) {
+  .rogle-header {
+    gap: 0.5rem;
+  }
+  .rogle-brand img {
+    height: 2.5rem;
+  }
+  .rogle-nav__control .rogle-button {
+    padding-inline: 0.75rem;
+  }
+}
+.rogle-logo--dark {
+  display: none !important;
+}
+:root[data-theme="dark"] .rogle-logo--light {
+  display: none !important;
+}
+:root[data-theme="dark"] .rogle-logo--dark {
+  display: block !important;
+}
+.rogle-header__tools {
   display: flex;
   gap: 0.5rem;
-  align-items: center;
+  margin-left: auto;
 }
-.nav-control {
+.rogle-nav__control {
   position: relative;
-  display: inline-flex;
+  display: inline-block;
 }
-.nav-toggle {
+/* The checkbox covers the button, so the common focus outline surrounds the button. */
+.rogle-nav__toggle {
+  appearance: none;
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
+  min-height: 0;
   margin: 0;
-  opacity: 0;
-  cursor: pointer;
-  z-index: 1;
-}
-.nav-toggle:focus-visible + .nav-button {
-  outline: 3px solid var(--indigo);
-  outline-offset: 3px;
-}
-.lang-switch {
-  min-width: 2.75rem;
-  padding-inline: 0.6rem;
-}
-.site-nav {
-  grid-area: nav;
-  display: none;
-}
-.site-header:has(.nav-toggle:checked) .site-nav {
-  display: block;
-}
-@supports not selector(:has(*)) {
-  .site-nav {
-    display: block;
-  }
-}
-.nav-list {
-  list-style: none;
-  margin: 0.5rem 0 0.25rem;
   padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
 }
-.nav-list a {
+.rogle-nav {
+  order: 3;
+  flex-basis: 100%;
+  display: none;
+  font-size: var(--size-menu);
+}
+.rogle-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.rogle-nav__list a {
   display: block;
-  padding: 0.7rem 0;
-  border-top: 1px solid var(--separator);
-  color: var(--oxford-blue);
-  font-size: 1.05rem;
+  padding-block: 0.625rem;
+  color: var(--fg);
   font-weight: 700;
   text-decoration: none;
 }
-.nav-list a:hover {
-  color: var(--indigo);
+.rogle-nav__list a:hover {
+  color: var(--link);
+  text-decoration: underline;
 }
-.nav-list a[aria-current="page"] {
-  color: var(--indigo);
-  box-shadow: inset 4px 0 0 var(--indigo);
-  padding-left: 0.75rem;
+.rogle-nav__list a[aria-current] {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 0.2em;
 }
-@media (min-width: 60rem) {
-  .header-inner {
-    grid-template-columns: auto 1fr auto;
-    grid-template-areas: "brand nav tools";
-    padding-block: 0.75rem;
-  }
-  .nav-control {
+.rogle-header:has(.rogle-nav__toggle:checked) .rogle-nav {
+  display: block;
+}
+.rogle-theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.rogle-theme-toggle svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+.rogle-theme-toggle__sun {
+  display: none;
+}
+:root[data-theme="dark"] .rogle-theme-toggle__sun {
+  display: inline;
+}
+:root[data-theme="dark"] .rogle-theme-toggle__moon {
+  display: none;
+}
+@media (min-width: 64rem) {
+  .rogle-nav__control {
     display: none;
   }
-  .site-nav {
+  .rogle-nav {
     display: block;
-    justify-self: end;
+    flex: 1 1 auto;
+    order: 0;
   }
-  .nav-list {
+  .rogle-nav__list {
     display: flex;
-    gap: 0.25rem 1.5rem;
-    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 1.25rem;
   }
-  .nav-list a {
-    border-top: 0;
-    border-bottom: 3px solid transparent;
-    padding: 0.4rem 0;
-    font-size: 1rem;
-  }
-  .nav-list a[aria-current="page"] {
-    box-shadow: none;
-    padding-left: 0;
-    border-bottom-color: var(--indigo);
+  .rogle-header__tools {
+    margin-left: 0;
   }
 }
 
-/* ---- Hero and title band (dark) --------------------------------------------------------- */
-.hero,
-.titleband {
+/* ---- Notice bar (under construction): Oxford Blue, amber rule ---------------------------------- */
+.rogle-notice {
   background: var(--oxford-blue);
   color: var(--white);
+  font-size: var(--size-menu);
 }
-.hero h1,
-.titleband h1,
-.hero h2 {
-  color: var(--white);
+.rogle-notice .rogle-wide {
+  padding-block: 0.625rem;
 }
-.hero a:not(.button),
-.titleband a,
-.footer-main a {
-  color: var(--white);
+.rogle-notice p {
+  margin: 0;
 }
-.hero a:not(.button):hover,
-.titleband a:hover,
-.footer-main a:hover {
-  color: var(--indigo-light);
-}
-.hero :focus-visible,
-.titleband :focus-visible,
-.footer-main :focus-visible {
-  outline-color: var(--white);
-}
-.hero {
-  padding-block: clamp(2.5rem, 6vw, 4.5rem);
-}
-.hero-inner {
+
+/* ---- Hero, title band, breadcrumb ---------------------------------------------------------- */
+.rogle-hero__inner {
   display: grid;
-  gap: 2.5rem;
+  gap: 2rem;
   align-items: center;
+  max-width: 75rem;
+  margin-inline: auto;
+  padding: 2.5rem 1rem;
 }
-@media (min-width: 52rem) {
-  .hero-inner {
-    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+@media (min-width: 48rem) {
+  .rogle-hero__inner {
+    grid-template-columns: 3fr 2fr;
   }
 }
-.hero h1 {
-  font-size: clamp(2.1rem, 5.5vw, 3.5rem);
-  line-height: 1.1;
+.rogle-hero h1,
+.rogle-titleband h1,
+.rogle-hero h2,
+.rogle-footer h2 {
+  color: var(--white);
+}
+.rogle-hero h1 {
   margin-bottom: 1rem;
 }
-.hero .lead {
-  font-size: clamp(1.15rem, 2.2vw, 1.4rem);
-  line-height: 1.4;
-  color: var(--indigo-light);
-  margin-bottom: 1.25rem;
-}
-.hero-text > p:not(.kicker):not(.lead):not(.hero-actions) {
-  max-width: 36rem;
-}
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 1.75rem;
-}
-.kicker {
+.rogle-hero__kicker {
   margin: 0 0 1rem;
-  font-size: 0.9rem;
+  font-family: var(--font-title);
+  font-size: var(--size-menu);
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-.hero-figure {
+.rogle-hero .rogle-lead {
+  margin-bottom: 1.25rem;
+  color: var(--indigo-light);
+}
+.rogle-hero a:not(.rogle-button) {
+  color: var(--indigo-light);
+}
+.rogle-hero__text > p {
+  max-width: 36rem;
+}
+.rogle-hero__figure {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
@@ -439,84 +616,981 @@ main:focus {
   column-gap: clamp(1rem, 3vw, 2rem);
   row-gap: 0.75rem;
 }
-.hero-figure__mark {
+.rogle-hero__mark {
   width: clamp(5rem, 14vw, 8.25rem);
   height: auto;
 }
-.hero-figure__number {
+.rogle-hero__number {
   font-family: var(--font-title);
   font-weight: 700;
   font-size: clamp(6rem, 16vw, 10rem);
   line-height: 0.85;
   letter-spacing: -0.02em;
 }
-.hero-figure__caption {
+.rogle-hero__caption {
   grid-column: 1 / -1;
   text-align: center;
-  font-family: var(--font-label);
-  font-size: 1rem;
+  font-size: var(--size-text);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--indigo-light);
 }
-.button--ghost {
-  background: transparent;
-  border-color: var(--white);
-  color: var(--white);
+.rogle-titleband > .rogle-wide {
+  padding-block: 0.5rem 2rem;
 }
-.button--ghost:hover {
-  background: var(--white);
-  border-color: var(--white);
-  color: var(--oxford-blue);
+.rogle-titleband h1 {
+  margin: 0;
+  font-size: var(--size-h2);
 }
-
-.titleband {
-  padding-block: 1.5rem 2.25rem;
+.rogle-breadcrumb {
+  font-size: var(--size-menu);
 }
-.crumbs ol {
+.rogle-breadcrumb ol {
   display: flex;
   flex-wrap: wrap;
   gap: 0.25rem 0.5rem;
+  margin: 0;
+  padding: 0.75rem 0;
   list-style: none;
-  margin: 0 0 1rem;
-  padding: 0;
-  font-size: 0.95rem;
   color: var(--indigo-light);
 }
-.crumbs li + li::before {
+.rogle-breadcrumb li + li::before {
   content: "/";
   margin-right: 0.5rem;
 }
-.titleband h1 {
-  margin-bottom: 0;
+.rogle-breadcrumb a {
+  color: var(--indigo-light);
+}
+.rogle-breadcrumb a:hover {
+  color: var(--white);
 }
 
-/* ---- AMBER: only on Oxford Blue (hero, title band, footer). Keep every amber rule here ---- */
-.hero .kicker {
-  color: var(--amber);
+/* ---- Cards, grids, figures ------------------------------------------------------------------ */
+.rogle-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
 }
-.hero .hero-figure__number {
-  color: var(--amber);
+.rogle-card {
+  position: relative;
+  padding: 1rem;
+  border: 2px solid var(--card-line);
+  background: var(--card-bg);
+  color: var(--fg);
+  box-shadow: var(--shadow);
+  transition:
+    border-color 0.2s,
+    transform 0.2s;
 }
-.hero .button--accent {
-  background: var(--amber);
-  border-color: var(--amber);
-  color: var(--oxford-blue);
+.rogle-card:hover,
+.rogle-card:focus-within {
+  border-color: var(--card-hover);
+  transform: translateY(-0.25rem);
 }
-.hero .button--accent:hover {
-  background: var(--white);
-  border-color: var(--white);
-  color: var(--oxford-blue);
+.rogle-card h3 {
+  font-size: var(--size-lead);
 }
-.titleband h1::after {
+.rogle-card > :first-child {
+  margin-top: 0;
+}
+.rogle-card > :last-child {
+  margin-bottom: 0;
+}
+.rogle-card h3 a {
+  text-decoration: none;
+}
+.rogle-card h3 a::after {
   content: "";
-  display: block;
-  width: 4rem;
-  height: 0.25rem;
-  margin-top: 1rem;
-  background: var(--amber);
+  position: absolute;
+  inset: 0;
 }
-.footer-main .footer-title::before {
+.rogle-card h3 a:hover {
+  text-decoration: underline;
+}
+.rogle-card h3 a:focus-visible {
+  outline: none;
+}
+.rogle-card:focus-within {
+  outline: 2px dashed var(--focus);
+  outline-offset: 2px;
+}
+.rogle-split {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+@media (min-width: 52rem) {
+  .rogle-split {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 24rem);
+    gap: 3rem;
+  }
+}
+.rogle-split__main {
+  max-width: var(--measure);
+}
+.rogle-split__aside img {
+  display: block;
+  width: 100%;
+  max-width: 26rem;
+}
+.rogle-figures {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.rogle-figures li {
+  padding-left: 1rem;
+  border-left: 4px solid var(--indigo-mid);
+}
+.rogle-figures__number {
+  display: block;
+  color: var(--link);
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  line-height: 1;
+}
+.rogle-figures__label {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: var(--size-menu);
+  line-height: 1.3;
+  color: var(--muted);
+}
+.rogle-jump ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 2rem;
+  padding: 0;
+  list-style: none;
+}
+.rogle-jump a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.5rem;
+  padding: 0.25rem 0.9rem;
+  border: 1px solid var(--line);
+  background: var(--tint);
+  font-size: var(--size-menu);
+  text-decoration: none;
+}
+.rogle-jump a:hover {
+  border-color: var(--link);
+}
+.rogle-timeline {
+  margin: 0 0 1.5rem;
+  padding: 0 0 0 1.5rem;
+  border-left: 4px solid var(--card-line);
+  list-style: none;
+}
+.rogle-timeline > li {
+  position: relative;
+  padding-bottom: 2rem;
+}
+.rogle-timeline > li::before {
+  content: "";
+  position: absolute;
+  top: 0.4rem;
+  left: -2.125rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 2px solid var(--card-line);
+  background: var(--mark);
+}
+.rogle-timeline > li > :first-child {
+  margin-top: 0;
+}
+.rogle-timeline h2 {
+  margin-top: 0;
+  font-size: var(--size-h3);
+}
+.rogle-date {
+  margin-bottom: 0.75rem;
+  font-size: var(--size-menu);
+  color: var(--muted);
+}
+.rogle-linkcard {
+  display: block;
+  margin: 1.25rem 0 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border: 2px solid var(--card-line);
+  background: var(--card-bg);
+  color: var(--fg);
+  box-shadow: var(--shadow);
+  text-decoration: none;
+}
+.rogle-linkcard:hover {
+  border-color: var(--card-hover);
+  color: var(--fg);
+}
+.rogle-linkcard span {
+  display: block;
+}
+.rogle-linkcard__kicker {
+  font-size: var(--size-small);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.rogle-linkcard__title {
+  margin: 0.2rem 0 0.4rem;
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: var(--size-lead);
+  line-height: 1.25;
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+.rogle-linkcard__title::after {
+  content: " \2197";
+  display: inline-block;
+  text-decoration: none;
+}
+.rogle-linkcard__host {
+  margin-top: 0.6rem;
+  font-size: var(--size-menu);
+  color: var(--muted);
+}
+.rogle-callout {
+  margin: 0 0 2rem;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid var(--link);
+  background: var(--tint);
+}
+.rogle-callout p {
+  margin: 0;
+}
+.rogle-callout p + p {
+  margin-top: 0.5rem;
+}
+.rogle-address {
+  margin: 0 0 1.5rem;
+  padding: 0.25rem 0 0.25rem 1.25rem;
+  border-left: 4px solid var(--link);
+  font-size: var(--size-lead);
+  line-height: 1.5;
+}
+
+/* ---- Members and profiles ------------------------------------------------------------------ */
+.rogle-people-group {
+  margin-bottom: 2.5rem;
+}
+.rogle-people-group h2 {
+  margin-top: 0;
+}
+.rogle-count {
+  font-size: 0.6em;
+  font-weight: 400;
+  color: var(--muted);
+}
+.rogle-people {
+  display: grid;
+  gap: 1.25rem;
+  align-items: start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 24rem), 1fr));
+}
+.rogle-person {
+  position: relative;
+  display: grid;
+  gap: 0.25rem 1rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding: 1.25rem;
+  border: 2px solid var(--card-line);
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+}
+.rogle-person__main {
+  min-width: 0;
+}
+.rogle-person__photo {
+  grid-column: 2;
+  grid-row: 1;
+}
+.rogle-person__rest {
+  grid-column: 1 / -1;
+}
+.rogle-person h3 {
+  margin-bottom: 0.25rem;
+  font-size: var(--size-lead);
+}
+.rogle-person p {
+  margin-bottom: 0.4rem;
+}
+.rogle-person__role {
+  font-weight: 700;
+}
+.rogle-person__dept,
+.rogle-person__areas,
+.rogle-person__note,
+.rogle-person__cat {
+  font-size: var(--size-menu);
+  color: var(--muted);
+}
+.rogle-person__areas .rogle-label {
+  font-weight: 700;
+}
+.rogle-person__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  margin: 0.75rem 0 0.5rem;
+  padding: 0;
+  list-style: none;
+  font-size: var(--size-menu);
+}
+.rogle-person__more {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--line);
+}
+.rogle-person__bio {
+  margin-top: 0.75rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--line);
+}
+.rogle-person__bio summary {
+  cursor: pointer;
+  padding-block: 0.4rem;
+  font-weight: 700;
+  color: var(--link);
+}
+.rogle-person__text {
+  line-height: 1.55;
+}
+.rogle-photo,
+.rogle-avatar {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  border: 2px solid var(--card-line);
+  object-fit: cover;
+}
+.rogle-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--indigo);
+  color: var(--white);
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1;
+  user-select: none;
+}
+:root[data-theme="dark"] .rogle-avatar {
+  background: var(--indigo-light);
+  color: var(--oxford-blue);
+}
+.rogle-profile {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+}
+.rogle-profile__photo .rogle-photo,
+.rogle-profile__photo .rogle-avatar {
+  width: clamp(6rem, 20vw, 11rem);
+  height: clamp(6rem, 20vw, 11rem);
+  font-size: clamp(2rem, 7vw, 3.5rem);
+}
+.rogle-profile__facts {
+  margin: 0 0 1rem;
+}
+.rogle-profile__facts dt {
+  margin-top: 0.5rem;
+  font-size: var(--size-menu);
+  font-weight: 700;
+  color: var(--muted);
+}
+.rogle-profile__facts dd {
+  margin: 0;
+}
+.rogle-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+.rogle-chips li {
+  padding: 0.15rem 0.75rem;
+  border: 1px solid var(--line);
+  background: var(--tint);
+  font-size: var(--size-menu);
+}
+.rogle-people-list {
+  display: grid;
+  gap: 0.5rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+}
+.rogle-people-list li {
+  padding: 0.5rem 0.75rem;
+  border-left: 4px solid var(--indigo-light);
+  background: var(--tint);
+}
+.rogle-people-list a {
+  text-decoration: none;
+  font-weight: 700;
+}
+.rogle-linklist {
+  margin: 0 0 1.5rem;
+  padding-left: 1.25rem;
+}
+.rogle-linklist li {
+  margin-bottom: 0.6rem;
+}
+.rogle-linklist small {
+  display: block;
+  color: var(--muted);
+}
+
+/* ---- Publications (cards with action strip) -------------------------------------------------- */
+.rogle-pubs {
+  display: grid;
+  gap: 2rem;
+}
+@media (min-width: 64rem) {
+  .rogle-pubs--aside {
+    grid-template-columns: 1fr 16rem;
+    align-items: start;
+  }
+  .rogle-pubs--aside .rogle-aside {
+    position: sticky;
+    top: 1rem;
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+.rogle-aside h2 {
+  margin-top: 0;
+  font-size: var(--size-lead);
+}
+.rogle-aside ul {
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+  font-size: var(--size-menu);
+}
+.rogle-aside li {
+  margin-bottom: 0.25rem;
+}
+.rogle-pubgroup h3 {
+  margin: 2rem 0 0.5rem;
+}
+.rogle-pub {
+  margin-block: 1rem;
+  padding: 0.75rem 0 0 1rem;
+  border-left: 4px solid var(--indigo);
+}
+.rogle-pub .rogle-cite {
+  margin: 0;
+}
+.rogle-pub__summary {
+  margin: 0.5rem 0;
+  color: var(--muted);
+  font-style: italic;
+}
+.rogle-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin: 0.5rem 0;
+  padding: 0;
+  list-style: none;
+}
+.rogle-tags li {
+  color: var(--muted);
+  font-size: var(--size-small);
+  text-transform: uppercase;
+}
+.rogle-tags a {
+  color: inherit;
+}
+.rogle-pub__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 0.75rem 0 0;
+  background: var(--strip-bg);
+  color: var(--fg);
+}
+.rogle-pub__primary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0 1.5rem 0 1rem;
+  background: var(--primary-bg);
+  color: var(--primary-fg);
+  font-weight: 700;
+  text-decoration: none;
+}
+.rogle-pub__primary:hover {
+  background: var(--oxford-blue);
+  color: var(--white);
+}
+:root[data-theme="dark"] .rogle-pub__primary:hover {
+  background: var(--white);
+  color: var(--oxford-blue);
+}
+.rogle-pub__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding: 0 0.75rem;
+  border: 0;
+  background: transparent;
+  color: var(--link);
+  font-family: var(--font-text);
+  font-size: var(--size-text);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.rogle-pub__link:hover {
+  color: var(--link-hover);
+}
+.rogle-icon {
+  flex: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.rogle-facts {
+  display: grid;
+  gap: 0.5rem 1.5rem;
+  grid-template-columns: max-content minmax(0, 1fr);
+  margin: 1.5rem 0;
+}
+.rogle-facts dt {
+  font-weight: 700;
+  color: var(--muted);
+}
+.rogle-facts dd {
+  margin: 0;
+}
+.rogle-missing {
+  color: var(--muted);
+  font-style: italic;
+}
+.rogle-cite {
+  padding: 1rem;
+  border-left: 4px solid var(--indigo);
+  background: var(--tint);
+}
+.rogle-authors a {
+  font-weight: 700;
+}
+
+/* ---- Filters and tables ------------------------------------------------------------------------ */
+.rogle-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  align-items: end;
+  margin-bottom: 0.75rem;
+}
+.rogle-filter__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.rogle-filter__field--grow {
+  flex: 1 1 18rem;
+  max-width: 32rem;
+}
+.rogle-filter label {
+  font-size: var(--size-menu);
+}
+.rogle-filter input::-webkit-search-cancel-button {
+  display: none;
+}
+.rogle-status {
+  flex: 1 0 100%;
+  margin: 0;
+  font-size: var(--size-menu);
+  color: var(--muted);
+}
+.rogle-table-block {
+  margin: 1rem 0 2.5rem;
+}
+.rogle-table-scroll {
+  overflow: auto;
+  max-height: 75vh;
+  border: 1px solid var(--line);
+}
+.rogle-table-scroll:focus-visible {
+  outline: 2px dashed var(--focus);
+  outline-offset: 2px;
+}
+.rogle-table-scroll table {
+  width: 100%;
+  min-width: 64rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: var(--size-menu);
+  line-height: 1.45;
+}
+.rogle-table-scroll caption {
+  position: sticky;
+  left: 0;
+  box-sizing: border-box;
+  /* As wide as the visible region, so the text wraps instead of running off to the right. */
+  width: min(calc(100vw - 2rem - 2px), 74rem);
+  padding: 0.75rem 1rem;
+  background: var(--tint);
+  caption-side: top;
+  color: var(--muted);
+  font-size: var(--size-menu);
+  text-align: left;
+}
+.rogle-table-hint {
+  display: block;
+  font-size: var(--size-small);
+}
+.rogle-table-scroll th,
+.rogle-table-scroll td {
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid var(--line);
+  background: var(--bg);
+  text-align: left;
+  vertical-align: top;
+}
+.rogle-table-scroll thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--head-bg);
+  color: var(--head-fg);
+  font-size: var(--size-small);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.rogle-table-scroll tbody th {
+  min-width: 16rem;
+  max-width: 26rem;
+  font-weight: 600;
+}
+.rogle-table-scroll tbody tr:hover th,
+.rogle-table-scroll tbody tr:hover td {
+  background: var(--tint);
+}
+.rogle-table-scroll .num {
+  text-align: right;
+  white-space: nowrap;
+}
+.rogle-table-scroll .wide {
+  min-width: 15rem;
+}
+.rogle-table-scroll .nowrap {
+  white-space: nowrap;
+}
+@media (min-width: 48rem) {
+  .rogle-table-scroll tbody th {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+  }
+  .rogle-table-scroll thead th:first-child {
+    left: 0;
+    z-index: 3;
+  }
+}
+
+/* ---- Brand page and downloads -------------------------------------------------------------------- */
+.rogle-logos {
+  display: grid;
+  gap: 1rem;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+}
+.rogle-logos > li {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--card-line);
+  background: var(--card-bg);
+}
+.rogle-logos__preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 9rem;
+  padding: 1rem;
+  background: var(--white);
+}
+.rogle-logos__preview--dark {
+  background: var(--oxford-blue);
+}
+.rogle-logos__preview img {
+  max-height: 7rem;
+  width: auto;
+  max-width: 100%;
+}
+.rogle-logos__body {
+  padding: 0.75rem 1rem 1rem;
+}
+.rogle-logos__body p {
+  margin: 0 0 0.5rem;
+  font-size: var(--size-menu);
+}
+.rogle-logos__name {
+  font-weight: 700;
+}
+.rogle-logos__formats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--size-menu);
+}
+.rogle-swatches {
+  display: grid;
+  gap: 1rem;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+}
+.rogle-swatch {
+  border: 2px solid var(--card-line);
+  background: var(--card-bg);
+}
+.rogle-swatch__chip {
+  height: 5rem;
+  border-bottom: 2px solid var(--card-line);
+}
+.rogle-swatch__body {
+  padding: 0.75rem 1rem 1rem;
+}
+.rogle-swatch__name {
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+}
+.rogle-swatch__use {
+  margin: 0 0 0.5rem;
+  font-size: var(--size-menu);
+  color: var(--muted);
+}
+.rogle-swatch__values {
+  display: grid;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.rogle-swatch__values li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.25rem;
+}
+.rogle-swatch__values .rogle-label {
+  min-width: 2.75rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+.rogle-swatch__values code {
+  flex: 1 1 auto;
+  white-space: nowrap;
+}
+.rogle-swatch__values .rogle-copy {
+  margin-left: auto;
+}
+.rogle-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.25rem;
+  padding: 0.1rem 0.5rem;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-code);
+  font-size: var(--size-menu);
+  cursor: pointer;
+}
+.rogle-copy:hover {
+  border-color: var(--link);
+}
+.rogle-copy .rogle-label {
+  font-family: var(--font-text);
+  font-weight: 700;
+  color: var(--muted);
+}
+.rogle-downloads {
+  margin: 0 0 2rem;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+.rogle-downloads li {
+  display: grid;
+  gap: 0.25rem 1rem;
+  align-items: center;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--line);
+  grid-template-columns: minmax(0, 1fr);
+}
+@media (min-width: 40rem) {
+  .rogle-downloads li {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+}
+.rogle-downloads__name {
+  font-weight: 700;
+}
+.rogle-downloads__text {
+  margin: 0;
+  font-size: var(--size-menu);
+  color: var(--muted);
+}
+.rogle-downloads__meta {
+  font-size: var(--size-menu);
+  color: var(--muted);
+  white-space: nowrap;
+}
+.rogle-rules {
+  display: grid;
+  gap: 1rem;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+}
+.rogle-rules li {
+  padding: 1rem;
+  border: 2px solid var(--card-line);
+  background: var(--card-bg);
+}
+.rogle-rules h3 {
+  font-size: var(--size-lead);
+}
+.rogle-rules p {
+  margin: 0;
+}
+
+/* ---- Footer ------------------------------------------------------------------------------ */
+.rogle-footer {
+  font-size: var(--size-text);
+}
+.rogle-footer__brands {
+  padding-block: 1.25rem;
+  border-top: 1px solid var(--separator);
+  background: var(--white);
+}
+.rogle-footer__brands img {
+  display: block;
+  width: min(100%, 24rem);
+  height: auto;
+}
+.rogle-footer__main {
+  background: var(--oxford-blue);
+  color: var(--white);
+}
+:root[data-theme="dark"] .rogle-footer__main {
+  border-top: 0.25rem solid var(--indigo);
+}
+.rogle-footer__grid {
+  display: grid;
+  gap: 1.75rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  padding-block: 2.25rem;
+}
+.rogle-footer__col {
+  padding-left: 1rem;
+  border-left: 2px solid var(--indigo-mid);
+}
+.rogle-footer__title {
+  margin: 0 0 0.75rem;
+  color: var(--white);
+  font-size: var(--size-lead);
+}
+.rogle-footer__col p,
+.rogle-footer__col address {
+  margin: 0 0 0.75rem;
+  line-height: 1.6;
+}
+.rogle-footer a {
+  color: var(--indigo-light);
+}
+.rogle-footer a:hover {
+  color: var(--white);
+}
+.rogle-footer :focus-visible {
+  outline-color: var(--white);
+}
+.rogle-footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 1.9;
+}
+.rogle-footer__legal {
+  background: var(--legal-bg);
+  color: var(--legal-fg);
+  font-size: var(--size-menu);
+}
+.rogle-footer__legal a {
+  color: var(--legal-link);
+}
+.rogle-footer__legal-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+  padding-block: 1rem;
+}
+.rogle-footer__legal p {
+  margin: 0;
+}
+
+/* ---- AMBER: only on Oxford Blue (hero, title band, notice bar, footer) or on its night shade
+   (dark theme). Keep every amber rule in this block so web/tests can check it. ----------- */
+.rogle-hero {
+  border-bottom: 0.5rem solid var(--amber);
+}
+.rogle-hero__kicker,
+.rogle-hero__number {
+  color: var(--amber);
+}
+.rogle-titleband {
+  border-bottom: 0.25rem solid var(--amber);
+}
+.rogle-notice {
+  border-bottom: 0.25rem solid var(--amber);
+}
+.rogle-notice strong {
+  color: var(--amber);
+}
+.rogle-footer__title::before {
   content: "";
   display: block;
   width: 2rem;
@@ -526,567 +1600,140 @@ main:focus {
 }
 /* ---- end of AMBER ------------------------------------------------------------------------ */
 
-/* ---- Content blocks ---------------------------------------------------------------------- */
-.split {
-  display: grid;
-  gap: 2rem;
-  align-items: center;
-}
-@media (min-width: 52rem) {
-  .split {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 24rem);
-    gap: 3rem;
+/* ---- Motion -------------------------------------------------------------------------------- */
+@keyframes rogle-rise {
+  from {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
   }
 }
-.split__main {
-  max-width: var(--measure);
-}
-.split__aside img {
-  display: block;
-  width: 100%;
-  max-width: 26rem;
-}
-
-.cards {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1.5rem;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
-}
-.card {
-  position: relative;
-  background: var(--white);
-  border: 1px solid var(--separator);
-  border-top: 4px solid var(--oxford-blue);
-  border-radius: var(--radius);
-  padding: 1.1rem 1.25rem 1.2rem;
-}
-.card p {
-  margin: 0;
-}
-.card h3 {
-  margin-bottom: 0.4rem;
-}
-.card h3 a {
-  color: var(--indigo);
-  text-decoration: none;
-}
-.card h3 a::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-}
-.card--link:hover {
-  border-top-color: var(--indigo);
-}
-.card--link h3 a:hover {
-  text-decoration: underline;
-}
-.card:focus-within {
-  outline: 3px solid var(--indigo);
-  outline-offset: 2px;
-}
-.card h3 a:focus-visible {
-  outline: none;
-}
-
-.figures {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.25rem 1.5rem;
-}
-.figures li {
-  border-left: 4px solid var(--indigo-mid);
-  padding-left: 1rem;
-}
-.figure__number {
-  display: block;
-  font-family: var(--font-title);
-  font-weight: 700;
-  font-size: clamp(2rem, 5vw, 2.75rem);
-  line-height: 1;
-  color: var(--indigo);
-}
-.figure__label {
-  display: block;
-  margin-top: 0.25rem;
-  font-family: var(--font-label);
-  font-size: 0.95rem;
-  line-height: 1.3;
-  color: var(--muted);
-}
-
-.jump ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  padding: 0;
-  margin: 0 0 2rem;
-}
-.jump a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 2.5rem;
-  padding: 0.25rem 0.9rem;
-  border: 1px solid var(--separator);
-  border-radius: 2rem;
-  font-family: var(--font-label);
-  font-size: 0.95rem;
-  text-decoration: none;
-  background: var(--surface);
-}
-.jump a:hover {
-  border-color: var(--indigo);
-}
-
-.link-card {
-  display: block;
-  margin: 1.25rem 0 1.5rem;
-  padding: 1.25rem 1.5rem;
-  border: 1px solid var(--separator);
-  border-left: 4px solid var(--indigo);
-  border-radius: var(--radius);
-  background: var(--white);
-  color: var(--text);
-  text-decoration: none;
-  transition: background-color 0.2s, border-color 0.2s;
-}
-.link-card:hover {
-  background: var(--surface);
-  border-color: var(--indigo);
-  color: var(--text);
-}
-.link-card span {
-  display: block;
-}
-.link-card__kicker {
-  font-family: var(--font-label);
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.link-card__title {
-  margin: 0.2rem 0 0.4rem;
-  font-family: var(--font-title);
-  font-weight: 700;
-  font-size: 1.35rem;
-  line-height: 1.25;
-  color: var(--indigo);
-  text-decoration: underline;
-  text-underline-offset: 0.18em;
-}
-.link-card__title::after {
-  content: " \2197";
-  text-decoration: none;
-  display: inline-block;
-}
-.link-card__host {
-  margin-top: 0.6rem;
-  font-family: var(--font-label);
-  font-size: 0.9rem;
-  color: var(--muted);
-}
-
-.news-item {
-  padding-block: 1.75rem;
-  border-top: 1px solid var(--separator);
-}
-.news-item:first-child {
-  border-top: 0;
-  padding-top: 0;
-}
-.news-item h2 {
-  margin-top: 0;
-  font-size: 1.6rem;
-}
-.news-date {
-  margin-bottom: 0.75rem;
-  font-family: var(--font-label);
-  font-size: 0.95rem;
-  color: var(--muted);
-}
-
-.notice {
-  margin-bottom: 2rem;
-  padding: 1rem 1.25rem;
-  border-left: 4px solid var(--indigo);
-  background: var(--surface);
-}
-.notice p {
-  margin: 0;
-}
-.address-block {
-  margin: 0 0 1.5rem;
-  padding: 0.25rem 0 0.25rem 1.25rem;
-  border-left: 4px solid var(--indigo);
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
-
-/* ---- Members ----------------------------------------------------------------------------- */
-.people-group {
-  margin-bottom: 2.5rem;
-}
-.people-group h2 {
-  margin-top: 0;
-}
-.count {
-  font-family: var(--font-label);
-  font-size: 0.6em;
-  font-weight: 400;
-  color: var(--muted);
-}
-.people {
-  display: grid;
-  gap: 1.25rem;
-  align-items: start;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 24rem), 1fr));
-}
-.person {
-  border: 1px solid var(--separator);
-  border-left: 4px solid var(--indigo);
-  border-radius: var(--radius);
-  padding: 1.25rem 1.5rem;
-  background: var(--white);
-}
-.person h3 {
-  margin-bottom: 0.25rem;
-  font-size: 1.4rem;
-}
-.person p {
-  margin-bottom: 0.4rem;
-}
-.person__role {
-  font-weight: 700;
-}
-.person__dept,
-.person__areas,
-.person__note {
-  font-size: 0.95rem;
-  color: var(--muted);
-}
-.person__areas .label {
-  font-weight: 700;
-}
-.person__links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem 1rem;
-  list-style: none;
-  margin: 0.75rem 0 0.5rem;
-  padding: 0;
-  font-family: var(--font-label);
-  font-size: 0.95rem;
-}
-.person__bio {
-  margin-top: 0.75rem;
-  border-top: 1px solid var(--separator);
-  padding-top: 0.5rem;
-}
-.person__bio summary {
-  cursor: pointer;
-  padding-block: 0.4rem;
-  font-family: var(--font-label);
-  font-weight: 700;
-  color: var(--indigo);
-}
-.person__bio summary:hover {
-  color: var(--oxford-blue);
-}
-.person__text {
-  font-size: 1rem;
-  line-height: 1.55;
-}
-.people-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: 0.5rem 1.5rem;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
-}
-.people-list li {
-  padding: 0.5rem 0.75rem;
-  border-left: 4px solid var(--indigo-light);
-  background: var(--surface);
-}
-
-/* ---- Tables (projects and papers) -------------------------------------------------------- */
-.table-block {
-  margin: 1rem 0 2.5rem;
-}
-.table-tools {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 0.75rem;
-  align-items: end;
-  margin-bottom: 0.75rem;
-}
-.table-tools label {
-  flex: 1 0 100%;
-  font-weight: 700;
-}
-.table-tools input {
-  flex: 1 1 18rem;
-  max-width: 32rem;
-  min-height: 2.75rem;
-  padding: 0.4rem 0.75rem;
-  border: 2px solid var(--oxford-blue);
-  border-radius: var(--radius);
-  background: var(--white);
-  color: var(--text);
-  font: inherit;
-  font-size: 1rem;
-}
-.table-tools input::-webkit-search-cancel-button {
-  display: none;
-}
-.table-status {
-  flex: 1 0 100%;
-  margin: 0;
-  font-size: 0.95rem;
-  color: var(--muted);
-}
-.table-scroll {
-  overflow: auto;
-  max-height: 75vh;
-  border: 1px solid var(--separator);
-  border-radius: var(--radius);
-}
-.table-scroll:focus-visible {
-  outline: 3px solid var(--indigo);
-  outline-offset: 2px;
-}
-.table-scroll table {
-  width: 100%;
-  min-width: 64rem;
-  border-collapse: separate;
-  border-spacing: 0;
-  font-size: 0.9rem;
-  line-height: 1.45;
-}
-caption {
-  caption-side: top;
-  padding: 0.75rem 1rem;
-  text-align: left;
-  font-family: var(--font-label);
-  font-size: 0.95rem;
-  color: var(--muted);
-  background: var(--surface);
-  position: sticky;
-  left: 0;
-  /* As wide as the visible region, so the text wraps instead of running off to the right. */
-  width: min(calc(100vw - 2 * var(--gutter) - 2px), 74rem);
-  box-sizing: border-box;
-}
-.table-hint {
-  display: block;
-  font-size: 0.85rem;
-}
-.table-scroll th,
-.table-scroll td {
-  padding: 0.55rem 0.75rem;
-  border-bottom: 1px solid var(--separator);
-  text-align: left;
-  vertical-align: top;
-  background: var(--white);
-}
-.table-scroll thead th {
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  background: var(--oxford-blue);
-  color: var(--white);
-  font-size: 0.8rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-.table-scroll tbody th {
-  min-width: 16rem;
-  max-width: 26rem;
-  font-weight: 600;
-}
-.table-scroll tbody tr:hover th,
-.table-scroll tbody tr:hover td {
-  background: var(--surface);
-}
-.table-scroll td.num,
-.table-scroll th.num {
-  text-align: right;
-  white-space: nowrap;
-}
-.table-scroll .wide {
-  min-width: 15rem;
-}
-.table-scroll .nowrap {
-  white-space: nowrap;
-}
-@media (min-width: 48rem) {
-  .table-scroll tbody th {
-    position: sticky;
-    left: 0;
-    z-index: 1;
-  }
-  .table-scroll thead th:first-child {
-    left: 0;
-    z-index: 3;
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .rogle-reveal {
+      animation: rogle-rise linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 40%;
+    }
   }
 }
-
-/* ---- Footer ------------------------------------------------------------------------------ */
-.site-footer {
-  font-family: var(--font-label);
-  font-size: 1rem;
-}
-.footer-brands {
-  background: var(--white);
-  border-top: 1px solid var(--separator);
-  padding-block: 1.25rem;
-}
-.footer-brands img {
-  display: block;
-  width: min(100%, 24rem);
-  height: auto;
-}
-.footer-main {
-  background: var(--oxford-blue);
-  color: var(--white);
-  padding-block: 2.25rem;
-}
-.footer-grid {
-  display: grid;
-  gap: 1.75rem 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
-}
-.footer-col {
-  border-left: 2px solid var(--indigo-mid);
-  padding-left: 1.25rem;
-}
-.footer-title {
-  margin: 0 0 0.75rem;
-  font-family: var(--font-label);
-  font-size: 1.2rem;
-  color: var(--white);
-}
-.footer-col p,
-.footer-col address {
-  margin: 0 0 0.75rem;
-  line-height: 1.6;
-}
-.footer-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  line-height: 1.9;
-}
-.footer-legal {
-  background: var(--surface);
-  color: var(--oxford-blue);
-  font-size: 0.9rem;
-  padding-block: 1rem;
-}
-.footer-legal a {
-  color: var(--indigo);
-}
-.footer-legal__inner {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.25rem 1.5rem;
-}
-.footer-legal p {
-  margin: 0;
-}
-
-/* ---- Print ------------------------------------------------------------------------------- */
-@media print {
-  body.rogle-site {
-    font-size: 11pt;
-    color: #000;
-  }
-  .skip-link,
-  .site-nav,
-  .nav-control,
-  .lang-switch,
-  .footer-brands,
-  .table-tools,
-  .jump,
-  .hero-figure,
-  .hero-actions,
-  .button {
-    display: none !important;
-  }
-  .hero,
-  .titleband,
-  .footer-main {
-    background: none;
-    color: #000;
-  }
-  .hero h1,
-  .titleband h1,
-  .hero h2,
-  .hero a:not(.button),
-  .titleband a,
-  .footer-main a,
-  .footer-title,
-  .hero .lead,
-  .crumbs ol {
-    color: #000;
-  }
-  .hero .kicker {
-    color: #000;
-  }
-  .titleband h1::after,
-  .footer-main .footer-title::before {
-    display: none;
-  }
-  .band--tint,
-  .footer-legal {
-    background: none;
-  }
-  .table-scroll {
-    overflow: visible;
-    max-height: none;
-    border: 0;
-  }
-  .table-scroll table {
-    min-width: 0;
-    font-size: 8pt;
-  }
-  .table-scroll thead th {
-    position: static;
-    background: none;
-    color: #000;
-    border-bottom: 2px solid #000;
-  }
-  .table-scroll tbody th {
-    position: static;
-  }
-  tr {
-    break-inside: avoid;
-  }
-  .person__bio:not([open]) > *:not(summary) {
-    display: block;
-  }
-  a {
-    color: #000;
-  }
-}
-
-/* ---- Reduced motion ---------------------------------------------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
   *::after {
     transition: none !important;
     animation: none !important;
+  }
+  .rogle-card:hover,
+  .rogle-card:focus-within {
+    transform: none;
+  }
+}
+
+/* High contrast mode replaces author colours: keep the inactive state visible. */
+@media (forced-colors: active) {
+  .rogle-button:disabled,
+  .rogle-button[aria-disabled="true"] {
+    border-color: GrayText;
+    color: GrayText;
+  }
+}
+
+/* ---- Print: always the light theme, no chrome ---------------------------------------------- */
+@media print {
+  :root[data-theme="dark"] {
+    --bg: #fff;
+    --fg: #000;
+    --heading: #000;
+    --link: #000;
+    --muted: #333;
+    --line: #999;
+    --tint: #fff;
+    --card-bg: #fff;
+    --card-line: #000;
+    --code-bg: #fff;
+    --head-bg: #fff;
+    --head-fg: #000;
+  }
+  body.rogle-site {
+    background: #fff;
+    color: #000;
+    font-size: 11pt;
+  }
+  .rogle-skip,
+  .rogle-nav,
+  .rogle-nav__control,
+  .rogle-header__tools,
+  .rogle-notice,
+  .rogle-footer__brands,
+  .rogle-filter,
+  .rogle-jump,
+  .rogle-hero__figure,
+  .rogle-actions,
+  .rogle-pub__actions,
+  .rogle-copy,
+  .rogle-button {
+    display: none !important;
+  }
+  .rogle-hero,
+  .rogle-titleband,
+  .rogle-footer__main,
+  .rogle-band--dark,
+  .rogle-band {
+    border: 0;
+    background: none;
+    color: #000;
+  }
+  .rogle-hero h1,
+  .rogle-titleband h1,
+  .rogle-hero h2,
+  .rogle-hero a:not(.rogle-button),
+  .rogle-titleband a,
+  .rogle-footer a,
+  .rogle-footer__title,
+  .rogle-hero .rogle-lead,
+  .rogle-hero__kicker,
+  .rogle-breadcrumb ol,
+  .rogle-breadcrumb a {
+    color: #000;
+  }
+  .rogle-footer__title::before {
+    display: none;
+  }
+  .rogle-footer__legal {
+    background: none;
+    color: #000;
+  }
+  .rogle-table-scroll {
+    overflow: visible;
+    max-height: none;
+    border: 0;
+  }
+  .rogle-table-scroll table {
+    min-width: 0;
+    font-size: 8pt;
+  }
+  .rogle-table-scroll thead th {
+    position: static;
+    border-bottom: 2px solid #000;
+    background: none;
+    color: #000;
+  }
+  .rogle-table-scroll tbody th {
+    position: static;
+  }
+  .rogle-person,
+  .rogle-pub,
+  tr {
+    break-inside: avoid;
+  }
+  .rogle-person__bio:not([open]) > *:not(summary) {
+    display: block;
+  }
+  a {
+    color: #000;
   }
 }

@@ -32,12 +32,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<script src="../rogle-theme.js"></script>
 <link rel="canonical" href="https://rogle.webs.upv.es/es/index.html">
 <link rel="alternate" hreflang="es" href="index.html">
 <link rel="alternate" hreflang="en" href="../en/index.html">
 <link rel="alternate" hreflang="x-default" href="../es/index.html">
 <meta name="theme-color" content="#002147">
-<meta name="color-scheme" content="light">
+<meta name="color-scheme" content="light dark">
 <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
 <link rel="icon" sizes="48x48" href="../favicon.ico">
 <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
@@ -64,51 +65,54 @@ ul.task-list li input[type="checkbox"] {
 <!-- Quarto prints no title block: the page frame in rogle-site.lua prints the h1. -->
 
 
-<a class="skip-link" href="#main-content">Saltar al contenido</a>
-<header class="site-header"><div class="wrap header-inner">
-<a class="brand" href="index.html" aria-label="ROGLE, ir al inicio"><img src="../img/rogle-logo.svg" alt="" width="171" height="64"></a>
-<div class="header-tools">
-<span class="nav-control">
-<input type="checkbox" id="menu-toggle" class="nav-toggle" aria-label="Menú">
-<label for="menu-toggle" class="nav-button button button--outline" aria-hidden="true">Menú</label>
+<a class="rogle-skip" href="#main-content">Saltar al contenido</a>
+<div class="rogle-notice" role="note"><div class="rogle-wide"><p><strong>Esta web está en construcción.</strong> Sus contenidos y enlaces son provisionales.</p></div></div>
+<div class="rogle-header__bar"><header class="rogle-header">
+<a class="rogle-brand" href="index.html" aria-label="ROGLE, ir al inicio"><img class="rogle-logo--light" src="../img/rogle-logo.svg" alt="" width="171" height="64"><img class="rogle-logo--dark" src="../img/rogle-logo-negativo.svg" alt="" width="171" height="64"></a>
+<span class="rogle-nav__control">
+<input type="checkbox" id="menu-toggle" class="rogle-nav__toggle" aria-label="Menú">
+<label for="menu-toggle" class="rogle-button rogle-button--outline" aria-hidden="true">Menú</label>
 </span>
-<a class="lang-switch button button--outline" hreflang="en" lang="en" href="../en/index.html" title="Read this page in English">EN</a>
-</div>
-<nav class="site-nav" aria-label="Principal"><ul class="nav-list">
+<nav class="rogle-nav" aria-label="Principal"><ul class="rogle-nav__list">
 <li><a href="index.html" aria-current="page">Inicio</a></li>
 <li><a href="miembros.html">Miembros</a></li>
 <li><a href="investigacion.html">Investigación</a></li>
-<li><a href="docencia.html">Docencia y recursos</a></li>
+<li><a href="docencia.html">Docencia</a></li>
+<li><a href="recursos.html">Recursos</a></li>
 <li><a href="noticias.html">Noticias</a></li>
 <li><a href="contacto.html">Contacto</a></li>
 </ul></nav>
-</div></header>
-<main id="main-content" tabindex="-1"><div class="hero">
-<div class="wrap hero-inner">
-<div class="hero-text">
-<p class="kicker">
+<div class="rogle-header__tools">
+<button type="button" class="rogle-button rogle-button--outline rogle-square rogle-theme-toggle" hidden="" data-rogle-theme-toggle="" data-label-to-dark="Cambiar a tema oscuro" data-label-to-light="Cambiar a tema claro" aria-label="Cambiar a tema oscuro"><svg class="rogle-theme-toggle__moon" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z"></path></svg><svg class="rogle-theme-toggle__sun" viewbox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></button>
+<a class="rogle-button rogle-button--outline rogle-square" hreflang="en" lang="en" href="../en/index.html" title="Read this page in English">EN</a>
+</div>
+</header></div>
+<main id="main-content" tabindex="-1"><div class="rogle-hero rogle-band--dark">
+<div class="rogle-hero__inner">
+<div class="rogle-hero__text">
+<p class="rogle-hero__kicker">
 20 aniversario · desde 2006
 </p>
 <h1 id="grupo-de-investigación-rogle">Grupo de investigación ROGLE</h1>
-<p class="lead">
+<p class="rogle-lead">
 Reingeniería, Organización, trabajo en Grupo y Logística Empresarial
 </p>
 <p>Docencia, investigación y transferencia a la industria desde el Departamento de Organización de Empresas de la Universitat Politècnica de València, con un firme compromiso con la sostenibilidad social y ambiental.</p>
-<p class="hero-actions">
-<a class="button button--accent" href="miembros.html">Conoce al grupo</a> <a class="button button--ghost" href="investigacion.html">Líneas de investigación</a>
+<p class="rogle-actions">
+<a class="rogle-button rogle-button--outline" href="miembros.html">Conoce al grupo</a> <a class="rogle-button rogle-button--outline" href="investigacion.html">Líneas de investigación</a>
 </p>
 </div>
-<div class="hero-figure" aria-hidden="true">
-<img class="hero-figure__mark" src="../img/rogle-isotipo-negativo.svg" alt="" width="132" height="132">
-<span class="hero-figure__number">20</span>
-<span class="hero-figure__caption">años de ROGLE<br>2006 – 2026</span>
+<div class="rogle-hero__figure" aria-hidden="true">
+<img class="rogle-hero__mark" src="../img/rogle-isotipo-negativo.svg" alt="" width="132" height="132">
+<span class="rogle-hero__number">20</span>
+<span class="rogle-hero__caption">años de ROGLE<br>2006 – 2026</span>
 </div>
 </div>
 </div>
-<div class="band">
-<div class="wrap">
-<div class="split">
-<section id="que-es-rogle" class="split__main">
+<div class="rogle-section">
+<div class="rogle-wide">
+<div class="rogle-split">
+<section id="que-es-rogle" class="rogle-split__main">
 <h2>Qué es ROGLE</h2>
 <p>Los miembros del grupo ROGLE trabajan en áreas ligadas a la gestión industrial, como la mejora continua, la gestión y el control de producción e inventarios, el diseño y la reingeniería de sistemas de producción y logística, el trabajo en equipo, la sostenibilidad y la gestión de recursos humanos.</p>
 <p>La actividad del grupo se encuadra en el trinomio educación, investigación y aplicación en empresas, con un firme compromiso con la sostenibilidad social y ambiental.</p>
@@ -116,98 +120,115 @@ Reingeniería, Organización, trabajo en Grupo y Logística Empresarial
 <h3 id="fer-rogle">Fer rogle</h3>
 <p>En valenciano, <em>rogle</em> es el corro de personas. «Fer rogle» es reunirse en círculo. El isotipo muestra cinco personas en corro, y cada una abraza al grupo con una media luna.</p>
 </section>
-<div class="split__aside">
-<img src="../img/rogle-logo-descriptor.svg" alt="Logotipo de ROGLE: Reengineering Operations GroupWork Logistics Excellence" width="420" height="158">
+<div class="rogle-split__aside">
+<img class="rogle-logo--light" src="../img/rogle-logo-descriptor.svg" alt="Logotipo de ROGLE: Reengineering Operations GroupWork Logistics Excellence" width="420" height="158">
+<img class="rogle-logo--dark" src="../img/rogle-logo-descriptor-negativo.svg" alt="Logotipo de ROGLE: Reengineering Operations GroupWork Logistics Excellence" width="420" height="158">
 </div>
 </div>
 </div>
 </div>
-<div class="band band--tint">
-<section id="lineas" class="wrap">
-<h2>Líneas de investigación</h2>
-<ul class="cards">
-<li class="card">
+<div class="rogle-band rogle-section">
+<section id="lineas" class="rogle-reveal rogle-wide">
+<h2 class="rogle-reveal">Líneas de investigación</h2>
+<ul class="rogle-grid">
+<li class="rogle-card rogle-reveal">
 <p>
 Aplicación y adaptación de técnicas de Ingeniería de Organización a entornos laborales con personas con discapacidad
 </p>
 </li>
-<li class="card">
+<li class="rogle-card rogle-reveal">
 <p>
 Docencia universitaria de gestión de empresas
 </p>
 </li>
-<li class="card">
+<li class="rogle-card rogle-reveal">
 <p>
 Equilibrado de líneas de montaje considerando factores realistas
 </p>
 </li>
-<li class="card">
+<li class="rogle-card rogle-reveal">
 <p>
 Evaluación y mejora de sistemas productivos y logísticos (producción ajustada, reingeniería)
 </p>
 </li>
-<li class="card">
+<li class="rogle-card rogle-reveal">
 <p>
 Gestión de recursos humanos en los nuevos entornos de producción
 </p>
 </li>
-<li class="card">
+<li class="rogle-card rogle-reveal">
 <p>
 Indicadores de eficiencia y sostenibilidad en empresas industriales
 </p>
 </li>
-<li class="card">
+<li class="rogle-card rogle-reveal">
 <p>
 Programación y secuenciación de la producción
 </p>
 </li>
-<li class="card">
+<li class="rogle-card rogle-reveal">
 <p>
 Sostenibilidad industrial social y ambiental
 </p>
 </li>
 </ul>
 <p>
-<a class="button button--outline" href="investigacion.html">Ver proyectos y publicaciones</a>
+<a class="rogle-button" href="investigacion.html">Ver proyectos y publicaciones</a>
 </p>
 </section>
 </div>
-<div class="band">
-<div class="wrap">
-<div class="split">
-<section id="inclusion" class="split__main">
+<div class="rogle-section">
+<div class="rogle-wide">
+<div class="rogle-split">
+<section id="inclusion" class="rogle-split__main">
 <h2>Trabajo por la inclusión laboral</h2>
 <p>Una línea de especial interés es la aplicación de las técnicas de Ingeniería de Organización para aumentar la accesibilidad al mercado laboral de las personas con discapacidad.</p>
 <p>La actividad abarca desde el diseño de software para la gestión de la producción hasta el desarrollo de cursos en las propias empresas para aumentar sus capacidades.</p>
 </section>
-<div class="split__aside">
+<div class="rogle-split__aside">
 <!-- Generated by web/build_web.py. Do not edit by hand. -->
-<ul class="figures"><li><span class="figure__number">20</span> <span class="figure__label">años de trayectoria</span></li><li><span class="figure__number">13</span> <span class="figure__label">personas en el grupo</span></li><li><span class="figure__number">151</span> <span class="figure__label">proyectos de investigación</span></li><li><span class="figure__number">297</span> <span class="figure__label">artículos en revistas</span></li></ul>
+<ul class="rogle-figures"><li><span class="rogle-figures__number">20</span> <span class="rogle-figures__label">años de trayectoria</span></li><li><span class="rogle-figures__number">13</span> <span class="rogle-figures__label">personas en el grupo</span></li><li><span class="rogle-figures__number">151</span> <span class="rogle-figures__label">proyectos de investigación</span></li><li><span class="rogle-figures__number">297</span> <span class="rogle-figures__label">artículos en revistas</span></li></ul>
 </div>
 </div>
 </div>
 </div>
-<div class="band band--tint">
-<section id="para-seguir" class="wrap">
-<h2>Para seguir</h2>
-<ul class="cards cards--links">
-<li class="card card--link">
+<div class="rogle-band rogle-section">
+<section id="para-seguir" class="rogle-reveal rogle-wide">
+<h2 class="rogle-reveal">Para seguir</h2>
+<ul class="rogle-grid">
+<li class="rogle-card rogle-reveal">
 <h3>
 <a href="miembros.html">Miembros</a>
 </h3>
 <p>
-Las personas del grupo, con su cargo y sus enlaces.
+Las personas del grupo, con su perfil, su cargo y sus enlaces.
 </p>
 </li>
-<li class="card card--link">
+<li class="rogle-card rogle-reveal">
 <h3>
-<a href="docencia.html">Docencia y recursos</a>
+<a href="investigacion.html">Investigación</a>
+</h3>
+<p>
+Proyectos y publicaciones, con una ficha, cita APA y BibTeX por artículo.
+</p>
+</li>
+<li class="rogle-card rogle-reveal">
+<h3>
+<a href="docencia.html">Docencia</a>
 </h3>
 <p>
 Vídeos docentes de Dirección de Operaciones.
 </p>
 </li>
-<li class="card card--link">
+<li class="rogle-card rogle-reveal">
+<h3>
+<a href="recursos.html">Recursos</a>
+</h3>
+<p>
+Descargas del grupo y la identidad visual (marca, plantillas y logotipos).
+</p>
+</li>
+<li class="rogle-card rogle-reveal">
 <h3>
 <a href="noticias.html">Noticias</a>
 </h3>
@@ -215,7 +236,7 @@ Vídeos docentes de Dirección de Operaciones.
 Novedades del grupo.
 </p>
 </li>
-<li class="card card--link">
+<li class="rogle-card rogle-reveal">
 <h3>
 <a href="contacto.html">Contacto</a>
 </h3>
@@ -228,12 +249,12 @@ Dónde estamos, en el Edificio 7D de la UPV.
 </div>
 
 </main>
-<footer class="site-footer">
-<div class="footer-brands"><div class="wrap">
+<footer class="rogle-footer">
+<div class="rogle-footer__brands"><div class="rogle-wide">
 <img src="../img/upv-rogle-convivencia.svg" alt="Universitat Politècnica de València y ROGLE" width="680" height="159">
 </div></div>
-<div class="footer-main"><div class="wrap footer-grid">
-<div class="footer-col"><h2 class="footer-title">Dónde estamos</h2>
+<div class="rogle-footer__main"><div class="rogle-wide rogle-footer__grid">
+<div class="rogle-footer__col"><h2 class="rogle-footer__title">Dónde estamos</h2>
 <address><strong>Grupo de Investigación ROGLE</strong><br>
 <span lang="es">Departamento de Organización de Empresas</span><br>
 Universitat Politècnica de València<br>
@@ -241,17 +262,18 @@ Edificio 7D<br>
 Camino de Vera, s/n<br>
 46022 València</address>
 <p><a href="https://www.openstreetmap.org/search?query=Universitat%20Polit%C3%A8cnica%20de%20Val%C3%A8ncia%2C%20Camino%20de%20Vera" rel="noopener">Cómo llegar (mapa en OpenStreetMap)</a></p></div>
-<div class="footer-col"><h2 class="footer-title">Páginas</h2>
-<ul class="footer-list"><li><a href="index.html">Inicio</a></li><li><a href="miembros.html">Miembros</a></li><li><a href="investigacion.html">Investigación</a></li><li><a href="docencia.html">Docencia y recursos</a></li><li><a href="noticias.html">Noticias</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="aviso-legal.html">Aviso legal y privacidad</a></li></ul></div>
-<div class="footer-col"><h2 class="footer-title">Enlaces</h2>
-<ul class="footer-list">
+<div class="rogle-footer__col"><h2 class="rogle-footer__title">Páginas</h2>
+<ul class="rogle-footer__list"><li><a href="index.html">Inicio</a></li><li><a href="miembros.html">Miembros</a></li><li><a href="investigacion.html">Investigación</a></li><li><a href="docencia.html">Docencia</a></li><li><a href="recursos.html">Recursos</a></li><li><a href="noticias.html">Noticias</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="marca.html">Marca</a></li><li><a href="aviso-legal.html">Aviso legal y privacidad</a></li></ul></div>
+<div class="rogle-footer__col"><h2 class="rogle-footer__title">Enlaces</h2>
+<ul class="rogle-footer__list">
 <li><a href="https://www.upv.es" rel="noopener">Universitat Politècnica de València</a></li>
 <li><a href="https://rogle.blogs.upv.es/" rel="noopener">Web anterior del grupo</a></li>
 </ul></div>
 </div></div>
-<div class="footer-legal"><div class="wrap footer-legal__inner">
+<div class="rogle-footer__legal"><div class="rogle-wide rogle-footer__legal-inner">
 <p>© 2006–2026 Grupo ROGLE · Universitat Politècnica de València</p>
 <p>Última actualización: <time datetime="2026-10-02">2 de octubre de 2026</time></p>
+<p class="rogle-building">Web en construcción</p>
 <p>Esta web no usa cookies ni analítica. <a href="aviso-legal.html">Aviso legal y privacidad</a></p>
 </div></div>
 </footer>

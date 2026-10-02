@@ -1,0 +1,63 @@
+% ROGLE 20th-anniversary proposal typography for LaTeX (brand/rediseno-20).
+% Same system as Alberto Lacort's personal brand (profile/brand/marca.sty):
+%   text     Palatino      (system under LuaLaTeX/XeLaTeX; newpxtext otherwise)
+%   titles   Palatino bold
+%   labels   Gill Sans     (secondary text only: captions, running heads, table headers;
+%                           system under LuaLaTeX/XeLaTeX; gillius otherwise)
+%   formulas newpxmath (Pagella)
+%   code     Inconsolata
+% Engines: pdfLaTeX, LuaLaTeX, XeLaTeX.
+% Usage: \usepackage{rogle20-fonts}  ->  \rogletitlefont for titles in Palatino bold, \sffamily for Gill Sans.
+% Decision record: brand/rediseno-20/decisiones/tipografia.md.
+% In Beamer it also sets professionalfonts and Palatino bold frame and cover titles.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{rogle20-fonts}[2026/09/30 ROGLE 20th-anniversary proposal fonts]
+\RequirePackage{iftex}
+
+% amssymb before newpxmath: a later \usepackage{amssymb} (Pandoc and Quarto
+% templates) would clash with the symbols newpxmath defines.
+\RequirePackage{amssymb}
+% amsthm must precede newpxmath (both define \openbox). Beamer loads it.
+\@ifclassloaded{beamer}{}{\RequirePackage{amsthm}}
+\ifPDFTeX
+  \RequirePackage[T1]{fontenc}
+\fi
+\RequirePackage{newpxtext}
+\RequirePackage{newpxmath}
+\ifPDFTeX\else
+  % Under fontspec, newpxmath resolves operators (\sin, \mathrm, digits)
+  % to Latin Modern. Point them to newpx's own OT1 Pagella instead.
+  \DeclareSymbolFont{operators}{OT1}{zpltlf}{m}{n}
+  \SetSymbolFont{operators}{bold}{OT1}{zpltlf}{b}{n}
+  \DeclareMathAlphabet{\mathit}{OT1}{zpltlf}{m}{it}
+  \SetMathAlphabet{\mathit}{bold}{OT1}{zpltlf}{b}{it}
+  \DeclareMathAlphabet{\mathbf}{OT1}{zpltlf}{b}{n}
+\fi
+\RequirePackage{gillius}
+\ifPDFTeX
+  \RequirePackage[varqu]{inconsolata}
+\else
+  % inconsolata.sty is pdfLaTeX-only; use the same font from its OTF files.
+  \setmonofont{Inconsolatazi4}[
+    Extension=.otf, UprightFont=*-Regular, BoldFont=*-Bold]
+  % Brand fonts from the system when installed; the clones above are the fallback.
+  % newpxtext sets the main font again at \begin{document}, so Palatino goes after.
+  \newcommand{\rogle@systemfont}[3]{% setter, Mac name, Windows name
+    \IfFontExistsTF{#2}{#1{#2}}{\IfFontExistsTF{#3}{#1{#3}}{}}}
+  \AtBeginDocument{\rogle@systemfont{\setmainfont}{Palatino}{Palatino Linotype}}
+  \rogle@systemfont{\setsansfont}{Gill Sans}{Gill Sans MT}
+\fi
+\renewcommand{\familydefault}{\rmdefault}
+
+% Title font: Palatino, bold. Gill Sans (\sffamily) is for secondary text only.
+\newcommand{\rogletitlefont}{\rmfamily\bfseries}
+
+% Beamer: keep newpxmath formulas (its default font theme would switch them to
+% Computer Modern Sans). Frame and cover titles in Palatino bold.
+\@ifclassloaded{beamer}{%
+  \usefonttheme{professionalfonts}
+  \setbeamerfont{frametitle}{family=\rmfamily,series=\bfseries}
+  \setbeamerfont{title}{family=\rmfamily,series=\bfseries}
+}{}
+
+\endinput

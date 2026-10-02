@@ -1,0 +1,41 @@
+% ROGLE brand colours for LaTeX. Mirror of the palette in _brand.yml: keep both in sync.
+% Current brand: 20th-anniversary proposal, alternative A adopted for the time being.
+% Usage: \usepackage{rogle-colors}  ->  \color{rogleIndigo}, \colorbox{rogleIndigoClaro!20}{...}
+% Amber rule: only for the "20" mark and on Oxford Blue.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{rogle-colors}[2026/10/01 ROGLE brand colours]
+\RequirePackage{xcolor}
+
+% Current brand
+\definecolor{rogleOxfordBlue}{HTML}{002147}
+\definecolor{rogleIndigo}{HTML}{3F4AA8}
+\definecolor{rogleIndigoMedio}{HTML}{5B67C7}
+\definecolor{rogleIndigoClaro}{HTML}{A9B0E0}
+\definecolor{rogleAmbar}{HTML}{F5B000}
+\definecolor{rogleGrisUPV431}{HTML}{5B6770}
+\definecolor{rogleSeparador}{HTML}{CFCFCF}
+% Status
+\definecolor{rogleGreen}{HTML}{2E8B57}
+\definecolor{rogleRed}{HTML}{C8423B}
+
+% Aliases of the former proposal names, so existing documents keep compiling
+\colorlet{rogle20OxfordBlue}{rogleOxfordBlue}
+\colorlet{rogle20Indigo}{rogleIndigo}
+\colorlet{rogle20IndigoMedio}{rogleIndigoMedio}
+\colorlet{rogle20IndigoClaro}{rogleIndigoClaro}
+\colorlet{rogle20Ambar}{rogleAmbar}
+\colorlet{rogle20GrisUPV431}{rogleGrisUPV431}
+\colorlet{rogle20Separador}{rogleSeparador}
+
+% Previous violet brand (brand/historial/violeta/), kept under the prefix rogleviolet
+\definecolor{roglevioletIndigo}{HTML}{1F0F39}
+\definecolor{roglevioletLavender}{HTML}{7271B3}
+\definecolor{roglevioletLavenderMist}{HTML}{75749F}
+\definecolor{roglevioletLavenderDark}{HTML}{5B5A9E}
+\definecolor{roglevioletLavenderLight}{HTML}{9C9BD3}
+\definecolor{roglevioletLavender100}{HTML}{E3E3F1}
+\definecolor{roglevioletLavender50}{HTML}{F4F4FA}
+\definecolor{roglevioletAmber}{HTML}{F2B544}
+\definecolor{roglevioletInkMuted}{HTML}{5E5A6E}
+
+\endinput
