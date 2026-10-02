@@ -4,7 +4,7 @@
  * Base: the UPV web kit of the group members' personal sites (buttons, bands, cards, header,
  * menu, breadcrumb, footer, publication cards with action strip, light and dark theme), renamed
  * to rogle-* and recoloured with alternative A of the 20th anniversary
- * (brand/rediseno-20/BRAND_SPEC.md).
+ * (brand/marca/BRAND_SPEC.md).
  * - Palette: Oxford Blue, indigo and its two tints, UPV grey 431, separator. Amber appears only
  *   on Oxford Blue (hero, title band, notice bar, footer) and, in the dark theme, on its night
  *   shade. Every amber rule lives in those scopes so web/tests can check it.

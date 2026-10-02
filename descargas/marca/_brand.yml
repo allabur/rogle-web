@@ -5,7 +5,7 @@
 # The previous violet brand lives in brand/historial/violeta/ and under the tag marca-violeta.
 # Quarto applies this file automatically to HTML, Reveal.js, Dashboard and Typst output in this project.
 # Other projects import it with:  quarto use brand allabur/rogle
-# Guide: brand/index.qmd. Spec of the proposal: brand/rediseno-20/BRAND_SPEC.md.
+# Guide: brand/index.qmd. Spec of the proposal: brand/marca/BRAND_SPEC.md.
 
 meta:
   name:
@@ -127,7 +127,7 @@ typography:
     family: '"Palatino Linotype", Palatino, "Book Antiqua", "TeX Gyre Pagella", serif'
     line-height: 1.6
   headings:
-    # Decision: brand/rediseno-20/decisiones/tipografia.md. Titles in bold Palatino; Gill Sans only for secondary text.
+    # Decision: brand/marca/decisiones/tipografia.md. Titles in bold Palatino; Gill Sans only for secondary text.
     family: '"Palatino Linotype", Palatino, "Book Antiqua", "TeX Gyre Pagella", serif'
     weight: bold
     color: oxford-blue
