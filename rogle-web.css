@@ -1756,3 +1756,16 @@ label {
   width: 100%;
   height: auto;
 }
+
+/* Hero: the animated 20th-anniversary logo is drawn on Oxford Blue, like the hero band. */
+.rogle-hero__animation {
+  display: block;
+  background: var(--oxford-blue);
+}
+.rogle-hero__animation img {
+  display: block;
+  width: 100%;
+  max-width: 34rem;
+  height: auto;
+  margin-inline: auto;
+}
