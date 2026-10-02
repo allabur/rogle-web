@@ -26,41 +26,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -263,12 +228,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#plantillas-vídeo-y-kit-de-imprenta" id="toc-plantillas-vídeo-y-kit-de-imprenta" class="nav-link" data-scroll-target="#plantillas-vídeo-y-kit-de-imprenta">Plantillas, vídeo y kit de imprenta</a></li>
   <li><a href="#sitio-web" id="toc-sitio-web" class="nav-link" data-scroll-target="#sitio-web">Sitio web</a></li>
   <li><a href="#presentaciones" id="toc-presentaciones" class="nav-link" data-scroll-target="#presentaciones">Presentaciones</a></li>
-  <li><a href="#uso-en-proyectos" id="toc-uso-en-proyectos" class="nav-link" data-scroll-target="#uso-en-proyectos">Uso en proyectos</a></li>
-  <li><a href="#cambiar-de-alternativa" id="toc-cambiar-de-alternativa" class="nav-link" data-scroll-target="#cambiar-de-alternativa">Cambiar de alternativa</a></li>
-  <li><a href="#alternativas-descartadas-por-el-momento" id="toc-alternativas-descartadas-por-el-momento" class="nav-link" data-scroll-target="#alternativas-descartadas-por-el-momento">Alternativas descartadas por el momento</a></li>
-  <li><a href="#marca-anterior-historial" id="toc-marca-anterior-historial" class="nav-link" data-scroll-target="#marca-anterior-historial">Marca anterior (historial)</a></li>
-  <li><a href="#decisiones-tomadas" id="toc-decisiones-tomadas" class="nav-link" data-scroll-target="#decisiones-tomadas">Decisiones tomadas</a></li>
-  <li><a href="#pendientes" id="toc-pendientes" class="nav-link" data-scroll-target="#pendientes">Pendientes</a></li>
   </ul>
 </nav>
 </div>
@@ -305,19 +264,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="la-marca">La marca</h2>
 <p>ROGLE es un grupo de investigación del Departamento de Organización de Empresas de la Universitat Politècnica de València. Investiga la reingeniería de operaciones y la logística, y trabaja en equipo.</p>
 <p>La web del grupo es <a href="https://rogle.webs.upv.es/" class="uri">https://rogle.webs.upv.es/</a>.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Advertencia</span>Marca vigente por el momento: alternativa A
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Desde el 1 de octubre de 2026 el grupo usa la alternativa A del 20 aniversario. La UPV aún no la ha aprobado. A necesita el visto bueno del Área de Comunicación de la UPV (imagen@upv.es), y por eso el repositorio sigue privado. Si no se aprueba, el grupo puede volver a C o a B con un comando (ver <a href="#cambiar-de-alternativa">Cambiar de alternativa</a>). El seguimiento está en el <a href="https://github.com/allabur/rogle/issues/13">epic #13</a>.</p>
-</div>
-</div>
 <section id="idea" class="level3">
 <h3 class="anchored" data-anchor-id="idea">Idea</h3>
 <ul>
@@ -814,7 +760,7 @@ Fondo. Personas y logotipo en negativo.</p>
 <ul>
 <li><strong>Logotipo:</strong> letras UPV (A), geométrica a medida (B) o Palatino negrita (C).</li>
 <li><strong>Descriptor:</strong> Belleza (A), Barlow Semi Condensed Medium (B) o Palatino (C). Belleza y Barlow tienen licencia OFL. C usa TeX Gyre Pagella, con licencia GUST.</li>
-<li><strong>Firma institucional UPV:</strong> Futura Bold Condensed, como recomienda el anexo de la UPV para grupos. El anexo nombra Futura LT Pro. Los archivos usan la variante BT. Es una fuente comercial. Su licencia está pendiente (<a href="https://github.com/allabur/rogle/issues/24">#24</a>).</li>
+<li><strong>Firma institucional UPV:</strong> Futura Bold Condensed, como recomienda el anexo de la UPV para grupos. El anexo nombra Futura LT Pro. Los archivos usan la variante BT. Es una fuente comercial. Su licencia está pendiente.</li>
 </ul>
 </section>
 <section id="convivencia-con-la-upv" class="level2">
@@ -933,169 +879,6 @@ Fondo. Personas y logotipo en negativo.</p>
 <li><strong>Portada.</strong> El diseño principal es un campo Oxford Blue con un filete ámbar y una franja blanca con los logotipos de la UPV y de ROGLE en positivo. La alternativa es toda Oxford Blue con los logotipos en blanco (<code>portada: negativa</code>).</li>
 <li><strong>Color.</strong> El ámbar solo va sobre Oxford Blue.</li>
 </ul>
-</section>
-<section id="uso-en-proyectos" class="level2">
-<h2 class="anchored" data-anchor-id="uso-en-proyectos">Uso en proyectos</h2>
-<section id="quarto" class="level3">
-<h3 class="anchored" data-anchor-id="quarto">Quarto</h3>
-<p>Cualquier proyecto Quarto importa la marca con un comando:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> use brand allabur/rogle</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Quarto copia <code>_brand.yml</code> y los logotipos en <code>_brand/</code>. Aplica colores, tipografía y logotipo a HTML, Reveal.js, Dashboard y Typst sin configuración adicional. El repositorio es privado: necesitas acceso de lectura.</p>
-</section>
-<section id="latex" class="level3">
-<h3 class="anchored" data-anchor-id="latex">LaTeX</h3>
-<p>Copia <code>brand/latex/rogle-colors.sty</code> junto al documento y cárgalo con <code>\usepackage{rogle-colors}</code>. Los colores se llaman <code>rogleOxfordBlue</code>, <code>rogleIndigo</code>, <code>rogleIndigoMedio</code>, <code>rogleIndigoClaro</code>, <code>rogleAmbar</code>, etc. Usa los logotipos en PDF de <code>brand/logos/</code>. La tipografía está en <code>brand/latex/rogle20-fonts.sty</code>.</p>
-</section>
-<section id="office-y-otras-herramientas" class="level3">
-<h3 class="anchored" data-anchor-id="office-y-otras-herramientas">Office y otras herramientas</h3>
-<p>Usa los PNG de <code>brand/logos/</code> (1200 px de ancho, fondo transparente). Introduce los colores con su código HEX. Para Word y PowerPoint hay tema, diapositivas y plantillas de documento listas en <code>plantillas/office/</code> (ver su README).</p>
-</section>
-<section id="archivos" class="level3">
-<h3 class="anchored" data-anchor-id="archivos">Archivos</h3>
-<pre><code>brand/
-├── logos/                 Logotipos vigentes. Los genera adoptar.sh
-│   ├── logo/              Principal: rogle-logo[-notagline]-&lt;variante&gt;.{svg,pdf,png}
-│   ├── wordmark/          Integrado: rogle-wordmark[-notagline]-&lt;variante&gt;.{svg,pdf,png}
-│   └── symbol/            Isotipo:   rogle-symbol-&lt;variante&gt;.{svg,pdf,png}
-├── marca-activa.txt       Alternativa vigente (A, B o C)
-├── adoptar.sh             Cambia de alternativa y regenera los logotipos
-├── latex/
-│   ├── rogle-colors.sty   Colores de la marca (y los de la marca anterior, con prefijo roglevioleta)
-│   └── rogle20-fonts.sty  Tipografía de la marca
-├── fonts/                 Fuentes libres de respaldo, con su licencia
-├── historial/violeta/     Marca anterior (violeta, Inter)
-├── marca/                 Alternativas A, B y C, exportaciones, animaciones, generadores y especificación
-│   ├── BRAND_SPEC.md      Especificación de la marca
-│   ├── alternativa-A/     SVG de la alternativa A (vigente)
-│   ├── alternativa-B/     SVG de la alternativa B
-│   ├── alternativa-C/     SVG de la alternativa C (generados)
-│   ├── comunes/           Isotipo, favicon, avatar y firma institucional UPV
-│   ├── animaciones/       GIF y MP4 de las cuatro animaciones de A, B y C
-│   ├── pdf/ y png/        Exportaciones por carpeta
-│   ├── muestra.qmd        Documento de ejemplo con la marca
-│   └── archivo/           Entrega anterior con Futura y traspasos antiguos (solo historial)
-├── build-logos.sh         Exporta PDF y PNG de marca o la marca anterior (actual)
-└── index.qmd              Este manual</code></pre>
-<p>Fuera de <code>brand/</code> están las plantillas (<code>plantillas/</code>: Word, PowerPoint, presentaciones, informe, póster y carta) y los entregables (<code>entregables/</code>: kit de imprenta, vídeos y lámina para la UPV). El mapa completo del repositorio está en el README.</p>
-<p>Los SVG y PDF tienen el texto convertido en trazos. No necesitan ninguna fuente instalada.</p>
-</section>
-</section>
-<section id="cambiar-de-alternativa" class="level2">
-<h2 class="anchored" data-anchor-id="cambiar-de-alternativa">Cambiar de alternativa</h2>
-<p>La alternativa vigente se guarda en <code>brand/marca-activa.txt</code>. Para cambiarla, ejecuta desde la raíz del repositorio:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brand/adoptar.sh</span> C</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p>El script acepta <code>A</code>, <code>B</code> o <code>C</code>. Sin argumento, regenera la alternativa guardada. Necesita <code>rsvg-convert</code> y <code>uv</code>.</p>
-<p>Qué cambia:</p>
-<ul>
-<li>Se regenera <code>brand/logos/</code> (SVG, PDF y PNG), con los mismos nombres de rol: <code>rogle-logo-color</code>, <code>rogle-symbol-reverse</code>, etc.</li>
-<li>Se actualizan los <code>rogle-logo.png</code> de las tres extensiones de <code>_extensions/</code> y de <code>assets/</code>.</li>
-<li>Cambian solos el <code>_brand.yml</code>, que apunta a esos nombres, y las imágenes de las secciones de logotipos de este manual.</li>
-</ul>
-<p>Qué no cambia:</p>
-<ul>
-<li>La paleta, la tipografía y el isotipo, que son comunes a las tres alternativas.</li>
-<li>Las plantillas de <code>plantillas/</code>, que usan los logotipos de A. Para pasarlas a otra alternativa, sustituye <code>rogle-A-</code> por <code>rogle-C-</code> en sus rutas.</li>
-<li>Las galerías «Más versiones», «20 aniversario» y «Firma institucional» de este manual, que muestran A.</li>
-</ul>
-<p>El cambio es determinista. Pasar de A a C y volver a A deja git limpio.</p>
-</section>
-<section id="alternativas-descartadas-por-el-momento" class="level2">
-<h2 class="anchored" data-anchor-id="alternativas-descartadas-por-el-momento">Alternativas descartadas por el momento</h2>
-<p>A, B y C solo cambian las letras del nombre y del descriptor. Las composiciones horizontales miden 1200 × 450. B y C no dependen de nadie fuera del grupo. Siguen disponibles si la UPV no aprueba A.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th>Alternativa A (vigente)</th>
-<th>Alternativa B (reserva)</th>
-<th>Alternativa C (tipografía de la marca)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Letras de ROGLE</td>
-<td>R, O, L y E recortadas del logotipo oficial de la UPV y engrosadas 2 unidades SVG. La G se construye con la C y la I de la UPV.</td>
-<td>Geométrica condensada dibujada a medida.</td>
-<td>Palatino negrita, con contornos de TeX Gyre Pagella Bold, su clon libre.</td>
-</tr>
-<tr class="even">
-<td>Descriptor</td>
-<td>Belleza (licencia OFL).</td>
-<td>Barlow Semi Condensed Medium (licencia OFL), al mismo ancho que ROGLE.</td>
-<td>Palatino, con contornos de TeX Gyre Pagella, al mismo ancho que ROGLE.</td>
-</tr>
-<tr class="odd">
-<td>Aprobación externa</td>
-<td>Necesita el visto bueno del Área de Comunicación de la UPV.</td>
-<td>No depende de nadie fuera del grupo.</td>
-<td>No depende de nadie fuera del grupo.</td>
-</tr>
-</tbody>
-</table>
-<div class="ab-grid">
-<div class="ab-head">
-<p>Alternativa A (vigente)</p>
-</div>
-<div class="ab-head">
-<p>Alternativa B (descartada)</p>
-</div>
-<div class="ab-head">
-<p>Alternativa C (descartada)</p>
-</div>
-<div class="logo-tile">
-<p><img src="marca/alternativa-A/rogle-A-horizontal-descriptor.svg" class="img-fluid" alt="Alternativa A, horizontal con descriptor"></p>
-</div>
-<div class="logo-tile">
-<p><img src="marca/alternativa-B/rogle-B-horizontal-descriptor.svg" class="img-fluid" alt="Alternativa B, horizontal con descriptor"></p>
-</div>
-<div class="logo-tile">
-<p><img src="marca/alternativa-C/rogle-C-horizontal-descriptor.svg" class="img-fluid" alt="Alternativa C, horizontal con descriptor"></p>
-</div>
-<div class="logo-tile">
-<p><img src="marca/alternativa-A/rogle-A-integrado.svg" class="img-fluid" alt="Alternativa A, integrado"></p>
-</div>
-<div class="logo-tile">
-<p><img src="marca/alternativa-B/rogle-B-integrado.svg" class="img-fluid" alt="Alternativa B, integrado"></p>
-</div>
-<div class="logo-tile">
-<p><img src="marca/alternativa-C/rogle-C-integrado.svg" class="img-fluid" alt="Alternativa C, integrado"></p>
-</div>
-</div>
-<p>Todas las versiones de cada alternativa están en sus carpetas: <code>alternativa-A/</code>, <code>alternativa-B/</code> y <code>alternativa-C/</code>. C se genera a partir de B con <code>uv run brand/marca/build_alternativa_c.py</code>. La lámina de A para la solicitud a la UPV está en <code>marca/upv/</code>. La votación del grupo está pendiente (<a href="https://github.com/allabur/rogle/issues/18">#18</a>).</p>
-</section>
-<section id="marca-anterior-historial" class="level2">
-<h2 class="anchored" data-anchor-id="marca-anterior-historial">Marca anterior (historial)</h2>
-<p>Hasta el 30 de septiembre de 2026 la marca fue un símbolo violeta con tipografía Inter. Se conserva en <code>historial/violeta/</code> y en la etiqueta git <code>marca-violeta</code>. No se usa en piezas nuevas.</p>
-</section>
-<section id="decisiones-tomadas" class="level2">
-<h2 class="anchored" data-anchor-id="decisiones-tomadas">Decisiones tomadas</h2>
-<ul>
-<li><strong>Alternativa:</strong> A, por el momento (1 de octubre de 2026). Es reversible con <code>brand/adoptar.sh</code>. La UPV aún no la ha aprobado.</li>
-<li><strong>Isotipo:</strong> cinco personas en corro, común a las tres alternativas.</li>
-<li><strong>Tipografía:</strong> Palatino para texto y títulos (negrita) y Gill Sans solo para lo secundario, con fórmulas en Pagella. Una sola regla para documentos y presentaciones (registro).</li>
-<li><strong>Siglas:</strong> el desarrollo oficial es el inglés, «Reengineering Operations GroupWork Logistics Excellence». «Reingeniería, Organización, trabajo en Grupo y Logística Empresarial» es su traducción.</li>
-<li><strong>Año de creación:</strong> 2006, por decisión del usuario el 1 de octubre de 2026. El grupo cumple 20 años en 2026, no 25 como se creyó antes. La marca del aniversario lleva «20» y «since 2006».</li>
-<li><strong>Versión impresa del 20 aniversario:</strong> las variantes «since» y el kit de imprenta usan medias lunas planas.</li>
-<li><strong>Marca anterior:</strong> queda en el historial. La marca violeta ya no es vigente.</li>
-</ul>
-</section>
-<section id="pendientes" class="level2">
-<h2 class="anchored" data-anchor-id="pendientes">Pendientes</h2>
-<p>Cada pendiente tiene su issue en GitHub:</p>
-<ul>
-<li><a href="https://github.com/allabur/rogle/issues/14">#14</a>: pedir la aprobación de A al Área de Comunicación de la UPV.</li>
-<li><a href="https://github.com/allabur/rogle/issues/18">#18</a>: cerrar la votación del grupo.</li>
-<li><a href="https://github.com/allabur/rogle/issues/22">#22</a>: marca UPV oficial en la firma institucional en negativo.</li>
-<li><a href="https://github.com/allabur/rogle/issues/23">#23</a>: confirmar el valor en pantalla del Pantone 431. Ahora se usa <code>#5B6770</code>.</li>
-<li><a href="https://github.com/allabur/rogle/issues/24">#24</a>: licencia de Futura para la firma institucional.</li>
-</ul>
-<p>Los epics <a href="https://github.com/allabur/rogle/issues/13">#13</a> (adoptar A), <a href="https://github.com/allabur/rogle/issues/20">#20</a> (diseño), <a href="https://github.com/allabur/rogle/issues/26">#26</a> (plantillas) y <a href="https://github.com/allabur/rogle/issues/32">#32</a> (presentar la marca) siguen abiertos hasta cerrar sus pendientes.</p>
 </section>
 
 </main>
