@@ -126,8 +126,27 @@
     fromAddress();
   }
 
+  // The page is long and its height changes while it loads (web fonts, filter tools). The browser
+  // scrolls to #section before that, and lands in the wrong place. Scroll again once the layout is
+  // stable, unless the visitor has already started to scroll.
+  function keepAnchor() {
+    var moved = false;
+    ["wheel", "touchstart", "keydown", "mousedown"].forEach(function (name) {
+      window.addEventListener(name, function () { moved = true; }, { once: true, passive: true });
+    });
+    function settle() {
+      var id = decodeURIComponent(location.hash.slice(1));
+      if (moved || !id || id.indexOf("=") > -1) return;
+      var target = document.getElementById(id);
+      if (target) target.scrollIntoView();
+    }
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(settle);
+    window.addEventListener("load", settle);
+  }
+
   function init() {
     Array.prototype.forEach.call(document.querySelectorAll("[data-filter]"), setup);
+    keepAnchor();
   }
 
   if (document.readyState === "loading") {
