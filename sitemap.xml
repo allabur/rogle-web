@@ -38,6 +38,30 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/research.html"/>
   </url>
   <url>
+    <loc>https://rogle.webs.upv.es/es/publicaciones.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/publicaciones.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/publications.html"/>
+  </url>
+  <url>
+    <loc>https://rogle.webs.upv.es/en/publications.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/publicaciones.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/publications.html"/>
+  </url>
+  <url>
+    <loc>https://rogle.webs.upv.es/es/congresos.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/congresos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/conferences.html"/>
+  </url>
+  <url>
+    <loc>https://rogle.webs.upv.es/en/conferences.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/congresos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/conferences.html"/>
+  </url>
+  <url>
     <loc>https://rogle.webs.upv.es/es/docencia.html</loc>
     <lastmod>2026-10-02</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/docencia.html"/>
