@@ -2,7 +2,9 @@ TY  - JOUR
 AU  - Miralles Insa, Cristóbal Javier
 TI  - On solving the assembly line worker assignment and balancing problem via beam search.
 JO  - Computers & Operations Research
+DO  - 10.1016/j.cor.2010.05.008
 PY  - 2011
+VL  - 38
 IS  - 38
 SP  - 328
 EP  - 339
