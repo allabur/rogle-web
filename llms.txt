@@ -1,0 +1,42 @@
+# ROGLE
+
+> ROGLE (Reengineering Operations GroupWork Logistics Excellence) is a research group of the Department of Business Organization of the Universitat Politècnica de València (UPV), Spain, founded in 2006. It does research and teaching on operations management, production planning and scheduling, logistics and supply chains, work organization, human resources management and industrial sustainability.
+
+The group has 13 members, 1162 publications since 2001 and 155 research projects. Every publication has its own page with the APA citation, BibTeX and RIS, and links to the open-access copy in RiUNET when there is one. Titles keep their original language (Spanish or English). Contact: rogle@upv.es.
+
+## Main pages
+
+- [Home](https://rogle.webs.upv.es/en/index.html): the group, its aims and its 20th anniversary (in Spanish: [Inicio](https://rogle.webs.upv.es/es/index.html)).
+- [Members](https://rogle.webs.upv.es/en/members.html): Researchers of the group, with ORCID, links and their publications. ([Español](https://rogle.webs.upv.es/es/miembros.html))
+- [Research](https://rogle.webs.upv.es/en/research.html): Research lines, projects, publications, and conference papers and talks. ([Español](https://rogle.webs.upv.es/es/investigacion.html))
+- [Teaching](https://rogle.webs.upv.es/en/teaching.html): Teaching of operations management and teaching materials. ([Español](https://rogle.webs.upv.es/es/docencia.html))
+- [Resources](https://rogle.webs.upv.es/en/resources.html): Open resources of the group. ([Español](https://rogle.webs.upv.es/es/recursos.html))
+- [News](https://rogle.webs.upv.es/en/news.html): News of the group. ([Español](https://rogle.webs.upv.es/es/noticias.html))
+- [Contact](https://rogle.webs.upv.es/en/contact.html): Address and e-mail of the group. ([Español](https://rogle.webs.upv.es/es/contacto.html))
+
+## Data
+
+- [All publications in BibTeX](https://rogle.webs.upv.es/descargas/rogle-publicaciones.bib): every publication of the group.
+- [Full list as text](https://rogle.webs.upv.es/llms-full.txt): members, projects and publications, one line each.
+- [Sitemap](https://rogle.webs.upv.es/sitemap.xml): every page, with its Spanish and English versions.
+
+## Members
+
+- [Carlos Andrés Romano](https://rogle.webs.upv.es/en/members/andres-carlos.html): University Full Professor, ORCID 0000-0003-4453-4891
+- [Lourdes Canós Darós](https://rogle.webs.upv.es/en/members/canos-lourdes.html): Full Professor, ORCID 0000-0002-9609-2880
+- [Rosa Esteban Amaro](https://rogle.webs.upv.es/en/members/esteban-rosa.html): Professor and Researcher, ORCID 0000-0001-7895-403X
+- [Sofia García Manglano](https://rogle.webs.upv.es/en/members/garcia-sofia.html): Member, ORCID 0000-0003-0478-6218
+- [José P. Garcia-Sabater](https://rogle.webs.upv.es/en/members/garcia-sabater-jose-p.html): Full Professor of Operations Management, ORCID 0000-0002-9097-2852
+- [Julio J. García-Sabater](https://rogle.webs.upv.es/en/members/garcia-sabater-julio-j.html): Associate professor, ORCID 0000-0001-9449-1709
+- [Arnau Igualde Saez](https://rogle.webs.upv.es/en/members/igualde-arnau.html): PhD student and substitute lecturer, ORCID 0009-0009-0824-6957
+- [Alberto Lacort](https://rogle.webs.upv.es/en/members/lacort-alberto.html): PhD student, ORCID 0000-0001-7571-0494
+- [Julien Maheut](https://rogle.webs.upv.es/en/members/maheut-julien.html): Associate Professor, ORCID 0000-0002-5796-9053
+- [Juan A. Marín-Garcia](https://rogle.webs.upv.es/en/members/marin-garcia-juan-a.html): Professor, ORCID 0000-0001-5416-3938
+- [Cristobal Miralles Insa](https://rogle.webs.upv.es/en/members/miralles-cristobal.html): Full Professor, ORCID 0000-0002-5269-9955
+- [Aida Saéz Más](https://rogle.webs.upv.es/en/members/saez-aida.html): Member
+- [Pilar I. Vidal-Carreras](https://rogle.webs.upv.es/en/members/vidal-carreras-pilar-i.html): Associate professor of operations management, ORCID 0000-0001-5206-3730
+
+## Optional
+
+- [Brand and downloads](https://rogle.webs.upv.es/en/brand.html): logos, templates and the visual identity of the group.
+- [Legal notice](https://rogle.webs.upv.es/en/legal.html)
