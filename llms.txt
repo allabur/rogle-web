@@ -17,6 +17,7 @@ The group has 13 members, 1162 publications since 2001 and 155 research projects
 ## Data
 
 - [All publications in BibTeX](https://rogle.webs.upv.es/descargas/rogle-publicaciones.bib): every publication of the group.
+- [All publications in CSV](https://rogle.webs.upv.es/descargas/rogle-publicaciones.csv) and [all projects in CSV](https://rogle.webs.upv.es/descargas/rogle-proyectos.csv): the tables of the group database.
 - [Full list as text](https://rogle.webs.upv.es/llms-full.txt): members, projects and publications, one line each.
 - [Sitemap](https://rogle.webs.upv.es/sitemap.xml): every page, with its Spanish and English versions.
 
