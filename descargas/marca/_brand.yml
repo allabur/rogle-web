@@ -1,5 +1,5 @@
 # ROGLE brand: single source of truth for colours, logos and typography.
-# Current brand: the 20th-anniversary proposal, alternative A adopted for the time being (the UPV has not approved it yet).
+# Current brand: the 20th-anniversary proposal, alternative C (bold Palatino), adopted on 6 October 2026.
 # To switch alternative (A, B or C):  brand/adoptar.sh C   (regenerates brand/logos/ and the logos of the extensions).
 # The logo files keep stable role names, so this file does not change when the alternative changes.
 # The previous violet brand lives in brand/historial/violeta/ and under the tag marca-violeta.

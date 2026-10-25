@@ -17,6 +17,7 @@ The group has 13 members, 1163 publications since 2001 and 155 research projects
 ## Data
 
 - [All publications in BibTeX](https://rogle.webs.upv.es/descargas/rogle-publicaciones.bib): every publication of the group.
+- [Brand guide for AI assistants](https://rogle.webs.upv.es/descargas/marca/BRAND.md): colours, typography, logos and rules of the ROGLE brand in one Markdown file.
 - [All publications in CSV](https://rogle.webs.upv.es/descargas/rogle-publicaciones.csv) and [all projects in CSV](https://rogle.webs.upv.es/descargas/rogle-proyectos.csv): the tables of the group database.
 - [Full list as text](https://rogle.webs.upv.es/llms-full.txt): members, projects and publications, one line each.
 - [Sitemap](https://rogle.webs.upv.es/sitemap.xml): every page, with its Spanish and English versions.
