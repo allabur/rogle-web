@@ -1,6 +1,6 @@
 # Guía de la marca ROGLE para asistentes de IA
 
-Esta guía dice cómo usar la marca del grupo de investigación ROGLE al generar documentos, presentaciones, páginas web, vídeos u objetos. Léela entera antes de producir nada. La versión pública está en https://rogle.webs.upv.es/descargas/marca/BRAND.md y el manual completo con imágenes, en https://rogle.webs.upv.es/es/marca.html.
+Esta guía dice cómo usar la marca del grupo de investigación ROGLE al generar documentos, presentaciones, páginas web, vídeos u objetos. Léela entera antes de producir nada. La versión pública está en https://rogle.webs.upv.es/descargas/marca/BRAND.md y el manual completo con imágenes, en https://rogle.webs.upv.es/es/recursos/marca.html.
 
 **English summary.** ROGLE is a research group of the Department of Business Organization (Departamento de Organización de Empresas) of the Universitat Politècnica de València (UPV), Spain, founded in 2006. Brand: five people in a circle, Oxford Blue (#002147) and indigo, bold Palatino for the name and titles, Gill Sans only for secondary text, amber (#F5B000) only on Oxford Blue. Always use the logo files, never typeset the logo. Write in Spanish unless asked otherwise.
 
@@ -98,4 +98,4 @@ La UPV exige al menos el nivel AA. Texto a 4,5:1 (3:1 desde 24 px), foco visible
 
 ## Plantillas
 
-En `plantillas/` del repositorio `allabur/rogle`: Word (`.dotx`) y PowerPoint (`.potx`) con tema, presentaciones Quarto (Reveal.js y Beamer), informe técnico (Quarto a PDF), póster A0 (Typst) y carta con membrete (LaTeX). Para Quarto: `quarto use brand allabur/rogle`. La marca está en `_brand.yml` y las descargas, en https://rogle.webs.upv.es/es/marca.html.
+En `plantillas/` del repositorio `allabur/rogle`: Word (`.dotx`) y PowerPoint (`.potx`) con tema, presentaciones Quarto (Reveal.js y Beamer), informe técnico (Quarto a PDF), póster A0 (Typst) y carta con membrete (LaTeX). Para Quarto: `quarto use brand allabur/rogle`. La marca está en `_brand.yml` y las descargas, en https://rogle.webs.upv.es/es/recursos/marca.html.

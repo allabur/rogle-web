@@ -6,13 +6,13 @@ The group has 13 members, 1163 publications since 2001 and 155 research projects
 
 ## Main pages
 
-- [Home](https://rogle.webs.upv.es/en/index.html): the group, its aims and its 20th anniversary (in Spanish: [Inicio](https://rogle.webs.upv.es/es/index.html)).
-- [Members](https://rogle.webs.upv.es/en/members.html): Researchers of the group, with ORCID, links and their publications. ([Español](https://rogle.webs.upv.es/es/miembros.html))
-- [Research](https://rogle.webs.upv.es/en/research.html): Research lines, projects, publications, and conference papers and talks. ([Español](https://rogle.webs.upv.es/es/investigacion.html))
-- [Teaching](https://rogle.webs.upv.es/en/teaching.html): Teaching of operations management and teaching materials. ([Español](https://rogle.webs.upv.es/es/docencia.html))
-- [Resources](https://rogle.webs.upv.es/en/resources.html): Open resources of the group. ([Español](https://rogle.webs.upv.es/es/recursos.html))
-- [News](https://rogle.webs.upv.es/en/news.html): News of the group. ([Español](https://rogle.webs.upv.es/es/noticias.html))
-- [Contact](https://rogle.webs.upv.es/en/contact.html): Address and e-mail of the group. ([Español](https://rogle.webs.upv.es/es/contacto.html))
+- [Home](https://rogle.webs.upv.es/en/): the group, its aims and its 20th anniversary (in Spanish: [Inicio](https://rogle.webs.upv.es/es/)).
+- [Members](https://rogle.webs.upv.es/en/members/): Researchers of the group, with ORCID, links and their publications. ([Español](https://rogle.webs.upv.es/es/miembros/))
+- [Research](https://rogle.webs.upv.es/en/research/): Research lines, projects, publications, and conference papers and talks. ([Español](https://rogle.webs.upv.es/es/investigacion/))
+- [Teaching](https://rogle.webs.upv.es/en/teaching/): Teaching of operations management and teaching materials. ([Español](https://rogle.webs.upv.es/es/docencia/))
+- [Resources](https://rogle.webs.upv.es/en/resources/): Open resources of the group. ([Español](https://rogle.webs.upv.es/es/recursos/))
+- [News](https://rogle.webs.upv.es/en/news/): News of the group. ([Español](https://rogle.webs.upv.es/es/noticias/))
+- [Contact](https://rogle.webs.upv.es/en/contact/): Address and e-mail of the group. ([Español](https://rogle.webs.upv.es/es/contacto/))
 
 ## Data
 
@@ -40,5 +40,5 @@ The group has 13 members, 1163 publications since 2001 and 155 research projects
 
 ## Optional
 
-- [Brand and downloads](https://rogle.webs.upv.es/en/brand.html): logos, templates and the visual identity of the group.
+- [Brand and downloads](https://rogle.webs.upv.es/en/resources/brand.html): logos, templates and the visual identity of the group.
 - [Legal notice](https://rogle.webs.upv.es/en/legal.html)

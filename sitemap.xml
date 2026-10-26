@@ -2,124 +2,124 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url><loc>https://rogle.webs.upv.es/</loc></url>
   <url>
-    <loc>https://rogle.webs.upv.es/es/index.html</loc>
+    <loc>https://rogle.webs.upv.es/es/</loc>
     <lastmod>2026-10-02</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/index.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/"/>
   </url>
   <url>
-    <loc>https://rogle.webs.upv.es/en/index.html</loc>
+    <loc>https://rogle.webs.upv.es/en/</loc>
     <lastmod>2026-10-02</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/index.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/"/>
   </url>
   <url>
-    <loc>https://rogle.webs.upv.es/es/miembros.html</loc>
+    <loc>https://rogle.webs.upv.es/es/miembros/</loc>
     <lastmod>2026-10-02</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/miembros.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/members.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/miembros/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/members/"/>
   </url>
   <url>
-    <loc>https://rogle.webs.upv.es/en/members.html</loc>
+    <loc>https://rogle.webs.upv.es/en/members/</loc>
     <lastmod>2026-10-02</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/miembros.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/members.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/miembros/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/members/"/>
   </url>
   <url>
-    <loc>https://rogle.webs.upv.es/es/investigacion.html</loc>
+    <loc>https://rogle.webs.upv.es/es/investigacion/</loc>
     <lastmod>2026-10-02</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/investigacion.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/research.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/investigacion/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/research/"/>
   </url>
   <url>
-    <loc>https://rogle.webs.upv.es/en/research.html</loc>
+    <loc>https://rogle.webs.upv.es/en/research/</loc>
     <lastmod>2026-10-02</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/investigacion.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/research.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/investigacion/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/research/"/>
   </url>
   <url>
-    <loc>https://rogle.webs.upv.es/es/publicaciones.html</loc>
+    <loc>https://rogle.webs.upv.es/es/investigacion/publicaciones.html</loc>
     <lastmod>2026-10-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/publicaciones.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/publications.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/investigacion/publicaciones.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/research/publications.html"/>
   </url>
   <url>
-    <loc>https://rogle.webs.upv.es/en/publications.html</loc>
+    <loc>https://rogle.webs.upv.es/en/research/publications.html</loc>
     <lastmod>2026-10-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/publicaciones.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/publications.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/investigacion/publicaciones.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/research/publications.html"/>
   </url>
   <url>
-    <loc>https://rogle.webs.upv.es/es/congresos.html</loc>
+    <loc>https://rogle.webs.upv.es/es/investigacion/congresos.html</loc>
     <lastmod>2026-10-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/congresos.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/conferences.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/investigacion/congresos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/research/conferences.html"/>
   </url>
   <url>
-    <loc>https://rogle.webs.upv.es/en/conferences.html</loc>
+    <loc>https://rogle.webs.upv.es/en/research/conferences.html</loc>
     <lastmod>2026-10-15</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/congresos.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/conferences.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/investigacion/congresos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/research/conferences.html"/>
   </url>
   <url>
-    <loc>https://rogle.webs.upv.es/es/docencia.html</loc>
+    <loc>https://rogle.webs.upv.es/es/docencia/</loc>
     <lastmod>2026-10-02</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/docencia.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/teaching.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/docencia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/teaching/"/>
   </url>
   <url>
-    <loc>https://rogle.webs.upv.es/en/teaching.html</loc>
+    <loc>https://rogle.webs.upv.es/en/teaching/</loc>
     <lastmod>2026-10-02</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/docencia.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/teaching.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/docencia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/teaching/"/>
   </url>
   <url>
-    <loc>https://rogle.webs.upv.es/es/recursos.html</loc>
+    <loc>https://rogle.webs.upv.es/es/recursos/</loc>
     <lastmod>2026-10-02</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/recursos.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/resources.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/recursos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/resources/"/>
   </url>
   <url>
-    <loc>https://rogle.webs.upv.es/en/resources.html</loc>
+    <loc>https://rogle.webs.upv.es/en/resources/</loc>
     <lastmod>2026-10-02</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/recursos.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/resources.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/recursos/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/resources/"/>
   </url>
   <url>
-    <loc>https://rogle.webs.upv.es/es/noticias.html</loc>
+    <loc>https://rogle.webs.upv.es/es/noticias/</loc>
     <lastmod>2025-07-10</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/noticias.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/news.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/noticias/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/news/"/>
   </url>
   <url>
-    <loc>https://rogle.webs.upv.es/en/news.html</loc>
+    <loc>https://rogle.webs.upv.es/en/news/</loc>
     <lastmod>2025-07-10</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/noticias.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/news.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/noticias/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/news/"/>
   </url>
   <url>
-    <loc>https://rogle.webs.upv.es/es/contacto.html</loc>
+    <loc>https://rogle.webs.upv.es/es/contacto/</loc>
     <lastmod>2026-10-02</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/contacto.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/contact/"/>
   </url>
   <url>
-    <loc>https://rogle.webs.upv.es/en/contact.html</loc>
+    <loc>https://rogle.webs.upv.es/en/contact/</loc>
     <lastmod>2026-10-02</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/contacto.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/contact/"/>
   </url>
   <url>
-    <loc>https://rogle.webs.upv.es/es/marca.html</loc>
+    <loc>https://rogle.webs.upv.es/es/recursos/marca.html</loc>
     <lastmod>2026-10-02</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/marca.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/brand.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/recursos/marca.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/resources/brand.html"/>
   </url>
   <url>
-    <loc>https://rogle.webs.upv.es/en/brand.html</loc>
+    <loc>https://rogle.webs.upv.es/en/resources/brand.html</loc>
     <lastmod>2026-10-02</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/marca.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/brand.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://rogle.webs.upv.es/es/recursos/marca.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rogle.webs.upv.es/en/resources/brand.html"/>
   </url>
   <url>
     <loc>https://rogle.webs.upv.es/es/aviso-legal.html</loc>
