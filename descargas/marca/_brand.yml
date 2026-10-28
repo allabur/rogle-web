@@ -123,16 +123,18 @@ typography:
         - path: "brand/fonts/inconsolata/Inconsolata[wdth,wght].ttf"
           weight: 700
           style: normal
+  # No generic family (serif, monospace) at the end: Typst does not know them and warns
+  # "unknown font family". TeX Gyre Pagella and Inconsolata ship with the brand as fallbacks.
   base:
-    family: '"Palatino Linotype", Palatino, "Book Antiqua", "TeX Gyre Pagella", serif'
+    family: '"Palatino Linotype", Palatino, "Book Antiqua", "TeX Gyre Pagella"'
     line-height: 1.6
   headings:
     # Decision: brand/marca/decisiones/tipografia.md. Titles in bold Palatino; Gill Sans only for secondary text.
-    family: '"Palatino Linotype", Palatino, "Book Antiqua", "TeX Gyre Pagella", serif'
+    family: '"Palatino Linotype", Palatino, "Book Antiqua", "TeX Gyre Pagella"'
     weight: bold
     color: oxford-blue
   monospace:
-    family: 'Consolas, Menlo, Inconsolata, monospace'
+    family: 'Consolas, Menlo, Inconsolata'
   link:
     color: indigo
 
