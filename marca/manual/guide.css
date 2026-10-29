@@ -42,15 +42,13 @@
 .ab-grid .logo-tile img { height: 96px; }
 .ab-grid .ab-row p, .ab-grid .ab-head p { margin: 0; }
 
-/* Typography specimen: system Palatino and Gill Sans first, self-hosted clones as fallback */
+/* Typography specimen: system Palatino first, self-hosted Pagella as fallback */
 @font-face { font-family: "TeX Gyre Pagella"; font-weight: 400; font-style: normal; src: url("fonts/tex-gyre-pagella/texgyrepagella-regular.otf"); }
 @font-face { font-family: "TeX Gyre Pagella"; font-weight: 400; font-style: italic; src: url("fonts/tex-gyre-pagella/texgyrepagella-italic.otf"); }
 @font-face { font-family: "TeX Gyre Pagella"; font-weight: 700; font-style: normal; src: url("fonts/tex-gyre-pagella/texgyrepagella-bold.otf"); }
-@font-face { font-family: "Gillius ADF"; font-weight: 400; font-style: normal; src: url("fonts/gillius-adf/GilliusADF-Regular.otf"); }
-@font-face { font-family: "Gillius ADF"; font-weight: 700; font-style: normal; src: url("fonts/gillius-adf/GilliusADF-Bold.otf"); }
 @font-face { font-family: "Inconsolata"; font-weight: 200 900; src: url("fonts/inconsolata/Inconsolata[wdth,wght].ttf"); }
 .specimen { border-left-color: #3F4AA8; color: #002147; background: #FFFFFF; }
-.specimen .specimen-label { font-family: "Gill Sans", "Gill Sans MT", "Gillius ADF", Calibri, sans-serif; font-size: 0.95rem; color: #5B6770; margin-bottom: 0.6rem; }
+.specimen .specimen-label { font-family: "Palatino Linotype", Palatino, "Book Antiqua", "TeX Gyre Pagella", serif; font-style: italic; font-size: 0.95rem; color: #5B6770; margin-bottom: 0.6rem; }
 .specimen .specimen-display, .specimen .specimen-title { font-family: "Palatino Linotype", Palatino, "Book Antiqua", "TeX Gyre Pagella", serif; }
 .specimen .specimen-display { font-size: 2.6rem; font-weight: 700; line-height: 1.1; }
 .specimen .specimen-title { font-size: 1.5rem; font-weight: 700; }

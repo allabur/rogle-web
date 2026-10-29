@@ -10,7 +10,7 @@
  *   shade. Every amber rule lives in those scopes so web/tests can check it.
  * - Typography (web exception, decision of 2 October 2026): Poppins Bold for titles and Inter
  *   for everything else. They are the web fonts of the UPV. Documents and presentations keep
- *   Palatino and Gill Sans. Scale of the web spec: titles 64/42/28 px from a 1280 px window,
+ *   Palatino. Scale of the web spec: titles 64/42/28 px from a 1280 px window,
  *   40/30/24 px at 320 px; text 20/16/14/12 px; line height 1.5 (1.2 in titles).
  * - No third-party fonts, images or scripts. The fonts are self-hosted in fonts/ (WOFF2).
  * - Themes: light by default, dark by system preference or by the button of the header

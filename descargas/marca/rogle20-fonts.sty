@@ -2,12 +2,11 @@
 % Same system as Alberto Lacort's personal brand (profile/brand/marca.sty):
 %   text     Palatino      (system under LuaLaTeX/XeLaTeX; newpxtext otherwise)
 %   titles   Palatino bold
-%   labels   Gill Sans     (secondary text only: captions, running heads, table headers;
-%                           system under LuaLaTeX/XeLaTeX; gillius otherwise)
+%   labels   Palatino      (same face; \sffamily resolves to Palatino, so old documents compile)
 %   formulas newpxmath (Pagella)
 %   code     Inconsolata
 % Engines: pdfLaTeX, LuaLaTeX, XeLaTeX.
-% Usage: \usepackage{rogle20-fonts}  ->  \rogletitlefont for titles in Palatino bold, \sffamily for Gill Sans.
+% Usage: \usepackage{rogle20-fonts}  ->  \rogletitlefont for titles in Palatino bold, \sffamily is Palatino too.
 % Decision record: brand/marca/decisiones/tipografia.md.
 % In Beamer it also sets professionalfonts and Palatino bold frame and cover titles.
 \NeedsTeXFormat{LaTeX2e}
@@ -33,23 +32,23 @@
   \SetMathAlphabet{\mathit}{bold}{OT1}{zpltlf}{b}{it}
   \DeclareMathAlphabet{\mathbf}{OT1}{zpltlf}{b}{n}
 \fi
-\RequirePackage{gillius}
 \ifPDFTeX
   \RequirePackage[varqu]{inconsolata}
 \else
   % inconsolata.sty is pdfLaTeX-only; use the same font from its OTF files.
   \setmonofont{Inconsolatazi4}[
     Extension=.otf, UprightFont=*-Regular, BoldFont=*-Bold]
-  % Brand fonts from the system when installed; the clones above are the fallback.
+  % Palatino from the system when installed; Pagella (newpxtext) is the fallback.
   % newpxtext sets the main font again at \begin{document}, so Palatino goes after.
   \newcommand{\rogle@systemfont}[3]{% setter, Mac name, Windows name
     \IfFontExistsTF{#2}{#1{#2}}{\IfFontExistsTF{#3}{#1{#3}}{}}}
   \AtBeginDocument{\rogle@systemfont{\setmainfont}{Palatino}{Palatino Linotype}}
-  \rogle@systemfont{\setsansfont}{Gill Sans}{Gill Sans MT}
 \fi
 \renewcommand{\familydefault}{\rmdefault}
+% One text family: \sffamily selects Palatino (the roman family), in every engine.
+\renewcommand{\sfdefault}{\rmdefault}
 
-% Title font: Palatino, bold. Gill Sans (\sffamily) is for secondary text only.
+% Title font: Palatino, bold. Labels and metadata use the same face (italic or small caps for contrast).
 \newcommand{\rogletitlefont}{\rmfamily\bfseries}
 
 % Beamer: keep newpxmath formulas (its default font theme would switch them to

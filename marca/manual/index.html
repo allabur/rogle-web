@@ -41,9 +41,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting-50240166a3ba027bded4b272733917f3.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="index_files/libs/bootstrap/bootstrap-e78b1004acd00c913a45d157ac40d4c5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="index_files/libs/bootstrap/bootstrap-dark-756497d5073327cce2a1c82104e262ae.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="index_files/libs/bootstrap/bootstrap-e78b1004acd00c913a45d157ac40d4c5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="index_files/libs/bootstrap/bootstrap-481b776f91db3af37658212bf01075ac.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="index_files/libs/bootstrap/bootstrap-dark-96bdf4b0fc62a6f520a94e40dd68e1bb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="index_files/libs/bootstrap/bootstrap-481b776f91db3af37658212bf01075ac.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 
 
 <link rel="stylesheet" href="guide.css">
@@ -574,8 +574,8 @@ Fondo. Personas y logotipo en negativo.</p>
 </section>
 <section id="tipografía" class="level2">
 <h2 class="anchored" data-anchor-id="tipografía">Tipografía</h2>
-<p>La marca usa <strong>Palatino</strong> para el texto y para todos los títulos, estos en negrita. <strong>Gill Sans</strong> queda solo para lo secundario: etiquetas, pies, cabeceras y numeración. La regla es la misma en documentos y presentaciones. Es el sistema de la marca personal de Alberto Lacort, que comparte esta paleta. Las fórmulas van en Pagella y el código en Consolas o Inconsolata. Decisión y fuentes: registro de decisión.</p>
-<p><strong>Excepción: la web usa Poppins e Inter, las fuentes web de la UPV.</strong> Poppins Bold va en los titulares e Inter en el texto, el menú y las etiquetas. Documentos y presentaciones siguen con Palatino y Gill Sans. Las fuentes web están en <code>brand/fonts/poppins/</code> y <code>brand/fonts/inter/</code>, con su licencia SIL OFL 1.1.</p>
+<p>La marca usa <strong>Palatino</strong> para todo el texto: cuerpo, títulos (en negrita), etiquetas, pies, cabeceras y numeración. No hay segunda familia. Para contrastar se usa cursiva o versalitas con espaciado. La regla es la misma en documentos y presentaciones. Es el sistema de la marca personal de Alberto Lacort, que comparte esta paleta. Las fórmulas van en Pagella y el código en Consolas o Inconsolata. Decisión y fuentes: registro de decisión.</p>
+<p><strong>Excepción: la web usa Poppins e Inter, las fuentes web de la UPV.</strong> Poppins Bold va en los titulares e Inter en el texto, el menú y las etiquetas. Documentos y presentaciones siguen con Palatino. Las fuentes web están en <code>brand/fonts/poppins/</code> y <code>brand/fonts/inter/</code>, con su licencia SIL OFL 1.1.</p>
 <div class="type-specimen specimen">
 <div class="specimen-display">
 <p>Reingeniería de operaciones</p>
@@ -584,7 +584,7 @@ Fondo. Personas y logotipo en negativo.</p>
 <p>Títulos en Palatino negrita</p>
 </div>
 <div class="specimen-label">
-<p>Etiquetas, pies y cabeceras en Gill Sans</p>
+<p>Etiquetas, pies y cabeceras en Palatino cursiva</p>
 </div>
 <div class="specimen-text">
 <p>El texto corrido va en Palatino. Las cursivas marcan <em>términos técnicos</em>. La utilización de un servidor es <em>ρ</em> = <em>λ</em>/<em>μ</em>.</p>
@@ -610,8 +610,8 @@ Fondo. Personas y logotipo en negativo.</p>
 <td>Palatino</td>
 </tr>
 <tr class="even">
-<td>Texto secundario: etiquetas, pies de figura y de tabla, cabeceras de tabla, cabecera y pie de página, numeración, menú de seguimiento y metadatos de autoría</td>
-<td>Gill Sans</td>
+<td>Texto secundario: etiquetas, pies de figura y de tabla, cabeceras de tabla (negrita), cabecera y pie de página, numeración, menú de seguimiento y metadatos de autoría</td>
+<td>Palatino, mismo cuerpo y color; cursiva o versalitas con espaciado para contrastar</td>
 </tr>
 <tr class="odd">
 <td>Fórmulas</td>
@@ -654,9 +654,9 @@ Fondo. Personas y logotipo en negativo.</p>
 </tr>
 <tr class="odd">
 <td>Texto secundario</td>
-<td>Gill Sans MT</td>
-<td>Gill Sans del sistema; respaldo <code>gillius</code></td>
-<td>Gill Sans del sistema; respaldo Gillius ADF</td>
+<td>Palatino Linotype</td>
+<td>Palatino del sistema; respaldo <code>newpxtext</code></td>
+<td>Palatino del sistema; respaldo TeX Gyre Pagella</td>
 </tr>
 <tr class="even">
 <td>Fórmulas</td>
@@ -672,7 +672,7 @@ Fondo. Personas y logotipo en negativo.</p>
 </tr>
 </tbody>
 </table>
-<p>LaTeX toma Palatino y Gill Sans del sistema solo con LuaLaTeX o XeLaTeX. Con pdfLaTeX usa siempre los clones libres.</p>
+<p>LaTeX toma Palatino del sistema solo con LuaLaTeX o XeLaTeX. Con pdfLaTeX usa siempre el clon libre.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -724,17 +724,13 @@ Fondo. Personas y logotipo en negativo.</p>
 <ul>
 <li><strong>Quarto:</strong> el <code>_brand.yml</code> de la raíz ya define colores y tipografía. <code>marca/muestra.qmd</code> es un ejemplo completo.</li>
 <li><strong>Fórmulas en Quarto:</strong> añade <code>include-in-header: &lt;ruta&gt;/brand/marca/mathjax-pagella.html</code> y fija MathJax 4 en <code>html-math-method</code>, como hace <code>muestra.qmd</code>. Reveal.js necesita el mismo ajuste, porque Quarto carga allí MathJax 2 por defecto.</li>
-<li><strong>Reveal.js:</strong> las fuentes libres de respaldo no llegan a las diapositivas. Allí se usan Palatino y Gill Sans del sistema. Los títulos van en Palatino negrita y Gill Sans solo aparece en lo secundario.</li>
-<li><strong>LaTeX:</strong> carga <code>\usepackage{rogle20-fonts}</code> desde <code>brand/latex/</code>. <code>\rogletitlefont</code> da Palatino en negrita para los títulos; <code>\sffamily</code> da Gill Sans para lo secundario.</li>
-<li><strong>Word y PowerPoint:</strong> Palatino Linotype para el texto y los títulos (en negrita) y Gill Sans MT solo para lo secundario (en PowerPoint: menú, etiquetas, fuente y pie; en Word: pies de figura, cabeceras y numeración). Office para Mac las incluye y PowerPoint las incrusta al exportar a PDF. En Windows falta comprobarlo.</li>
+<li><strong>Reveal.js:</strong> las fuentes libres de respaldo no llegan a las diapositivas. Allí se usa Palatino del sistema. Los títulos van en Palatino negrita.</li>
+<li><strong>LaTeX:</strong> carga <code>\usepackage{rogle20-fonts}</code> desde <code>brand/latex/</code>. <code>\rogletitlefont</code> da Palatino en negrita para los títulos; <code>\sffamily</code> también da Palatino, para que los documentos antiguos compilen.</li>
+<li><strong>Word y PowerPoint:</strong> Palatino Linotype para todo: texto, títulos (en negrita), menú, etiquetas, fuente, pie, cabeceras y numeración. Office para Mac la incluye y PowerPoint la incrusta al exportar a PDF. En Windows falta comprobarlo.</li>
 <li><strong>Fórmulas en Word y PowerPoint:</strong> usa Cambria Math. En equipos propios puedes instalar TeX Gyre Pagella Math (<code>brand/fonts/</code>) y elegirla en las opciones de ecuación.</li>
 </ul>
-<p>Las fuentes libres de respaldo están en <code>brand/fonts/</code>, cada una con su licencia. Gillius ADF no es un clon exacto: está inspirada en Gill Sans. Palatino, Gill Sans, Cambria y Consolas no se incluyen, porque son comerciales.</p>
+<p>Las fuentes libres de respaldo están en <code>brand/fonts/</code>, cada una con su licencia. Palatino, Cambria y Consolas no se incluyen, porque son comerciales.</p>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
 <thead>
 <tr class="header">
 <th>Fuente</th>
@@ -747,10 +743,6 @@ Fondo. Personas y logotipo en negativo.</p>
 <td>GUST Font License</td>
 </tr>
 <tr class="even">
-<td>Gillius ADF</td>
-<td>GPL 2 o posterior. Su README cita una excepción para fuentes, cuyo texto no se distribuye</td>
-</tr>
-<tr class="odd">
 <td>Inconsolata</td>
 <td>SIL Open Font License</td>
 </tr>
@@ -874,7 +866,7 @@ Fondo. Personas y logotipo en negativo.</p>
 <p>Reveal.js, Beamer y PowerPoint comparten un diseño de estilo consultora. La plantilla de Quarto (Reveal.js y Beamer) está en <code>plantillas/presentaciones/</code> y la de PowerPoint en <code>plantillas/office/</code>.</p>
 <ul>
 <li><strong>Estilo.</strong> Fondo blanco, título de acción de una frase, menú de seguimiento de las secciones, barra de mensaje clave, línea de fuente y pie con número. La portada, la contraportada y los separadores van sobre Oxford Blue.</li>
-<li><strong>Tipografía.</strong> Los títulos van en Palatino negrita y el cuerpo en Palatino. Gill Sans solo aparece en lo secundario: menú, etiquetas, fuente, pie, número, cabeceras de tabla y leyendas.</li>
+<li><strong>Tipografía.</strong> Los títulos van en Palatino negrita y el cuerpo en Palatino. Lo secundario (menú, etiquetas, fuente, pie, número, cabeceras de tabla y leyendas) va en el mismo Palatino.</li>
 <li><strong>Menú de seguimiento.</strong> Cinco variantes: lateral, superior, inferior, pasos (chevrones numerados) y ninguno. La sección actual va en índigo y las demás en gris. En Reveal.js y Beamer se elige con <code>tracker:</code> en el YAML y se calcula a partir de los <code># Sección</code>.</li>
 <li><strong>Portada.</strong> El diseño principal es un campo Oxford Blue con un filete ámbar y una franja blanca con los logotipos de la UPV y de ROGLE en positivo. La alternativa es toda Oxford Blue con los logotipos en blanco (<code>portada: negativa</code>).</li>
 <li><strong>Color.</strong> El ámbar solo va sobre Oxford Blue.</li>

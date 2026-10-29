@@ -2,7 +2,7 @@
 
 Esta guía dice cómo usar la marca del grupo de investigación ROGLE al generar documentos, presentaciones, páginas web, vídeos u objetos. Léela entera antes de producir nada. La versión pública está en https://rogle.webs.upv.es/descargas/marca/BRAND.md y el manual completo con imágenes, en https://rogle.webs.upv.es/es/recursos/marca.html.
 
-**English summary.** ROGLE is a research group of the Department of Business Organization (Departamento de Organización de Empresas) of the Universitat Politècnica de València (UPV), Spain, founded in 2006. Brand: five people in a circle, Oxford Blue (#002147) and indigo, bold Palatino for the name and titles, Gill Sans only for secondary text, amber (#F5B000) only on Oxford Blue. Always use the logo files, never typeset the logo. Write in Spanish unless asked otherwise.
+**English summary.** ROGLE is a research group of the Department of Business Organization (Departamento de Organización de Empresas) of the Universitat Politècnica de València (UPV), Spain, founded in 2006. Brand: five people in a circle, Oxford Blue (#002147) and indigo, Palatino only (bold for the name and titles), amber (#F5B000) only on Oxford Blue. Always use the logo files, never typeset the logo. Write in Spanish unless asked otherwise.
 
 ## Contenido y estilo de escritura
 
@@ -67,7 +67,7 @@ Variantes de la alternativa C en `brand/marca/alternativa-C/`: `rogle-C-horizont
 
 ## Tipografía
 
-- **Documentos y presentaciones.** Palatino para el texto y para todos los títulos, estos en negrita. Gill Sans solo para lo secundario: menú de seguimiento, etiquetas, fuente, pie, número de página, cabeceras de tabla y leyendas. Fórmulas en Pagella y código en Inconsolata. Fuentes libres de respaldo: TeX Gyre Pagella y Gillius ADF.
+- **Documentos y presentaciones.** Palatino es la única fuente de texto: cuerpo, títulos (en negrita), menú de seguimiento, etiquetas, fuente, pie, número de página, cabeceras de tabla (en negrita) y leyendas. Para contrastar usa cursiva o versalitas con espaciado, nunca otra familia. Fórmulas en Pagella y código en Inconsolata. Fuente libre de respaldo: TeX Gyre Pagella.
 - **Web.** Poppins Bold para titulares e Inter para todo lo demás, autoalojadas, sin Google Fonts.
 - Ancho del texto corrido: unos 65 a 70 caracteres.
 - No escribas textos nuevos en Futura: es comercial y la firma institucional ya la lleva convertida a trazados.

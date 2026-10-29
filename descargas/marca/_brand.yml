@@ -80,7 +80,7 @@ color:
   danger: red
 
 typography:
-  # Typography: Palatino for text and titles (bold), Gill Sans only for secondary text. System fonts first, free clones as fallback.
+  # Typography: Palatino for text, titles (bold) and small furniture. System fonts first, free clone as fallback.
   # Self-hosted fallbacks live in brand/fonts/. Paths are relative to this file.
   fonts:
     - family: TeX Gyre Pagella
@@ -96,21 +96,6 @@ typography:
           weight: 700
           style: normal
         - path: brand/fonts/tex-gyre-pagella/texgyrepagella-bolditalic.otf
-          weight: 700
-          style: italic
-    - family: Gillius ADF
-      source: file
-      files:
-        - path: brand/fonts/gillius-adf/GilliusADF-Regular.otf
-          weight: 400
-          style: normal
-        - path: brand/fonts/gillius-adf/GilliusADF-Italic.otf
-          weight: 400
-          style: italic
-        - path: brand/fonts/gillius-adf/GilliusADF-Bold.otf
-          weight: 700
-          style: normal
-        - path: brand/fonts/gillius-adf/GilliusADF-BoldItalic.otf
           weight: 700
           style: italic
     - family: Inconsolata
@@ -129,7 +114,7 @@ typography:
     family: '"Palatino Linotype", Palatino, "Book Antiqua", "TeX Gyre Pagella"'
     line-height: 1.6
   headings:
-    # Decision: brand/marca/decisiones/tipografia.md. Titles in bold Palatino; Gill Sans only for secondary text.
+    # Decision: brand/marca/decisiones/tipografia.md. Titles in bold Palatino; one text family.
     family: '"Palatino Linotype", Palatino, "Book Antiqua", "TeX Gyre Pagella"'
     weight: bold
     color: oxford-blue
@@ -141,7 +126,6 @@ typography:
 defaults:
   bootstrap:
     rules: |
-      // Gill Sans is only for secondary text: labels, captions and metadata.
-      .quarto-title-meta, .quarto-title-meta-heading, figcaption, .caption, .table > thead th {
-        font-family: "Gill Sans", "Gill Sans MT", "Gillius ADF", Calibri, sans-serif;
-      }
+      // Palatino everywhere: table headers in bold, captions and metadata in italic.
+      .table > thead th { font-weight: bold; }
+      .quarto-title-meta-heading, figcaption, .caption { font-style: italic; }
