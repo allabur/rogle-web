@@ -30,14 +30,14 @@ Con nombres por rol, en `brand/logos/` del repositorio `allabur/rogle` (siguen l
 
 | Archivo | Úsalo para |
 |---|---|
-| `logo/rogle-logo-color.svg` | Versión por defecto: documentos, web y presentaciones |
+| `logo/rogle-logo-color.svg` | Versión por defecto: documentos y presentaciones |
 | `logo/rogle-logo-reverse.svg` | Sobre fondo `oxford-blue` o fondos oscuros |
 | `logo/rogle-logo-black.svg` | Impresión a un color, grabado, láser y sellos |
 | `logo/rogle-logo-notagline-color.svg`, `…-reverse.svg` | Sin descriptor |
 | `symbol/rogle-symbol-color.svg`, `…-reverse.svg` | Isotipo solo: sellos e iconos, si el nombre ya está cerca |
 | `wordmark/rogle-wordmark-color.svg`, `…-reverse.svg` | Solo el nombre |
 
-Variantes de la alternativa C en `brand/marca/alternativa-C/`: `rogle-C-horizontal-descriptor.svg` (portadas), `rogle-C-integrado.svg` (el isotipo hace de «O»), `rogle-C-vertical.svg` (espacios estrechos), `rogle-C-horizontal-digital.svg` (solo pantalla), `rogle-C-upv-convivencia.svg` (junto a la marca UPV), y para el 20 aniversario `rogle-C-20-aniversario.svg` (sobre `oxford-blue`), `rogle-C-20-since.svg`, `rogle-C-20-blanco.svg` y `rogle-C-20-blanco-digital.svg` (sobre blanco).
+Variantes de la alternativa C en `brand/marca/alternativa-C/`: `rogle-C-horizontal-descriptor.svg` (portadas), `rogle-C-integrado.svg` (el isotipo hace de «O»), `rogle-C-vertical.svg` (espacios estrechos), `rogle-C-horizontal-digital.svg` y `rogle-C-horizontal-digital-negativo.svg` (solo pantalla: cabecera de webs, en tema claro y oscuro), `rogle-C-upv-convivencia.svg` (junto a la marca UPV), y para el 20 aniversario `rogle-C-20-aniversario.svg` (sobre `oxford-blue`), `rogle-C-20-since.svg`, `rogle-C-20-blanco.svg` y `rogle-C-20-blanco-digital.svg` (sobre blanco).
 
 ### Reglas de uso
 
