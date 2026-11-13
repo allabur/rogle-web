@@ -2,7 +2,7 @@
 
 > ROGLE (Reengineering Operations GroupWork Logistics Excellence) is a research group of the Department of Business Organization of the Universitat Politècnica de València (UPV), Spain, founded in 2006. It does research and teaching on operations management, production planning and scheduling, logistics and supply chains, work organization, human resources management and industrial sustainability.
 
-The group has 13 members, 1163 publications since 2001 and 155 research projects. Every publication has its own page with the APA citation, BibTeX and RIS, and links to the open-access copy in RiUNET when there is one. Titles keep their original language (Spanish or English). Contact: rogle@upv.es.
+The group has 14 members, 1167 publications since 2001 and 155 research projects. Every publication has its own page with the APA citation, BibTeX and RIS, and links to the open-access copy in RiUNET when there is one. Titles keep their original language (Spanish or English). Contact: rogle@upv.es.
 
 ## Main pages
 
@@ -24,19 +24,20 @@ The group has 13 members, 1163 publications since 2001 and 155 research projects
 
 ## Members
 
-- [Carlos Andrés Romano](https://rogle.webs.upv.es/en/members/andres-carlos.html): University Full Professor, ORCID 0000-0003-4453-4891
-- [Lourdes Canós Darós](https://rogle.webs.upv.es/en/members/canos-lourdes.html): Full Professor, ORCID 0000-0002-9609-2880
-- [Rosa Esteban Amaro](https://rogle.webs.upv.es/en/members/esteban-rosa.html): Professor and Researcher, ORCID 0000-0001-7895-403X
-- [Sofia García Manglano](https://rogle.webs.upv.es/en/members/garcia-sofia.html): Member, ORCID 0000-0003-0478-6218
-- [José P. Garcia-Sabater](https://rogle.webs.upv.es/en/members/garcia-sabater-jose-p.html): Full Professor of Operations Management, ORCID 0000-0002-9097-2852
-- [Julio J. García-Sabater](https://rogle.webs.upv.es/en/members/garcia-sabater-julio-j.html): Associate professor, ORCID 0000-0001-9449-1709
-- [Arnau Igualde Saez](https://rogle.webs.upv.es/en/members/igualde-arnau.html): PhD student and substitute lecturer, ORCID 0009-0009-0824-6957
-- [Alberto Lacort](https://rogle.webs.upv.es/en/members/lacort-alberto.html): PhD student, ORCID 0000-0001-7571-0494
-- [Julien Maheut](https://rogle.webs.upv.es/en/members/maheut-julien.html): Associate Professor, ORCID 0000-0002-5796-9053
-- [Juan A. Marín-Garcia](https://rogle.webs.upv.es/en/members/marin-garcia-juan-a.html): Professor, ORCID 0000-0001-5416-3938
-- [Cristobal Miralles Insa](https://rogle.webs.upv.es/en/members/miralles-cristobal.html): Full Professor, ORCID 0000-0002-5269-9955
-- [Aida Saéz Más](https://rogle.webs.upv.es/en/members/saez-aida.html): Member
-- [Pilar I. Vidal-Carreras](https://rogle.webs.upv.es/en/members/vidal-carreras-pilar-i.html): Associate professor of operations management, ORCID 0000-0001-5206-3730
+- [Carlos Andrés Romano](https://rogle.webs.upv.es/en/members/carlos-andres-romano.html): University Full Professor, ORCID 0000-0003-4453-4891
+- [Lourdes Canós Darós](https://rogle.webs.upv.es/en/members/lourdes-canos-daros.html): Full Professor, ORCID 0000-0002-9609-2880
+- [Rosa Esteban Amaro](https://rogle.webs.upv.es/en/members/rosa-esteban-amaro.html): Professor and Researcher, ORCID 0000-0001-7895-403X
+- [Sofia García Manglano](https://rogle.webs.upv.es/en/members/sofia-garcia-manglano.html): Member, ORCID 0000-0003-0478-6218
+- [José P. Garcia-Sabater](https://rogle.webs.upv.es/en/members/jose-p-garcia-sabater.html): Full Professor of Operations Management, ORCID 0000-0002-9097-2852
+- [Julio J. García-Sabater](https://rogle.webs.upv.es/en/members/julio-j-garcia-sabater.html): Associate professor, ORCID 0000-0001-9449-1709
+- [Arnau Igualde Saez](https://rogle.webs.upv.es/en/members/arnau-igualde-saez.html): PhD student and substitute lecturer, ORCID 0009-0009-0824-6957
+- [Alberto Lacort](https://rogle.webs.upv.es/en/members/alberto-lacort.html): PhD student, ORCID 0000-0001-7571-0494
+- [Julien Maheut](https://rogle.webs.upv.es/en/members/julien-maheut.html): Full Professor, ORCID 0000-0002-5796-9053
+- [Juan A. Marín-Garcia](https://rogle.webs.upv.es/en/members/juan-a-marin-garcia.html): Professor, ORCID 0000-0001-5416-3938
+- [Juan Martínez Tomás](https://rogle.webs.upv.es/en/members/juan-martinez-tomas.html): Profesor Ayudante Doctor, ORCID 0000-0002-8224-5081
+- [Cristobal Miralles Insa](https://rogle.webs.upv.es/en/members/cristobal-miralles-insa.html): Full Professor, ORCID 0000-0002-5269-9955
+- [Aida Saéz Más](https://rogle.webs.upv.es/en/members/aida-saez-mas.html): Member
+- [Pilar I. Vidal-Carreras](https://rogle.webs.upv.es/en/members/pilar-i-vidal-carreras.html): Associate professor of operations management, ORCID 0000-0001-5206-3730
 
 ## Optional
 
