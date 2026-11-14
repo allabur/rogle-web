@@ -9,7 +9,7 @@ Esta guía dice cómo usar la marca del grupo de investigación ROGLE al generar
 - Escribe en español, con frases cortas de una sola idea. La web y los documentos tienen también versión en inglés.
 - Escribe el nombre siempre en mayúsculas: **ROGLE**. Su desarrollo oficial es el inglés, *Reengineering Operations GroupWork Logistics Excellence*. La traducción, *Reingeniería, Organización, trabajo en Grupo y Logística Empresarial*, solo acompaña.
 - Escribe el nombre propio del departamento siempre en castellano, también en textos en inglés: **Departamento de Organización de Empresas**. Dirección: Edificio 7D, Camino de Vera, s/n, 46022 València. Correo del grupo: rogle@upv.es.
-- El grupo se creó en **2006** y cumple **20 años** en 2026. Escribe «20 años» o «2006 · 2026».
+- El grupo se creó en **2006** y cumple **20 años** en 2026. Escribe «20 años» o «2006-2026».
 - No uses emoji ni adornos tipográficos en los títulos.
 - Los títulos de acción de las presentaciones son una frase con la conclusión («La reorganización de rutas reduce un 18 % la distancia recorrida»), no una etiqueta («Resultados»).
 
@@ -74,12 +74,17 @@ Variantes de la alternativa C en `brand/marca/alternativa-C/`: `rogle-C-horizont
 
 ## Presentaciones
 
-Estilo de consultora: contenido en blanco, título de acción, menú de seguimiento y barra de mensaje clave.
+Estilo de consultora: contenido en blanco, título de acción, menú de seguimiento y barra de mensaje clave. Todo el texto va en Palatino, con los títulos en negrita.
 
-- Portada y contraportada: campo `oxford-blue` de 4/5, filete `ambar` al corte y, debajo, franja blanca con la UPV y ROGLE en positivo a la misma altura. Alternativa: toda oscura, con los logotipos en blanco.
-- Separadores: `oxford-blue` con el número de sección grande en `ambar`.
-- Contenido: título de acción, cuerpo, mensaje clave en `tinte-mensaje`, fuente y pie «Grupo de Investigación ROGLE · UPV» con el número.
+Así es la plantilla de PowerPoint (`plantillas/office/ROGLE.potx`). Las presentaciones de Quarto (Reveal.js y Beamer) mantienen por ahora la portada, la contraportada y la variante negativa.
+
+- Portadas: una de docencia y otra de investigación. Campo `oxford-blue` de 4/5, franja `ambar` al corte y, debajo, franja blanca con los logotipos UPV, DOE y ROGLE en positivo. Arriba, una etiqueta `ambar` (asignatura y titulación con sus códigos de la UPV, o congreso), el título, el subtítulo, los autores con ORCID, las afiliaciones numeradas, la fecha y el enlace. Abajo a la derecha, solo logotipos: el del centro (docencia) o los de los financiadores (investigación).
+- Separadores: `oxford-blue` con el número de sección grande en `ambar`, franja `ambar` y logotipos en blanco.
+- Índice: número, nombre de la sección y una línea de descripción en `gris-upv-431`.
+- Contenido: título de acción, cuerpo, mensaje clave en `tinte-mensaje` y fuente. El pie lleva los iconos de Creative Commons, una cita corta con la licencia y el identificador de la obra, y el número. No lleva marca del grupo.
+- Cierres: no hay contraportada. El cierre es todo `oxford-blue`: la etiqueta «Conclusión», el mensaje clave, «Gracias. ¿Preguntas?» y un QR al identificador; debajo, cómo citar y la licencia a la izquierda, y autoría, afiliación y contacto a la derecha; al pie, franja `ambar` y logotipos en blanco. Hay tres: docencia, obra adaptada (la frase de adaptación sustituye a la línea de licencia) e investigación (con un apartado «Financiación» después de la licencia; la frase de financiación va solo en el cierre).
 - Menú de seguimiento (lateral, superior, inferior, pasos o ninguno): sección actual en `indigo`, las demás en `gris-upv-431`. Nunca `ambar` sobre blanco.
+- Licencia por defecto: CC BY-NC-SA 4.0, con los iconos oficiales de Creative Commons. No separes los elementos de una línea con puntos medios: usa comas.
 
 ## Usos incorrectos
 

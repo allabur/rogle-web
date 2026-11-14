@@ -4,20 +4,20 @@ Source: https://rogle.webs.upv.es. Summary: https://rogle.webs.upv.es/llms.txt. 
 
 ## Members
 
-- Carlos Andrés Romano. University Full Professor. ORCID https://orcid.org/0000-0003-4453-4891. Topics: Cellular Manufacturing, Work Study, Production Scheduling and Sequencing, Combinatorial Optimization. https://rogle.webs.upv.es/en/members/carlos-andres-romano.html
+- Carlos Andrés Romano. Full Professor. ORCID https://orcid.org/0000-0003-4453-4891. Topics: Cellular Manufacturing, Work Study, Production Scheduling and Sequencing, Combinatorial Optimization. https://rogle.webs.upv.es/en/members/carlos-andres-romano.html
 - Lourdes Canós Darós. Full Professor. ORCID https://orcid.org/0000-0002-9609-2880. https://rogle.webs.upv.es/en/members/lourdes-canos-daros.html
 - Rosa Esteban Amaro. Professor and Researcher. ORCID https://orcid.org/0000-0001-7895-403X. Topics: Operations Management, Artificial Intelligence and digital transformation, circular economy, sustainable operations, eco-innovation. https://rogle.webs.upv.es/en/members/rosa-esteban-amaro.html
 - Sofia García Manglano. Member. ORCID https://orcid.org/0000-0003-0478-6218. https://rogle.webs.upv.es/en/members/sofia-garcia-manglano.html
-- José P. Garcia-Sabater. Full Professor of Operations Management. ORCID https://orcid.org/0000-0002-9097-2852. Topics: supply chain management, operations management, management science. https://rogle.webs.upv.es/en/members/jose-p-garcia-sabater.html
-- Julio J. García-Sabater. Associate professor. ORCID https://orcid.org/0000-0001-9449-1709. Topics: process improvement and lean production; adapting operations management tools in work environments with people with intellectual disabilities. https://rogle.webs.upv.es/en/members/julio-j-garcia-sabater.html
-- Arnau Igualde Saez. PhD student and substitute lecturer. ORCID https://orcid.org/0009-0009-0824-6957. Topics: university resource planning, machine learning, academic trajectories, student dropout prediction. https://rogle.webs.upv.es/en/members/arnau-igualde-saez.html
-- Alberto Lacort. PhD student. ORCID https://orcid.org/0000-0001-7571-0494. Topics: hospital bed management, patient flow simulation, surgical blocks. https://rogle.webs.upv.es/en/members/alberto-lacort.html
+- José P. Garcia-Sabater. Full Professor (Operations Management). ORCID https://orcid.org/0000-0002-9097-2852. Topics: supply chain management, operations management, management science. https://rogle.webs.upv.es/en/members/jose-p-garcia-sabater.html
+- Julio J. García-Sabater. Associate Professor. ORCID https://orcid.org/0000-0001-9449-1709. Topics: process improvement and lean production; adapting operations management tools in work environments with people with intellectual disabilities. https://rogle.webs.upv.es/en/members/julio-j-garcia-sabater.html
+- Arnau Igualde Saez. PhD Student and Substitute Lecturer. ORCID https://orcid.org/0009-0009-0824-6957. Topics: university resource planning, machine learning, academic trajectories, student dropout prediction. https://rogle.webs.upv.es/en/members/arnau-igualde-saez.html
+- Alberto Lacort. PhD Student. ORCID https://orcid.org/0000-0001-7571-0494. Topics: hospital bed management, patient flow simulation, surgical blocks. https://rogle.webs.upv.es/en/members/alberto-lacort.html
 - Julien Maheut. Full Professor. ORCID https://orcid.org/0000-0002-5796-9053. Topics: workforce planning and assignment, skill-based workforce design, stochastic optimisation, LLM and metaheuristics. https://rogle.webs.upv.es/en/members/julien-maheut.html
 - Juan A. Marín-Garcia. Professor. ORCID https://orcid.org/0000-0001-5416-3938. Topics: Participative Management, Continuous Improvement, Lean Manufacturing Systems, TQM, TPM, Performance Evaluation and Active Learning in Higher Education. https://rogle.webs.upv.es/en/members/juan-a-marin-garcia.html
-- Juan Martínez Tomás. Profesor Ayudante Doctor. ORCID https://orcid.org/0000-0002-8224-5081. Topics: High-Involvement Work Practices, AMO Model, Continuous Improvement, Participative Management, Operations Management, Artificial Intelligence and Research Methodologies. https://rogle.webs.upv.es/en/members/juan-martinez-tomas.html
+- Juan Martínez Tomás. Assistant Professor. ORCID https://orcid.org/0000-0002-8224-5081. Topics: High-Involvement Work Practices, AMO Model, Continuous Improvement, Participative Management, Operations Management, Artificial Intelligence and Research Methodologies. https://rogle.webs.upv.es/en/members/juan-martinez-tomas.html
 - Cristobal Miralles Insa. Full Professor. ORCID https://orcid.org/0000-0002-5269-9955. Topics: design of systems and workplaces accessible for people with disabilities through the use of Industrial Engineering tools. https://rogle.webs.upv.es/en/members/cristobal-miralles-insa.html
 - Aida Saéz Más. Member. https://rogle.webs.upv.es/en/members/aida-saez-mas.html
-- Pilar I. Vidal-Carreras. Associate professor of operations management. ORCID https://orcid.org/0000-0001-5206-3730. Topics: Operations Management and Lean Manufacturing. https://rogle.webs.upv.es/en/members/pilar-i-vidal-carreras.html
+- Pilar I. Vidal-Carreras. Associate Professor (Operations Management). ORCID https://orcid.org/0000-0001-5206-3730. Topics: Operations Management and Lean Manufacturing. https://rogle.webs.upv.es/en/members/pilar-i-vidal-carreras.html
 
 ## Research projects
 

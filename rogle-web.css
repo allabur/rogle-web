@@ -895,7 +895,7 @@ label {
 .rogle-people {
   display: grid;
   gap: 1.25rem;
-  align-items: start;
+  grid-auto-rows: 1fr; /* every card as tall as the tallest one */
   margin: 0;
   padding: 0;
   list-style: none;
@@ -906,6 +906,7 @@ label {
   display: grid;
   gap: 0.25rem 1rem;
   grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-rows: auto 1fr;
   padding: 1.25rem;
   border: 2px solid var(--card-line);
   background: var(--card-bg);
@@ -919,6 +920,8 @@ label {
   grid-row: 1;
 }
 .rogle-person__rest {
+  display: flex;
+  flex-direction: column;
   grid-column: 1 / -1;
 }
 .rogle-person h2,
@@ -945,11 +948,48 @@ label {
 .rogle-person__links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem 1rem;
-  margin: 0.75rem 0 0.5rem;
-  padding: 0;
+  gap: 0.5rem;
+  margin: auto 0 0; /* pushed down onto the line above «Ver perfil» */
+  padding: 0.75rem 0 0;
   list-style: none;
   font-size: var(--size-menu);
+}
+.rogle-link {
+  display: inline-flex;
+  gap: 0.4rem;
+  align-items: center;
+  padding: 0.3rem 0.75rem 0.3rem 0.6rem;
+  border: 1px solid var(--card-line);
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.15s, color 0.15s;
+}
+.rogle-link::before {
+  flex: none;
+  width: 1.1em;
+  height: 1.1em;
+  background: currentColor;
+  content: "";
+  -webkit-mask: var(--icon) center / contain no-repeat;
+  mask: var(--icon) center / contain no-repeat;
+}
+.rogle-link:hover,
+.rogle-link:focus-visible {
+  background: var(--card-line);
+  color: var(--card-bg);
+}
+.rogle-link--upv { --icon: url("img/iconos/upv.svg"); }
+.rogle-link--orcid { --icon: url("img/iconos/orcid.svg"); }
+.rogle-link--scopus { --icon: url("img/iconos/scopus.svg"); }
+.rogle-link--googlescholar { --icon: url("img/iconos/googlescholar.svg"); }
+.rogle-link--researchgate { --icon: url("img/iconos/researchgate.svg"); }
+.rogle-link--linkedin { --icon: url("img/iconos/linkedin.svg"); }
+.rogle-link--github { --icon: url("img/iconos/github.svg"); }
+.rogle-link--clarivate { --icon: url("img/iconos/clarivate.svg"); }
+.rogle-link--web { --icon: url("img/iconos/web.svg"); }
+.rogle-person__more:first-child {
+  margin-top: auto; /* no links: the bar still sits at the bottom */
 }
 .rogle-person__more {
   display: flex;
