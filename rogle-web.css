@@ -89,6 +89,7 @@
   --card-bg: var(--white);
   --card-line: var(--oxford-blue);
   --card-hover: var(--indigo);
+  --card-shadow: 6px 6px 0 var(--indigo); /* member cards: solid offset shadow */
   --field-bg: var(--white);
   --field-line: var(--gray-upv);
   --btn-bg: var(--indigo);
@@ -132,6 +133,7 @@
   --card-bg: var(--oxford-blue);
   --card-line: var(--indigo-light);
   --card-hover: var(--amber);
+  --card-shadow: 6px 6px 0 var(--indigo-light);
   --field-bg: transparent;
   --field-line: var(--indigo-light);
   --btn-bg: var(--amber);
@@ -894,7 +896,7 @@ label {
 }
 .rogle-people {
   display: grid;
-  gap: 1.25rem;
+  gap: 1.5rem; /* room for the 6 px shadow */
   grid-auto-rows: 1fr; /* every card as tall as the tallest one */
   margin: 0;
   padding: 0;
@@ -910,7 +912,7 @@ label {
   padding: 1.25rem;
   border: 2px solid var(--card-line);
   background: var(--card-bg);
-  box-shadow: var(--shadow);
+  box-shadow: var(--card-shadow);
 }
 .rogle-person__main {
   min-width: 0;
@@ -1695,6 +1697,7 @@ label {
     --tint: #fff;
     --card-bg: #fff;
     --card-line: #000;
+    --card-shadow: none;
     --code-bg: #fff;
     --head-bg: #fff;
     --head-fg: #000;
