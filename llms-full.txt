@@ -16,7 +16,7 @@ Source: https://rogle.webs.upv.es. Summary: https://rogle.webs.upv.es/llms.txt. 
 - Juan A. Marín-Garcia. Professor. ORCID https://orcid.org/0000-0001-5416-3938. Topics: Participative Management, Continuous Improvement, Lean Manufacturing Systems, TQM, TPM, Performance Evaluation and Active Learning in Higher Education. https://rogle.webs.upv.es/en/members/juan-a-marin-garcia.html
 - Juan Martínez Tomás. Assistant Professor. ORCID https://orcid.org/0000-0002-8224-5081. Topics: High-Involvement Work Practices, AMO Model, Continuous Improvement, Participative Management, Operations Management, Artificial Intelligence and Research Methodologies. https://rogle.webs.upv.es/en/members/juan-martinez-tomas.html
 - Cristobal Miralles Insa. Full Professor. ORCID https://orcid.org/0000-0002-5269-9955. Topics: design of systems and workplaces accessible for people with disabilities through the use of Industrial Engineering tools. https://rogle.webs.upv.es/en/members/cristobal-miralles-insa.html
-- Aida Saéz Más. Member. https://rogle.webs.upv.es/en/members/aida-saez-mas.html
+- Aida Saéz Más. Member. ORCID https://orcid.org/0000-0002-5647-899X. https://rogle.webs.upv.es/en/members/aida-saez-mas.html
 - Pilar I. Vidal-Carreras. Associate Professor (Operations Management). ORCID https://orcid.org/0000-0001-5206-3730. Topics: Operations Management and Lean Manufacturing. https://rogle.webs.upv.es/en/members/pilar-i-vidal-carreras.html
 
 ## Research projects
