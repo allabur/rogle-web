@@ -76,7 +76,7 @@ Variantes de la alternativa C en `brand/marca/alternativa-C/`: `rogle-C-horizont
 
 Estilo de consultora: contenido en blanco, título de acción, menú de seguimiento y barra de mensaje clave. Todo el texto va en Palatino, con los títulos en negrita.
 
-Así es la plantilla de PowerPoint (`plantillas/office/ROGLE.potx`). Las presentaciones de Quarto (Reveal.js y Beamer) mantienen por ahora la portada, la contraportada y la variante negativa.
+Así son la plantilla de PowerPoint (`plantillas/office/ROGLE.potx`), las presentaciones de Quarto (Reveal.js y Beamer, extensión `rogle-slides`) y el tema Beamer para LaTeX (`brand/latex/beamer/beamerthemeROGLE.sty`).
 
 - Portadas: una de docencia y otra de investigación. Campo `oxford-blue` de 4/5, franja `ambar` al corte y, debajo, franja blanca con los logotipos UPV, DOE y ROGLE en positivo. Arriba, una etiqueta `ambar` (asignatura y titulación con sus códigos de la UPV, o congreso), el título, el subtítulo, los autores con ORCID, las afiliaciones numeradas, la fecha y el enlace. Abajo a la derecha, solo logotipos: el del centro (docencia) o los de los financiadores (investigación).
 - Separadores: `oxford-blue` con el número de sección grande en `ambar`, franja `ambar` y logotipos en blanco.
