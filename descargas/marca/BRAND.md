@@ -11,7 +11,7 @@ Esta guía dice cómo usar la marca del grupo de investigación ROGLE al generar
 - Escribe el nombre propio del departamento siempre en castellano, también en textos en inglés: **Departamento de Organización de Empresas**. Dirección: Edificio 7D, Camino de Vera, s/n, 46022 València. Correo del grupo: rogle@upv.es.
 - El grupo se creó en **2006** y cumple **20 años** en 2026. Escribe «20 años» o «2006-2026».
 - No uses emoji ni adornos tipográficos en los títulos.
-- Los títulos de acción de las presentaciones son una frase con la conclusión («La reorganización de rutas reduce un 18 % la distancia recorrida»), no una etiqueta («Resultados»).
+- El título de una diapositiva es el encabezado de la subsección o del apartado («Ocupación diaria real y simulada»), en una línea. La conclusión va en el bloque de mensaje clave («La reorganización de rutas reduce un 18 % la distancia recorrida»).
 
 ## Significado de la marca
 
@@ -57,7 +57,7 @@ Variantes de la alternativa C en `brand/marca/alternativa-C/`: `rogle-C-horizont
 | `ambar` | #F5B000 | La cifra del 20 aniversario, filetes y etiquetas, junto a `oxford-blue` |
 | `gris-upv-431` | #5B6770 | Pies y notas, y el nombre del grupo en la firma UPV |
 | `tinte-claro` | #F3F4FA | Secciones alternas, menú lateral y código |
-| `tinte-mensaje` | #E3E3F1 | Barra de mensaje clave de las diapositivas |
+| `tinte-mensaje` | #E3E3F1 | Paneles y bloques de cita de las diapositivas |
 | `separador` | #CFCFCF | Línea entre la marca UPV y la marca ROGLE |
 
 1. Pon `ambar` solo sobre `oxford-blue` o junto a él. Sobre fondo claro no se lee (1,89:1). Excepción: la cifra grande «20» del logotipo para fondos blancos.
@@ -74,14 +74,14 @@ Variantes de la alternativa C en `brand/marca/alternativa-C/`: `rogle-C-horizont
 
 ## Presentaciones
 
-Estilo de consultora: contenido en blanco, título de acción, menú de seguimiento y barra de mensaje clave. Todo el texto va en Palatino, con los títulos en negrita.
+Contenido en blanco, título de una línea con el encabezado del documento, menú de seguimiento con secciones y subsecciones, y bloque de mensaje clave. Todo el texto va en Palatino, con los títulos en negrita.
 
 Así son la plantilla de PowerPoint (`plantillas/office/ROGLE.potx`), las presentaciones de Quarto (Reveal.js y Beamer, extensión `rogle-slides`) y el tema Beamer para LaTeX (`brand/latex/beamer/beamerthemeROGLE.sty`).
 
 - Portadas: una de docencia y otra de investigación. Campo `oxford-blue` de 4/5, franja `ambar` al corte y, debajo, franja blanca con los logotipos UPV, DOE y ROGLE en positivo. Arriba, una etiqueta `ambar` (asignatura y titulación con sus códigos de la UPV, o congreso), el título, el subtítulo, los autores con ORCID, las afiliaciones numeradas, la fecha y el enlace. Abajo a la derecha, solo logotipos: el del centro (docencia) o los de los financiadores (investigación).
 - Separadores: `oxford-blue` con el número de sección grande en `ambar`, franja `ambar` y logotipos en blanco.
 - Índice: número, nombre de la sección y una línea de descripción en `gris-upv-431`.
-- Contenido: título de acción, cuerpo, mensaje clave en `tinte-mensaje` y fuente. El pie lleva los iconos de Creative Commons, una cita corta con la licencia y el identificador de la obra, y el número. No lleva marca del grupo.
+- Contenido: título de una línea (el encabezado de la subsección o del apartado), cuerpo, bloque de mensaje clave (fondo `tinte-claro` y filete `indigo` a la izquierda) y fuente. Sin etiqueta de sección: el menú ya nombra la sección y, en el menú lateral, las subsecciones de la sección actual. El pie lleva los iconos de Creative Commons, una cita corta con la licencia y el identificador de la obra, y el número. No lleva marca del grupo.
 - Cierres: no hay contraportada. El cierre es todo `oxford-blue`: la etiqueta «Conclusión», el mensaje clave, «Gracias. ¿Preguntas?» y un QR al identificador; debajo, cómo citar y la licencia a la izquierda, y autoría, afiliación y contacto a la derecha; al pie, franja `ambar` y logotipos en blanco. Hay tres: docencia, obra adaptada (la frase de adaptación sustituye a la línea de licencia) e investigación (con un apartado «Financiación» después de la licencia; la frase de financiación va solo en el cierre).
 - Menú de seguimiento (lateral, superior, inferior, pasos o ninguno): sección actual en `indigo`, las demás en `gris-upv-431`. Nunca `ambar` sobre blanco.
 - Licencia por defecto: CC BY-NC-SA 4.0, con los iconos oficiales de Creative Commons. No separes los elementos de una línea con puntos medios: usa comas.
