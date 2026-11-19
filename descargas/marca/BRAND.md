@@ -50,7 +50,8 @@ Variantes de la alternativa C en `brand/marca/alternativa-C/`: `rogle-C-horizont
 
 | Token | Valor | Úsalo para |
 |---|---|---|
-| `oxford-blue` | #002147 | Personas del isotipo, logotipo y texto. Fondo de portadas, separadores y negativos |
+| `oxford-blue` | #002147 | Personas del isotipo, logotipo y títulos. Fondo de portadas, separadores y negativos |
+| `negro` | #000000 | Texto del cuerpo: párrafos, listas, celdas de tabla, leyendas y cifras de los gráficos |
 | `indigo` | #3F4AA8 | Descriptor, enlaces, botones y titulares de apoyo |
 | `indigo-medio` | #5B67C7 | Medias lunas de la versión principal |
 | `indigo-claro` | #A9B0E0 | Degradado digital, medias lunas en negativo y texto sobre `oxford-blue` |
@@ -99,7 +100,7 @@ Así son la plantilla de PowerPoint (`plantillas/office/ROGLE.potx`), las presen
 
 ## Accesibilidad
 
-La UPV exige al menos el nivel AA. Texto a 4,5:1 (3:1 desde 24 px), foco visible, un solo `h1` por página y texto alternativo en cada imagen. Pares de la marca: `oxford-blue` sobre blanco 16,05:1; `indigo` sobre blanco 7,62:1; `gris-upv-431` sobre blanco 5,80:1; `ambar` sobre `oxford-blue` 8,48:1; `indigo-claro` sobre `oxford-blue` 7,62:1.
+La UPV exige al menos el nivel AA. Texto a 4,5:1 (3:1 desde 24 px), foco visible, un solo `h1` por página y texto alternativo en cada imagen. Pares de la marca: `negro` sobre blanco 21:1; `oxford-blue` sobre blanco 16,05:1; `indigo` sobre blanco 7,62:1; `gris-upv-431` sobre blanco 5,80:1; `ambar` sobre `oxford-blue` 8,48:1; `indigo-claro` sobre `oxford-blue` 7,62:1.
 
 ## Plantillas
 

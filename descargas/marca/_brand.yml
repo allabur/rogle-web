@@ -54,6 +54,8 @@ color:
     gris-upv-431: "#5B6770"
     separador: "#CFCFCF"
     blanco: "#FFFFFF"
+    # Body text. Titles, logo and fields stay in oxford-blue.
+    negro: "#000000"
     # Status
     green: "#2E8B57"
     red: "#C8423B"
@@ -64,7 +66,7 @@ color:
     upv-blue: "#59CBE8"
     upv-blue-dark: "#338FC2"
   foreground:
-    light: oxford-blue
+    light: negro
     dark: blanco
   background:
     light: blanco

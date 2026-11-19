@@ -79,7 +79,7 @@
 
   /* Theme: semantic tokens, light values */
   --bg: var(--white);
-  --fg: var(--oxford-blue);
+  --fg: #000;
   --muted: var(--gray-upv);
   --heading: var(--oxford-blue);
   --link: var(--indigo);
